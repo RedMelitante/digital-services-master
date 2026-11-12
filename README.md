@@ -32,12 +32,14 @@ Copy `.env.example` to `.env` and set as needed:
 ```
 public/
   images/              all design images (logos, client sites, clinic photos, blog images)
+  images/og/           social share images and logo carried over from the old site
   favicon.png, apple-touch-icon.png
 src/
   layouts/BaseLayout.astro   <head> (SEO and social tags, fonts), header, footer, runtime
   components/                SiteHeader, SiteFooter
   pages/                     one .astro file per page (URL = file path)
-  data/                      FAQ, pricing plans and industry content
+  data/                      FAQ, pricing plans, industry content and page metadata (seo.ts)
+  lib/schema.ts              JSON-LD structured data
   scripts/
     logic.ts                 page state (menus, accordions, filters, tabs, form) from the design
     bindings.ts              small runtime that applies that state to the page
@@ -65,6 +67,15 @@ Each page chooses its state logic with the `logic` prop on `BaseLayout`.
 The homepage serves the desktop design above 640px and the dedicated phone design
 (`Home-Mobile`) at 640px and below.
 
+### Page metadata
+
+Titles, meta descriptions, social share images, publish/modified dates and blog authors
+come from `src/data/seo.ts`, keyed by URL. They were copied from the old WordPress site,
+and each entry's `oldUrl` records the page it came from. `BaseLayout` uses an entry's
+values instead of the `title`/`description` props, and builds the JSON-LD structured data
+(`src/lib/schema.ts`) in the same shape the old site's SEO plugin produced. Pages with no
+entry use the props passed to `BaseLayout`.
+
 ## Pages
 
 | URL | Design file |
@@ -89,5 +100,6 @@ Open items from the design handoff:
 - Privacy Policy and Terms: add business name and registration, address, analytics tools
   and governing law; get a lawyer's review; remove the "Draft" label.
 - Set `PUBLIC_AUDIT_FORM_ENDPOINT` to connect the audit form (email or Fluid CRM).
-- Set up 301 redirects from the old site's URLs on the hosting platform.
+- Add 301 redirects from the old site's URLs (the redirect list in the migration audit,
+  plus the old sitemap and feed URLs).
 - Add Analytics and verify the site in Google Search Console.
