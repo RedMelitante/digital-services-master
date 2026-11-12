@@ -7,7 +7,7 @@
  */
 
 /** Where audit requests are emailed. */
-var RECIPIENT = 'redmelitante@digitalservicesmaster.com';
+var RECIPIENT = 'digitalservicesmaster@gmail.com';
 
 /** Longest value kept per field, so a bad request can't send a huge email. */
 var MAX_FIELD_LENGTH = 5000;

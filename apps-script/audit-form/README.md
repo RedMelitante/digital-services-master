@@ -1,7 +1,7 @@
 # Audit form handler (Google Apps Script)
 
 Receives the "Book a Free Clinic Growth Audit" form from the Contact page and emails
-each request to **redmelitante@digitalservicesmaster.com**. The recipient is set in
+each request to **digitalservicesmaster@gmail.com**. The recipient is set in
 `RECIPIENT` at the top of `Code.gs`.
 
 Each email has:
@@ -16,7 +16,7 @@ silently dropped.
 
 ## Deploy (one time, about 5 minutes)
 
-1. Sign in to Google as **redmelitante@digitalservicesmaster.com** and open
+1. Sign in to the Google account that should own the script (emails are sent from it) and open
    <https://script.google.com> → **New project**. Name it "DSM audit form".
 2. Replace the contents of `Code.gs` with this folder's `Code.gs`.
 3. Optional, to limit the script to sending email only: **Project Settings** → tick
