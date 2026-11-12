@@ -2,7 +2,8 @@
 
 Receives the "Book a Free Clinic Growth Audit" form from the Contact page and emails
 each request to **digitalservicesmaster@gmail.com**. The recipient is set in
-`RECIPIENT` at the top of `Code.gs`.
+`RECIPIENT` at the top of `Code.gs`. To send blind copies to other people, list their
+addresses, comma-separated, in `BCC`. Recipients don't see BCC addresses.
 
 Each email has:
 - **Subject:** `New audit request: <clinic> (<name>)`

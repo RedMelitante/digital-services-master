@@ -9,6 +9,12 @@
 /** Where audit requests are emailed. */
 var RECIPIENT = 'digitalservicesmaster@gmail.com';
 
+/**
+ * Extra recipients who get a blind copy (BCC): comma-separated, or '' for none.
+ * Each address counts toward the account's daily email quota.
+ */
+var BCC = '';
+
 /** Longest value kept per field, so a bad request can't send a huge email. */
 var MAX_FIELD_LENGTH = 5000;
 
@@ -51,14 +57,16 @@ function doPost(e) {
       return json_({ ok: false, error: 'Invalid email address' });
     }
 
-    MailApp.sendEmail({
+    var message = {
       to: RECIPIENT,
       replyTo: clean.email,
       name: 'Digital Services Master website',
       subject: 'New audit request: ' + clean.clinic + ' (' + clean.name + ')',
       body: plainBody_(clean),
       htmlBody: htmlBody_(clean),
-    });
+    };
+    if (BCC) message.bcc = BCC;
+    MailApp.sendEmail(message);
 
     return json_({ ok: true });
   } catch (err) {
