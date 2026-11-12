@@ -1,0 +1,21 @@
+/* Homepage: desktop design (Main.dc.html) above 640px, mobile design (Home-Mobile.dc.html) at 640px and below. */
+.home-m{display:none}
+@media (max-width:640px){.home-d{display:none}.home-m{display:block}}
+
+/* Mobile design styles, scoped to the mobile variant */
+.home-m a{color:#3D66E4;text-decoration:none}
+.home-m a:hover{color:#1E42B1}
+.home-m h1,.home-m h2,.home-m h3,.home-m h4,.home-m p{margin:0}
+.home-m .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 22px;border-radius:999px;font-weight:700;font-size:15px;line-height:1.2;text-align:center;cursor:pointer;border:0;font-family:inherit}
+.home-m .btn-cta{background:var(--accent);color:#131A33}
+.home-m .btn-cta:hover{color:#131A33;filter:brightness(.95)}
+.home-m .btn-ghost{background:#fff;color:#3D66E4;box-shadow:inset 0 0 0 1.5px #3D66E4}
+.home-m .btn-ghost:hover{background:#3D66E4;color:#fff}
+.home-m .btn-light{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.5)}
+.home-m .tlink{color:#3D66E4;font-weight:700;font-size:15px;display:inline-flex;align-items:center;gap:8px}
+.home-m .eb{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#3D66E4}
+.home-m .h2{font-size:28px;line-height:1.18;letter-spacing:-.025em;font-weight:800;color:#131A33}
+.home-m .foot a{color:#B9C3E3}
+.home-m .ph{background:#FFF4D6;color:#6E4B00;outline:1.5px dashed #D9A93C;outline-offset:-1.5px;border-radius:6px;padding:0 6px}
+.home-m .faq-q{all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;cursor:pointer;font-weight:700;font-size:16px;line-height:1.4;color:#131A33;min-height:44px}
+.home-m .chk{display:flex;gap:10px;align-items:flex-start}

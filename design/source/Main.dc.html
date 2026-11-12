@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Home — Digital Services Master</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#fff}
+*{box-sizing:border-box}
+a{color:#3D66E4;text-decoration:none}a:hover{color:#1E42B1}
+h1,h2,h3,h4,p{margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font-weight:700;font-size:15px;line-height:1.2;text-align:center;transition:filter .2s,transform .2s,box-shadow .2s,background .2s,color .2s;cursor:pointer;border:0;font-family:inherit}
+.btn-cta{background:var(--accent);color:#131A33}.btn-cta:hover{color:#131A33;filter:brightness(.95);transform:translateY(-1px);box-shadow:0 12px 24px -12px rgba(19,26,51,.45)}
+.btn-ghost{background:#fff;color:#3D66E4;box-shadow:inset 0 0 0 1.5px #3D66E4}.btn-ghost:hover{background:#3D66E4;color:#fff}
+.btn-light{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.5)}.btn-light:hover{background:#fff;color:#0D1838}
+.navlink{color:#3A4262;font-weight:500;font-size:15px}.navlink:hover{color:#3D66E4}
+.card{transition:transform .25s,box-shadow .25s}.card:hover{transform:translateY(-4px);box-shadow:0 28px 48px -28px rgba(13,24,56,.35)}
+.tlink{color:#3D66E4;font-weight:700;font-size:15px;display:inline-flex;align-items:center;gap:8px}.tlink:hover{color:#1E42B1}
+.foot a{color:#B9C3E3}.foot a:hover{color:#fff}
+.ph{background:#FFF4D6;color:#6E4B00;outline:1.5px dashed #D9A93C;outline-offset:-1.5px;border-radius:6px;padding:0 6px}
+.faq-q{all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 0;cursor:pointer;font-weight:700;font-size:18px;color:#131A33;min-height:44px}
+.faq-q:focus-visible{outline:2px solid #3D66E4;outline-offset:4px;border-radius:8px}
+@media (max-width:1080px){.hide-md{display:none !important}}
+@media (min-width:1081px){.show-md{display:none !important}}
+@media (max-width:640px){.hide-sm{display:none !important}}
+.dd{position:relative;display:flex;align-items:center}.dd::after{content:"";position:absolute;left:-12px;right:-12px;top:100%;height:20px}.dd-menu{position:absolute;top:calc(100% + 18px);left:-18px;min-width:280px;padding:10px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 28px 56px -24px rgba(13,24,56,.32);display:flex;flex-direction:column;gap:2px;opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .16s ease,transform .16s ease,visibility .16s;z-index:70}.dd:hover .dd-menu,.dd:focus-within .dd-menu{opacity:1;visibility:visible;transform:none}.dd:hover>.navlink svg,.dd:focus-within>.navlink svg{transform:rotate(180deg)}.dd>.navlink svg{transition:transform .16s ease}.dd-menu a{display:flex;flex-direction:column;gap:2px;padding:10px 14px;border-radius:12px;color:var(--ink);font-size:15px;font-weight:700}.dd-menu a span{font-size:13px;font-weight:500;color:var(--muted)}.dd-menu a:hover,.dd-menu a:focus-visible{background:var(--tint2);color:var(--blue)}
+</style>
+</helmet>
+<div style="--accent: {{accent}}; --ink: #131A33; --body: #4B5371; --muted: #646B88; --blue: #3D66E4; --blue-deep: #1E42B1; --navy: #0D1838; --tint: #EEF3FF; --tint2: #F6F8FE; --line: #E3E8F4; font-family: 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif; color: var(--body); font-size: 17px; line-height: 1.65; background: #fff">
+
+<!-- ============ HEADER (component: SiteHeader) ============ -->
+<header style="position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,0.95); border-bottom: 1px solid var(--line)">
+<div style="max-width: 1240px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 32px); height: 80px; display: flex; align-items: center; justify-content: space-between; gap: 24px">
+<a href="Main.dc.html" aria-label="Digital Services Master home" style="display: flex; align-items: center; gap: 12px">
+<img src="../images/dsm.png" alt="Dsm" style="display: block; height: 38px; width: auto">
+<span class="hide-sm" style="font-size: 12px; font-weight: 600; line-height: 1.25; color: var(--muted); border-left: 1px solid var(--line); padding-left: 12px">Digital<br>Services Master</span>
+</a>
+<nav aria-label="Main" class="hide-md" style="display: flex; align-items: center; gap: 28px">
+<a class="navlink" href="Main.dc.html" style="color: var(--blue); font-weight: 700">Home</a>
+<a class="navlink" href="About.dc.html">About Us</a>
+<div class="dd"><a class="navlink" href="Services.dc.html" style="display: inline-flex; align-items: center; gap: 4px">Services <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a><div class="dd-menu" role="menu" aria-label="Services"><a href="Service-WebDev.dc.html" role="menuitem">Web Development<span>Clinic websites that convert</span></a><a href="Service-SEO.dc.html" role="menuitem">SEO<span>Get found on Google and Maps</span></a><a href="Service-Ads.dc.html" role="menuitem">Paid Advertising<span>Google, Facebook &amp; Instagram ads</span></a></div></div>
+<div class="dd"><a class="navlink" href="Portfolio.dc.html" style="display: inline-flex; align-items: center; gap: 4px">Portfolio <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a><div class="dd-menu" role="menu" aria-label="Portfolio"><a href="Portfolio-Aesthetic.dc.html" role="menuitem">Aesthetic Clinic Websites<span>Cosmetic clinics &amp; med spas</span></a><a href="Portfolio-Dental.dc.html" role="menuitem">Dental Clinic Websites<span>Family &amp; cosmetic dentistry</span></a><a href="Portfolio-Business.dc.html" role="menuitem">Custom Websites<span>Businesses outside healthcare</span></a><a href="Portfolio-Ecommerce.dc.html" role="menuitem">E-commerce Websites<span>Online stores</span></a><a href="CaseStudies.dc.html" role="menuitem">Case Studies<span>Real results for dental clinics</span></a></div></div>
+<a class="navlink" href="Pricing.dc.html">Pricing</a>
+<a class="navlink" href="Blog.dc.html">Blog</a>
+<a class="navlink" href="Contact.dc.html">Contact</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 12px">
+<a class="btn btn-cta hide-sm" href="Contact.dc.html" style="min-height: 48px; padding: 0 22px">Book a Free Clinic Growth Audit</a>
+<button class="show-md" aria-label="Open menu" aria-expanded="{{menuOpen}}" onClick="{{toggleMenu}}" style="width: 48px; height: 48px; border-radius: 14px; border: 1px solid var(--line); background: #fff; color: var(--ink); display: flex; align-items: center; justify-content: center; cursor: pointer"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+</div>
+</div>
+<sc-if value="{{menuOpen}}" hint-placeholder-val="{{ false }}"><nav aria-label="Mobile menu" style="position: absolute; top: 100%; left: 0; right: 0; z-index: 60; background: #fff; border-bottom: 1px solid var(--line); box-shadow: 0 24px 40px -24px rgba(13,24,56,0.35); padding: 8px clamp(16px, 4vw, 32px) 20px; display: flex; flex-direction: column; max-height: calc(100vh - 80px); overflow-y: auto"><a href="Main.dc.html" style="padding: 13px 4px; font-size: 17px; color: var(--ink); font-weight: 600; border-bottom: 1px solid var(--line)">Home</a><a href="About.dc.html" style="padding: 13px 4px; font-size: 17px; color: var(--ink); font-weight: 600; border-bottom: 1px solid var(--line)">About Us</a><a href="Services.dc.html" style="padding: 13px 4px; font-size: 17px; color: var(--ink); font-weight: 600; border-bottom: 1px solid var(--line)">Services</a><a href="Service-WebDev.dc.html" style="padding: 13px 4px; font-size: 15px; color: var(--muted); padding-left: 18px; font-weight: 600; border-bottom: 1px solid var(--line)">Web Development</a><a href="Service-SEO.dc.html" style="padding: 13px 4px; font-size: 15px; color: var(--muted); padding-left: 18px; font-weight: 600; border-bottom: 1px solid var(--line)">SEO</a><a href="Service-Ads.dc.html" style="padding: 13px 4px; font-size: 15px; color: var(--muted); padding-left: 18px; font-weight: 600; border-bottom: 1px solid var(--line)">Paid Advertising</a><a href="Portfolio.dc.html" style="padding: 13px 4px; font-size: 17px; color: var(--ink); font-weight: 600; border-bottom: 1px solid var(--line)">Portfolio</a><a href="Portfolio-Aesthetic.dc.html" style="padding: 13px 4px; font-size: 15px; color: var(--muted); padding-left: 18px; font-weight: 600; border-bottom: 1px solid var(--line)">Aesthetic Clinic Websites</a><a href="Portfolio-Dental.dc.html" style="padding: 13px 4px; font-size: 15px; color: var(--muted); padding-left: 18px; font-weight: 600; border-bottom: 1px solid var(--line)">Dental Clinic Websites</a><a href="Portfolio-Business.dc.html" style="padding: 13px 4px; font-size: 15px; color: var(--muted); padding-left: 18px; font-weight: 600; border-bottom: 1px solid var(--line)">Custom Websites</a><a href="Portfolio-Ecommerce.dc.html" style="padding: 13px 4px; font-size: 15px; color: var(--muted); padding-left: 18px; font-weight: 600; border-bottom: 1px solid var(--line)">E-commerce Websites</a><a href="CaseStudies.dc.html" style="padding: 13px 4px; font-size: 15px; color: var(--muted); padding-left: 18px; font-weight: 600; border-bottom: 1px solid var(--line)">Case Studies</a><a href="Pricing.dc.html" style="padding: 13px 4px; font-size: 17px; color: var(--ink); font-weight: 600; border-bottom: 1px solid var(--line)">Pricing</a><a href="Blog.dc.html" style="padding: 13px 4px; font-size: 17px; color: var(--ink); font-weight: 600; border-bottom: 1px solid var(--line)">Blog</a><a href="FAQ.dc.html" style="padding: 13px 4px; font-size: 17px; color: var(--ink); font-weight: 600; border-bottom: 1px solid var(--line)">FAQ</a><a href="Contact.dc.html" style="padding: 13px 4px; font-size: 17px; color: var(--ink); font-weight: 600; border-bottom: 1px solid var(--line)">Contact</a><a class="btn btn-cta" href="Contact.dc.html" style="margin-top: 16px; width: 100%">Book a Free Clinic Growth Audit</a></nav></sc-if>
+</header>
+
+<!-- ============ HERO (component: HeroSplit + DeviceMockup) ============ -->
+<section style="background: var(--tint2); overflow: hidden">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(48px, 7vw, 96px) clamp(16px, 4vw, 32px) clamp(64px, 8vw, 112px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(480px, 100%), 1fr)); gap: clamp(48px, 5vw, 72px); align-items: center">
+<div style="display: flex; flex-direction: column; gap: 28px; align-items: flex-start">
+<span style="display: inline-flex; align-items: center; gap: 10px; background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 8px 16px 8px 10px; font-size: 14px; font-weight: 600; color: var(--ink)"><span style="width: 22px; height: 22px; border-radius: 50%; background: var(--tint); color: var(--blue); display: flex; align-items: center; justify-content: center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"></path></svg></span>For aesthetic &amp; dental clinics in the Philippines and Australia</span>
+<h1 style="font-size: clamp(38px, 4.6vw, 62px); line-height: 1.07; letter-spacing: -0.03em; font-weight: 800; color: var(--ink); text-wrap: balance">Digital Marketing for Aesthetic and Dental Clinics That Want <span style="color: var(--blue)">More Bookings</span></h1>
+<p style="font-size: clamp(17px, 1.4vw, 19px); max-width: 540px; text-wrap: pretty">Attract more clients, build trust and grow. Your website, Google visibility and ads working together to bring in qualified calls and consultation requests, not just traffic.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<a class="btn btn-cta" href="Contact.dc.html">Book a Free Clinic Growth Audit <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+<a class="btn btn-ghost" href="Portfolio.dc.html">View Our Work</a>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px 28px; font-size: 15px; font-weight: 600; color: var(--ink)">
+<span style="display: inline-flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3D66E4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"></path></svg>10+ years of experience</span>
+<span style="display: inline-flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3D66E4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"></path></svg>Web, SEO &amp; ads under one roof</span>
+</div>
+</div>
+
+<!-- Hero visual: real client website (component: DeviceMockup) -->
+<div style="position: relative; padding: 44px 0 56px">
+<div aria-hidden="true" style="position: absolute; width: 84%; aspect-ratio: 1; border-radius: 50%; background: #DFE7FF; right: -6%; top: 50%; transform: translateY(-50%)"></div>
+<!-- Laptop with a real client website -->
+<div style="position: relative; width: 92%">
+<div style="background: #1A2036; border-radius: 18px 18px 6px 6px; padding: 10px 10px 14px; box-shadow: 0 40px 70px -30px rgba(13,24,56,0.45)">
+<div style="border-radius: 6px; overflow: hidden; background: #fff">
+<div style="display: flex; align-items: center; gap: 6px; padding: 9px 12px; background: #F1F3F8"><span style="width: 8px; height: 8px; border-radius: 50%; background: #FF8A80"></span><span style="width: 8px; height: 8px; border-radius: 50%; background: #FFD166"></span><span style="width: 8px; height: 8px; border-radius: 50%; background: #7BD88F"></span><span style="margin-left: 8px; flex: 1; max-width: 260px; background: #fff; border-radius: 999px; padding: 3px 12px; font-size: 12px; color: #646B88; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">coastalluxeaesthetics.com.au</span></div>
+<img src="../images/cla-desk.webp" alt="Coastal Luxe Aesthetics website, built by Digital Services Master" style="display: block; width: 100%; height: auto">
+</div>
+</div>
+<div style="height: 14px; margin: 0 -6%; background: #CDD3E2; border-radius: 0 0 18px 18px; box-shadow: inset 0 3px 0 #E6EAF3"></div>
+</div>
+<!-- Phone -->
+<div style="position: absolute; right: 0; bottom: 16px; width: 26%; background: #1A2036; border-radius: 28px; padding: 7px; box-shadow: 0 30px 50px -20px rgba(13,24,56,0.5)">
+<img src="../images/cla-photo.webp" alt="Coastal Luxe Aesthetics clinic" style="display: block; width: 100%; aspect-ratio: 9 / 17; object-fit: cover; border-radius: 22px">
+</div>
+<div style="position: absolute; top: 0; left: -4%; z-index: 2; background: #fff; border-radius: 16px; padding: 12px 16px 12px 12px; display: flex; gap: 12px; align-items: center; box-shadow: 0 24px 40px -20px rgba(13,24,56,0.35); border: 1px solid var(--line)">
+<span style="width: 42px; height: 42px; border-radius: 12px; background: var(--tint); color: var(--blue); display: flex; align-items: center; justify-content: center; flex: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18M8 3v4M16 3v4"></path><path d="m9 15 2 2 4-4"></path></svg></span>
+<span style="display: flex; flex-direction: column; line-height: 1.3"><span style="font-size: 14px; font-weight: 700; color: var(--ink)">New consultation request</span><span style="font-size: 13px; color: var(--muted)">Anti-wrinkle · via website</span></span>
+</div>
+<div style="position: absolute; bottom: 0; left: 6%; z-index: 2; background: #fff; border-radius: 16px; padding: 12px 16px 12px 12px; display: flex; gap: 12px; align-items: center; box-shadow: 0 24px 40px -20px rgba(13,24,56,0.35); border: 1px solid var(--line)">
+<span style="width: 42px; height: 42px; border-radius: 12px; background: #FFF1E3; color: #B35A00; display: flex; align-items: center; justify-content: center; flex: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg></span>
+<span style="display: flex; flex-direction: column; line-height: 1.3"><span style="font-size: 14px; font-weight: 700; color: var(--ink)">Found on Google</span><span style="font-size: 13px; color: var(--muted)">“cosmetic clinic near me”</span></span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ LOGO STRIP (component: LogoStrip) ============ -->
+<section aria-label="Clients" style="background: #fff; border-bottom: 1px solid var(--line)">
+<div style="max-width: 1240px; margin: 0 auto; padding: 44px clamp(16px, 4vw, 32px); display: flex; flex-direction: column; align-items: center; gap: 24px">
+<p style="font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted)">Clinics and brands that trust us</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px 28px"><img src="../images/lg-above.png" alt="Above Dental Care" style="display: block; height: 64px; width: auto; mix-blend-mode: multiply"><img src="../images/lg-sia.png" alt="Sia-Tankiko Dental Clinic" style="display: block; height: 64px; width: auto; mix-blend-mode: multiply"><img src="../images/lg-cla.png" alt="Coastal Luxe Aesthetics" style="display: block; height: 64px; width: auto; mix-blend-mode: multiply"><img src="../images/lg-aplus.png" alt="A+ Health Services" style="display: block; height: 64px; width: auto; mix-blend-mode: multiply"><img src="../images/lg-lamaison.png" alt="La Maison Beaute" style="display: block; height: 64px; width: auto; mix-blend-mode: multiply"><img src="../images/lg-venus.png" alt="Venus Medispa" style="display: block; height: 64px; width: auto; mix-blend-mode: multiply"><img src="../images/lg-constantin.png" alt="Constantin Floors" style="display: block; height: 64px; width: auto; mix-blend-mode: multiply"><img src="../images/lg-camco.png" alt="CAMCO Prefabricated Structures" style="display: block; height: 64px; width: auto; mix-blend-mode: multiply"><img src="../images/lg-goodforce.png" alt="Good Force" style="display: block; height: 64px; width: auto; mix-blend-mode: multiply"><img src="../images/lg-clasol.png" alt="CLA Solutions" style="display: block; height: 64px; width: auto; mix-blend-mode: multiply"></div>
+</div>
+</section>
+
+<!-- ============ WHY CLINICS HIRE US (component: OutcomeCards) ============ -->
+<section style="background: #fff">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(72px, 9vw, 120px) clamp(16px, 4vw, 32px); display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px; max-width: 720px; margin: 0 auto">
+<p style="font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue)">Why clinics hire us</p>
+<h2 style="font-size: clamp(30px, 3.2vw, 44px); line-height: 1.15; letter-spacing: -0.025em; font-weight: 800; color: var(--ink); text-wrap: balance">More bookings, not just more traffic</h2>
+<p style="text-wrap: pretty">Traffic is easy to buy. Booked consultations are what grow a clinic. Everything we build is measured by the calls and enquiries it brings in.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 24px">
+<div class="card" style="background: #fff; border: 1px solid var(--line); border-radius: 28px; padding: 36px; display: flex; flex-direction: column; gap: 16px">
+<span style="width: 56px; height: 56px; border-radius: 16px; background: var(--tint); color: var(--blue); display: flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg></span>
+<h3 style="font-size: 22px; line-height: 1.3; font-weight: 700; color: var(--ink); margin-top: 8px">Get Found on Google</h3>
+<p style="font-size: 16px">Show up when nearby patients search for the treatments you offer, from Botox and fillers to veneers and implants, in Google Search and Maps.</p>
+</div>
+<div class="card" style="background: var(--blue); border-radius: 28px; padding: 36px; display: flex; flex-direction: column; gap: 16px; color: #fff; position: relative; overflow: hidden">
+<div aria-hidden="true" style="position: absolute; width: 240px; height: 240px; border-radius: 50%; background: rgba(255,255,255,0.08); right: -80px; top: -80px"></div>
+<span style="width: 56px; height: 56px; border-radius: 16px; background: rgba(255,255,255,0.16); color: #fff; display: flex; align-items: center; justify-content: center; position: relative"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18M8 3v4M16 3v4"></path><path d="m9 15 2 2 4-4"></path></svg></span>
+<h3 style="font-size: 22px; line-height: 1.3; font-weight: 700; color: #fff; margin-top: 8px; position: relative">Turn Visitors Into Consultations</h3>
+<p style="font-size: 16px; color: #EEF2FF; position: relative">Fast, trustworthy clinic websites with clear treatment pages and booking paths that make enquiring the easy next step.</p>
+</div>
+<div class="card" style="background: #fff; border: 1px solid var(--line); border-radius: 28px; padding: 36px; display: flex; flex-direction: column; gap: 16px">
+<span style="width: 56px; height: 56px; border-radius: 16px; background: var(--tint); color: var(--blue); display: flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1Z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"></path></svg></span>
+<h3 style="font-size: 22px; line-height: 1.3; font-weight: 700; color: var(--ink); margin-top: 8px">Drive Real Enquiries, Not Clicks</h3>
+<p style="font-size: 16px">Google, Facebook and Instagram campaigns aimed at people ready to book, tracked to calls and form enquiries rather than vanity metrics.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ SERVICES (component: ServiceCards) ============ -->
+<section style="background: var(--tint)">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(72px, 9vw, 120px) clamp(16px, 4vw, 32px); display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px; max-width: 720px; margin: 0 auto">
+<p style="font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue)">Our services</p>
+<h2 style="font-size: clamp(30px, 3.2vw, 44px); line-height: 1.15; letter-spacing: -0.025em; font-weight: 800; color: var(--ink); text-wrap: balance">Everything your clinic needs to get booked</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 24px">
+<a class="card" href="Service-WebDev.dc.html" style="background: #fff; border-radius: 28px; padding: 36px; display: flex; flex-direction: column; gap: 16px; color: inherit">
+<span style="width: 56px; height: 56px; border-radius: 16px; background: var(--tint); color: var(--blue); display: flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"></rect><path d="M8 20h8M12 16v4"></path></svg></span>
+<h3 style="font-size: 22px; line-height: 1.3; font-weight: 700; color: var(--ink); margin-top: 8px">Web Development</h3>
+<p style="font-size: 16px">Fast, secure, SEO-ready clinic websites built to turn visitors into consultations.</p>
+<ul style="list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 15px; color: var(--ink); font-weight: 500">
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3D66E4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="m5 12 5 5L20 7"></path></svg>Mobile-first, conversion-focused design</li>
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3D66E4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="m5 12 5 5L20 7"></path></svg>Treatment pages written to rank</li>
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3D66E4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="m5 12 5 5L20 7"></path></svg>Booking and enquiry forms built in</li>
+</ul>
+<span class="tlink" style="margin-top: auto; padding-top: 12px">Learn more <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</a>
+<a class="card" href="Service-SEO.dc.html" style="background: #fff; border-radius: 28px; padding: 36px; display: flex; flex-direction: column; gap: 16px; color: inherit">
+<span style="width: 56px; height: 56px; border-radius: 16px; background: var(--tint); color: var(--blue); display: flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path><path d="M8 11h6M11 8v6"></path></svg></span>
+<h3 style="font-size: 22px; line-height: 1.3; font-weight: 700; color: var(--ink); margin-top: 8px">SEO</h3>
+<p style="font-size: 16px">Get found on Google for treatments like Botox, fillers, veneers and implants, and own your local search results.</p>
+<ul style="list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 15px; color: var(--ink); font-weight: 500">
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3D66E4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="m5 12 5 5L20 7"></path></svg>Local search and Google Maps visibility</li>
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3D66E4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="m5 12 5 5L20 7"></path></svg>Treatment keyword strategy</li>
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3D66E4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="m5 12 5 5L20 7"></path></svg>On-page and technical SEO</li>
+</ul>
+<span class="tlink" style="margin-top: auto; padding-top: 12px">Learn more <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</a>
+<a class="card" href="Service-Ads.dc.html" style="background: #fff; border-radius: 28px; padding: 36px; display: flex; flex-direction: column; gap: 16px; color: inherit">
+<span style="width: 56px; height: 56px; border-radius: 16px; background: var(--tint); color: var(--blue); display: flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="5"></circle><circle cx="12" cy="12" r="1.5"></circle></svg></span>
+<h3 style="font-size: 22px; line-height: 1.3; font-weight: 700; color: var(--ink); margin-top: 8px">Paid Advertising</h3>
+<p style="font-size: 16px">Google, Facebook and Instagram ads that drive real enquiries, not clicks.</p>
+<ul style="list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 15px; color: var(--ink); font-weight: 500">
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3D66E4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="m5 12 5 5L20 7"></path></svg>Search campaigns for high-intent treatments</li>
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3D66E4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="m5 12 5 5L20 7"></path></svg>Facebook and Instagram campaigns</li>
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3D66E4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="m5 12 5 5L20 7"></path></svg>Call and form tracking</li>
+</ul>
+<span class="tlink" style="margin-top: auto; padding-top: 12px">Learn more <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</a>
+</div>
+</div>
+</section>
+
+<!-- ============ INDUSTRIES (component: IndustryCards) ============ -->
+<section style="background: #fff">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(72px, 9vw, 120px) clamp(16px, 4vw, 32px); display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 640px">
+<p style="font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue)">Industries</p>
+<h2 style="font-size: clamp(30px, 3.2vw, 44px); line-height: 1.15; letter-spacing: -0.025em; font-weight: 800; color: var(--ink)">Your Industry, Our Expertise</h2>
+<p style="text-wrap: pretty">We specialise in clinics, and we bring the same care to custom websites for businesses that want to stand out.</p>
+</div>
+<a class="btn btn-ghost" href="Portfolio.dc.html">View Our Work</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 24px">
+<a class="card" href="Industry-Landing.dc.html" style="border-radius: 28px; overflow: hidden; border: 1px solid var(--line); display: flex; flex-direction: column; color: inherit; background: #fff">
+<div style="height: 180px; background: #F6E9E4; position: relative; overflow: hidden"><div aria-hidden="true" style="position: absolute; width: 220px; height: 220px; border-radius: 50%; background: #EED5CC; right: -40px; bottom: -90px"></div><span style="position: absolute; left: 32px; bottom: 28px; width: 64px; height: 64px; border-radius: 18px; background: #fff; color: #9A5A47; display: flex; align-items: center; justify-content: center; box-shadow: 0 12px 24px -12px rgba(90,50,40,0.35)"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8Z"></path><path d="M19 16l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7Z"></path></svg></span></div>
+<div style="padding: 28px 32px 32px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+<h3 style="font-size: 22px; font-weight: 700; color: var(--ink)">Aesthetic Clinics</h3>
+<p style="font-size: 16px">Med spas, skin and cosmetic clinics. Websites and campaigns that feel as premium as your treatments.</p>
+<span class="tlink" style="margin-top: auto; padding-top: 8px">How we help aesthetic clinics <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</div>
+</a>
+<a class="card" href="Industry-Dental.dc.html" style="border-radius: 28px; overflow: hidden; border: 1px solid var(--line); display: flex; flex-direction: column; color: inherit; background: #fff">
+<div style="height: 180px; background: #E3F5F6; position: relative; overflow: hidden"><div aria-hidden="true" style="position: absolute; width: 220px; height: 220px; border-radius: 50%; background: #C8ECEE; right: -40px; bottom: -90px"></div><span style="position: absolute; left: 32px; bottom: 28px; width: 64px; height: 64px; border-radius: 18px; background: #fff; color: #0E7C86; display: flex; align-items: center; justify-content: center; box-shadow: 0 12px 24px -12px rgba(14,90,100,0.35)"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3c-2.5 0-4 2-4 4.5 0 3 1.5 4.5 2 7 .5 3 1 6.5 2.5 6.5S9.5 17 12 17s3 4 4.5 4 2-3.5 2.5-6.5c.5-2.5 2-4 2-7C21 5 19.5 3 17 3c-2 0-3 1-5 1S9 3 7 3Z"></path></svg></span></div>
+<div style="padding: 28px 32px 32px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+<h3 style="font-size: 22px; font-weight: 700; color: var(--ink)">Dental Clinics</h3>
+<p style="font-size: 16px">General, cosmetic and family dental practices. Be the clinic nearby patients find and trust first.</p>
+<span class="tlink" style="margin-top: auto; padding-top: 8px">How we help dental clinics <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</div>
+</a>
+<a class="card" href="Portfolio-Business.dc.html" style="border-radius: 28px; overflow: hidden; border: 1px solid var(--line); display: flex; flex-direction: column; color: inherit; background: #fff">
+<div style="height: 180px; background: #EEF0F5; position: relative; overflow: hidden"><div aria-hidden="true" style="position: absolute; width: 220px; height: 220px; border-radius: 50%; background: #DFE3EC; right: -40px; bottom: -90px"></div><span style="position: absolute; left: 32px; bottom: 28px; width: 64px; height: 64px; border-radius: 18px; background: #fff; color: #3A4262; display: flex; align-items: center; justify-content: center; box-shadow: 0 12px 24px -12px rgba(20,30,60,0.3)"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M3 9h18M8 13h4M8 16h8"></path></svg></span></div>
+<div style="padding: 28px 32px 32px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+<h3 style="font-size: 22px; font-weight: 700; color: var(--ink)">Custom Business Websites</h3>
+<p style="font-size: 16px">Custom builds for flooring, prefab structures, interior design, events and food brands.</p>
+<span class="tlink" style="margin-top: auto; padding-top: 8px">See custom websites <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</div>
+</a>
+</div>
+</div>
+</section>
+
+<!-- ============ FEATURED WORK (component: PortfolioCard) ============ -->
+<section style="background: var(--tint)">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(72px, 9vw, 120px) clamp(16px, 4vw, 32px); display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 640px">
+<p style="font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue)">Featured work</p>
+<h2 style="font-size: clamp(30px, 3.2vw, 44px); line-height: 1.15; letter-spacing: -0.025em; font-weight: 800; color: var(--ink)">Recent websites for clinics and brands</h2>
+</div>
+<a class="btn btn-ghost" href="Portfolio.dc.html">View Our Work</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 24px">
+
+<a class="card" href="CaseStudy-CoastalLuxe.dc.html" style="background: #fff; border-radius: 28px; overflow: hidden; display: flex; flex-direction: column; color: inherit">
+<div style="position: relative; aspect-ratio: 4 / 3; background: #F3ECE4; padding: 32px 32px 0; display: flex; align-items: flex-end">
+<div style="width: 84%; background: #fff; border-radius: 12px 12px 0 0; overflow: hidden; box-shadow: 0 20px 40px -24px rgba(60,40,20,0.5)">
+<div style="display: flex; gap: 5px; padding: 8px 10px; background: #F7F2EC"><span style="width: 7px; height: 7px; border-radius: 50%; background: #E3D6C8"></span><span style="width: 7px; height: 7px; border-radius: 50%; background: #E3D6C8"></span><span style="width: 7px; height: 7px; border-radius: 50%; background: #E3D6C8"></span></div>
+<img src="../images/cla-desk.webp" alt="Coastal Luxe Aesthetics website" style="display: block; width: 100%; height: auto">
+</div>
+<div style="position: absolute; right: 6%; bottom: 0; width: 24%; background: #1A2036; border-radius: 16px 16px 0 0; padding: 5px 5px 0"><img src="../images/cla-photo.webp" alt="" style="display: block; width: 100%; aspect-ratio: 9 / 14; object-fit: cover; border-radius: 12px 12px 0 0"></div>
+</div>
+<div style="padding: 24px 28px 28px; display: flex; flex-direction: column; gap: 8px">
+<span style="align-self: flex-start; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #8A4B36; background: #F8ECE7; border-radius: 999px; padding: 4px 12px">Aesthetic Clinic</span>
+<h3 style="font-size: 21px; font-weight: 700; color: var(--ink); margin-top: 6px">Coastal Luxe Aesthetics</h3>
+<span class="tlink">Read case study <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</div>
+</a>
+
+<a class="card" href="Portfolio.dc.html" style="background: #fff; border-radius: 28px; overflow: hidden; display: flex; flex-direction: column; color: inherit">
+<div style="position: relative; aspect-ratio: 4 / 3; background: #E3F5F6; padding: 32px 32px 0; display: flex; align-items: flex-end">
+<div style="width: 84%; background: #fff; border-radius: 12px 12px 0 0; overflow: hidden; box-shadow: 0 20px 40px -24px rgba(10,70,80,0.5)">
+<div style="display: flex; gap: 5px; padding: 8px 10px; background: #EEF8F9"><span style="width: 7px; height: 7px; border-radius: 50%; background: #C6E4E7"></span><span style="width: 7px; height: 7px; border-radius: 50%; background: #C6E4E7"></span><span style="width: 7px; height: 7px; border-radius: 50%; background: #C6E4E7"></span></div>
+<img src="../images/above-desk.webp" alt="Above Dental Care website" style="display: block; width: 100%; height: auto">
+</div>
+<div style="position: absolute; right: 6%; bottom: 0; width: 24%; background: #1A2036; border-radius: 16px 16px 0 0; padding: 5px 5px 0"><img src="../images/above-photo.webp" alt="" style="display: block; width: 100%; aspect-ratio: 9 / 14; object-fit: cover; border-radius: 12px 12px 0 0"></div>
+</div>
+<div style="padding: 24px 28px 28px; display: flex; flex-direction: column; gap: 8px">
+<span style="align-self: flex-start; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #0B6770; background: #E3F5F6; border-radius: 999px; padding: 4px 12px">Dental Clinic</span>
+<h3 style="font-size: 21px; font-weight: 700; color: var(--ink); margin-top: 6px">Above Dental Care</h3>
+<span class="tlink">View project <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</div>
+</a>
+
+<a class="card" href="Project-SiaTankiko.dc.html" style="background: #fff; border-radius: 28px; overflow: hidden; display: flex; flex-direction: column; color: inherit">
+<div style="position: relative; aspect-ratio: 4 / 3; background: #E6F4EC; padding: 32px 32px 0; display: flex; align-items: flex-end">
+<div style="width: 84%; background: #fff; border-radius: 12px 12px 0 0; overflow: hidden; box-shadow: 0 20px 40px -24px rgba(20,80,50,0.5)">
+<div style="display: flex; gap: 5px; padding: 8px 10px; background: #EFF8F3"><span style="width: 7px; height: 7px; border-radius: 50%; background: #C9E6D6"></span><span style="width: 7px; height: 7px; border-radius: 50%; background: #C9E6D6"></span><span style="width: 7px; height: 7px; border-radius: 50%; background: #C9E6D6"></span></div>
+<img src="../images/sia-desk.webp" alt="Sia-Tankiko Dental Clinic website" style="display: block; width: 100%; height: auto">
+</div>
+<div style="position: absolute; right: 6%; bottom: 0; width: 24%; background: #1A2036; border-radius: 16px 16px 0 0; padding: 5px 5px 0"><img src="../images/sia-photo.webp" alt="" style="display: block; width: 100%; aspect-ratio: 9 / 14; object-fit: cover; border-radius: 12px 12px 0 0"></div>
+</div>
+<div style="padding: 24px 28px 28px; display: flex; flex-direction: column; gap: 8px">
+<span style="align-self: flex-start; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #0B6770; background: #E3F5F6; border-radius: 999px; padding: 4px 12px">Dental Clinic</span>
+<h3 style="font-size: 21px; font-weight: 700; color: var(--ink); margin-top: 6px">Sia-Tankiko Dental Clinic</h3>
+<span class="tlink">View project <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</div>
+</a>
+
+<a class="card" href="Portfolio.dc.html" style="background: #fff; border-radius: 28px; overflow: hidden; display: flex; flex-direction: column; color: inherit">
+<div style="position: relative; aspect-ratio: 4 / 3; background: #F7E8EC; padding: 32px 32px 0; display: flex; align-items: flex-end">
+<div style="width: 84%; background: #fff; border-radius: 12px 12px 0 0; overflow: hidden; box-shadow: 0 20px 40px -24px rgba(90,30,50,0.45)">
+<div style="display: flex; gap: 5px; padding: 8px 10px; background: #FBF1F4"><span style="width: 7px; height: 7px; border-radius: 50%; background: #EBCFD7"></span><span style="width: 7px; height: 7px; border-radius: 50%; background: #EBCFD7"></span><span style="width: 7px; height: 7px; border-radius: 50%; background: #EBCFD7"></span></div>
+<img src="../images/lamaison-photo.webp" alt="La Maison Beaute" style="display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: center top">
+</div>
+<div style="position: absolute; right: 6%; bottom: 0; width: 24%; background: #1A2036; border-radius: 16px 16px 0 0; padding: 5px 5px 0"><img src="../images/lamaison-photo.webp" alt="" style="display: block; width: 100%; aspect-ratio: 9 / 14; object-fit: cover; border-radius: 12px 12px 0 0"></div>
+</div>
+<div style="padding: 24px 28px 28px; display: flex; flex-direction: column; gap: 8px">
+<span style="align-self: flex-start; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #8A4B36; background: #F8ECE7; border-radius: 999px; padding: 4px 12px">Aesthetic Clinic</span>
+<h3 style="font-size: 21px; font-weight: 700; color: var(--ink); margin-top: 6px">La Maison Beaute</h3>
+<span class="tlink">View project <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</div>
+</a>
+
+<a class="card" href="Portfolio.dc.html" style="background: #fff; border-radius: 28px; overflow: hidden; display: flex; flex-direction: column; color: inherit">
+<div style="position: relative; aspect-ratio: 4 / 3; background: #EEEAF7; padding: 32px 32px 0; display: flex; align-items: flex-end">
+<div style="width: 84%; background: #fff; border-radius: 12px 12px 0 0; overflow: hidden; box-shadow: 0 20px 40px -24px rgba(50,30,90,0.45)">
+<div style="display: flex; gap: 5px; padding: 8px 10px; background: #F5F2FB"><span style="width: 7px; height: 7px; border-radius: 50%; background: #DAD2EE"></span><span style="width: 7px; height: 7px; border-radius: 50%; background: #DAD2EE"></span><span style="width: 7px; height: 7px; border-radius: 50%; background: #DAD2EE"></span></div>
+<img src="../images/venus-photo.webp" alt="Venus Medispa" style="display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: center top">
+</div>
+<div style="position: absolute; right: 6%; bottom: 0; width: 24%; background: #1A2036; border-radius: 16px 16px 0 0; padding: 5px 5px 0"><img src="../images/venus-photo.webp" alt="" style="display: block; width: 100%; aspect-ratio: 9 / 14; object-fit: cover; border-radius: 12px 12px 0 0"></div>
+</div>
+<div style="padding: 24px 28px 28px; display: flex; flex-direction: column; gap: 8px">
+<span style="align-self: flex-start; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #8A4B36; background: #F8ECE7; border-radius: 999px; padding: 4px 12px">Aesthetic Clinic</span>
+<h3 style="font-size: 21px; font-weight: 700; color: var(--ink); margin-top: 6px">Venus Medispa</h3>
+<span class="tlink">View project <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</div>
+</a>
+
+<a class="card" href="Project-ConstantinFloors.dc.html" style="background: #fff; border-radius: 28px; overflow: hidden; display: flex; flex-direction: column; color: inherit">
+<div style="position: relative; aspect-ratio: 4 / 3; background: #EFEBE6; padding: 32px 32px 0; display: flex; align-items: flex-end">
+<div style="width: 84%; background: #fff; border-radius: 12px 12px 0 0; overflow: hidden; box-shadow: 0 20px 40px -24px rgba(60,45,30,0.45)">
+<div style="display: flex; gap: 5px; padding: 8px 10px; background: #F6F3EF"><span style="width: 7px; height: 7px; border-radius: 50%; background: #DDD5CB"></span><span style="width: 7px; height: 7px; border-radius: 50%; background: #DDD5CB"></span><span style="width: 7px; height: 7px; border-radius: 50%; background: #DDD5CB"></span></div>
+<img src="../images/con-desk.webp" alt="Constantin Floors website" style="display: block; width: 100%; height: auto">
+</div>
+<div style="position: absolute; right: 6%; bottom: 0; width: 24%; background: #1A2036; border-radius: 16px 16px 0 0; padding: 5px 5px 0"><img src="../images/con-photo.webp" alt="" style="display: block; width: 100%; aspect-ratio: 9 / 14; object-fit: cover; border-radius: 12px 12px 0 0"></div>
+</div>
+<div style="padding: 24px 28px 28px; display: flex; flex-direction: column; gap: 8px">
+<span style="align-self: flex-start; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #3A4262; background: #EEF0F5; border-radius: 999px; padding: 4px 12px">Custom Website · Flooring</span>
+<h3 style="font-size: 21px; font-weight: 700; color: var(--ink); margin-top: 6px">Constantin Floors</h3>
+<span class="tlink">View project <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</div>
+</a>
+
+</div>
+</div>
+</section>
+
+<!-- ============ STATS (component: StatsBand) ============ -->
+<section style="background: var(--blue-deep); color: #fff; position: relative; overflow: hidden">
+<div aria-hidden="true" style="position: absolute; width: 520px; height: 520px; border-radius: 50%; background: rgba(255,255,255,0.05); left: -160px; top: -200px"></div>
+<div style="position: relative; max-width: 1240px; margin: 0 auto; padding: clamp(64px, 8vw, 104px) clamp(16px, 4vw, 32px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 48px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<p style="font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #8BE9F0">From Garage to the Top</p>
+<h2 style="font-size: clamp(30px, 3.2vw, 44px); line-height: 1.15; letter-spacing: -0.025em; font-weight: 800; color: #fff">Guided by values. Driven by results.</h2>
+<p style="color: #D7E0FF; max-width: 480px">A decade of building websites and campaigns, now focused on helping clinics in the Philippines and Australia fill their appointment books.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 16px">
+<div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.14); border-radius: 24px; padding: 28px">
+<p style="font-size: 48px; line-height: 1; font-weight: 800; letter-spacing: -0.03em; color: #fff">10+</p>
+<p style="margin-top: 10px; font-size: 15px; font-weight: 600; color: #D7E0FF">Years of Experience</p>
+</div>
+<div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.14); border-radius: 24px; padding: 28px">
+<p style="font-size: 48px; line-height: 1; font-weight: 800; letter-spacing: -0.03em; color: #fff">2</p>
+<p style="margin-top: 10px; font-size: 15px; font-weight: 600; color: #D7E0FF">Countries served: Philippines &amp; Australia</p>
+</div>
+<div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.14); border-radius: 24px; padding: 28px">
+<p style="font-size: 48px; line-height: 1; font-weight: 800; letter-spacing: -0.03em; color: #fff">20+</p>
+<p style="margin-top: 10px; font-size: 15px; font-weight: 600; color: #D7E0FF">Websites in our portfolio</p>
+</div>
+<div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.14); border-radius: 24px; padding: 28px">
+<p style="font-size: 48px; line-height: 1; font-weight: 800; letter-spacing: -0.03em; color: #fff">3</p>
+<p style="margin-top: 10px; font-size: 15px; font-weight: 600; color: #D7E0FF">Services under one roof: Web, SEO &amp; Ads</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ HOW WE WORK (component: ProcessSteps) ============ -->
+<section style="background: #fff">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(72px, 9vw, 120px) clamp(16px, 4vw, 32px); display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px; max-width: 720px; margin: 0 auto">
+<p style="font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue)">How we work</p>
+<h2 style="font-size: clamp(30px, 3.2vw, 44px); line-height: 1.15; letter-spacing: -0.025em; font-weight: 800; color: var(--ink); text-wrap: balance">A simple path from audit to more bookings</h2>
+</div>
+<ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 24px">
+<li style="display: flex; flex-direction: column; gap: 14px; padding: 32px; border-radius: 28px; background: var(--tint2); border: 1px solid var(--line)">
+<span style="width: 52px; height: 52px; border-radius: 50%; background: var(--blue); color: #fff; font-weight: 800; font-size: 17px; display: flex; align-items: center; justify-content: center">01</span>
+<h3 style="font-size: 21px; font-weight: 700; color: var(--ink); margin-top: 6px">Audit</h3>
+<p style="font-size: 16px">We review your website, Google presence and ads, and show you where bookings are slipping away.</p>
+</li>
+<li style="display: flex; flex-direction: column; gap: 14px; padding: 32px; border-radius: 28px; background: var(--tint2); border: 1px solid var(--line)">
+<span style="width: 52px; height: 52px; border-radius: 50%; background: var(--blue); color: #fff; font-weight: 800; font-size: 17px; display: flex; align-items: center; justify-content: center">02</span>
+<h3 style="font-size: 21px; font-weight: 700; color: var(--ink); margin-top: 6px">Strategy</h3>
+<p style="font-size: 16px">A clear plan built around the treatments you want to sell more of and the patients you want to reach.</p>
+</li>
+<li style="display: flex; flex-direction: column; gap: 14px; padding: 32px; border-radius: 28px; background: var(--tint2); border: 1px solid var(--line)">
+<span style="width: 52px; height: 52px; border-radius: 50%; background: var(--blue); color: #fff; font-weight: 800; font-size: 17px; display: flex; align-items: center; justify-content: center">03</span>
+<h3 style="font-size: 21px; font-weight: 700; color: var(--ink); margin-top: 6px">Build &amp; Launch</h3>
+<p style="font-size: 16px">We design and build your site, set up SEO foundations and launch campaigns with tracking in place.</p>
+</li>
+<li style="display: flex; flex-direction: column; gap: 14px; padding: 32px; border-radius: 28px; background: var(--tint2); border: 1px solid var(--line)">
+<span style="width: 52px; height: 52px; border-radius: 50%; background: var(--accent); color: var(--ink); font-weight: 800; font-size: 17px; display: flex; align-items: center; justify-content: center">04</span>
+<h3 style="font-size: 21px; font-weight: 700; color: var(--ink); margin-top: 6px">Grow</h3>
+<p style="font-size: 16px">Regular reporting on calls and enquiries, with ongoing improvements to keep your bookings growing.</p>
+</li>
+</ol>
+</div>
+</section>
+
+<!-- ============ TESTIMONIALS (component: TestimonialCard) ============ -->
+<section style="background: var(--tint)">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(72px, 9vw, 120px) clamp(16px, 4vw, 32px); display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px; max-width: 720px; margin: 0 auto">
+<p style="font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue)">Client stories</p>
+<h2 style="font-size: clamp(30px, 3.2vw, 44px); line-height: 1.15; letter-spacing: -0.025em; font-weight: 800; color: var(--ink)">What clinic owners say</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 24px">
+<figure style="margin: 0; background: #fff; border-radius: 28px; padding: 40px; display: flex; flex-direction: column; gap: 28px">
+<svg width="40" height="32" viewBox="0 0 40 32" aria-hidden="true"><path d="M0 32V19C0 8.5 5.5 2 16 0l2 5c-6 1.6-8.6 5-9 10h8v17H0Zm22 0V19c0-10.5 5.5-17 16-19l2 5c-6 1.6-8.6 5-9 10h8v17H22Z" fill="#3D66E4"></path></svg>
+<blockquote style="margin: 0; font-size: 20px; line-height: 1.6; color: var(--ink); font-weight: 500">Red is amazing! He goes above and beyond always and makes life so easy. He manages my social media account, he made my website and helped me with SEO. His output is excellent and I have gained clients from his work.</blockquote>
+<figcaption style="display: flex; align-items: center; gap: 14px; margin-top: auto; padding-top: 24px; border-top: 1px solid var(--line)">
+<img src="../images/av-aubry.webp" alt="Aubry Ann" style="width: 52px; height: 52px; border-radius: 50%; object-fit: cover; flex: none">
+<span style="display: flex; flex-direction: column; line-height: 1.35"><span style="font-weight: 700; color: var(--ink)">Aubry Ann</span><span style="font-size: 15px; color: var(--muted)">CEO, Coastal Luxe Aesthetics</span></span>
+</figcaption>
+</figure>
+<figure style="margin: 0; background: #fff; border-radius: 28px; padding: 40px; display: flex; flex-direction: column; gap: 28px">
+<svg width="40" height="32" viewBox="0 0 40 32" aria-hidden="true"><path d="M0 32V19C0 8.5 5.5 2 16 0l2 5c-6 1.6-8.6 5-9 10h8v17H0Zm22 0V19c0-10.5 5.5-17 16-19l2 5c-6 1.6-8.6 5-9 10h8v17H22Z" fill="#3D66E4"></path></svg>
+<blockquote style="margin: 0; font-size: 20px; line-height: 1.6; color: var(--ink); font-weight: 500">Digital Services Master is an impressive company. Their immediate understanding of our brand's vibe and effective capture of our strategy stood out from the beginning. With their expertise and focused approach, they excel in understanding and meeting our unique needs.</blockquote>
+<figcaption style="display: flex; align-items: center; gap: 14px; margin-top: auto; padding-top: 24px; border-top: 1px solid var(--line)">
+<img src="../images/av-dennis.webp" alt="Dennis" style="width: 52px; height: 52px; border-radius: 50%; object-fit: cover; flex: none">
+<span style="display: flex; flex-direction: column; line-height: 1.35"><span style="font-weight: 700; color: var(--ink)">Dennis</span><span style="font-size: 15px; color: var(--muted)">Co-Founder, A+ Health Services</span></span>
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+
+<!-- ============ FAQ (component: FaqAccordion) ============ -->
+<section style="background: #fff">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(72px, 9vw, 120px) clamp(16px, 4vw, 32px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: clamp(40px, 6vw, 96px); align-items: start">
+<div style="display: flex; flex-direction: column; gap: 16px; align-items: flex-start">
+<p style="font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue)">FAQ</p>
+<h2 style="font-size: clamp(30px, 3.2vw, 44px); line-height: 1.15; letter-spacing: -0.025em; font-weight: 800; color: var(--ink)">Questions clinic owners ask us</h2>
+<p>Can't find what you're looking for? We're happy to talk it through.</p>
+<a class="btn btn-ghost" href="Contact.dc.html" style="margin-top: 8px">Get in Touch</a>
+</div>
+<div style="display: flex; flex-direction: column; border-top: 1px solid var(--line)">
+<div style="border-bottom: 1px solid var(--line)">
+<button class="faq-q" aria-expanded="{{open0}}" onClick="{{toggle0}}">What makes your web development different?<span style="width: 36px; height: 36px; border-radius: 50%; background: var(--tint); color: var(--blue); display: flex; align-items: center; justify-content: center; flex: none; transform: {{rot0}}; transition: transform .2s"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></span></button>
+<sc-if value="{{open0}}" hint-placeholder-val="{{ true }}"><p style="padding: 0 52px 24px 0; font-size: 16px">Every site is built around one goal: turning visitors into consultations. That means fast, secure, mobile-first pages, treatment pages written for search, and clear booking paths, built by the same team that runs your SEO and ads, so everything works together.</p></sc-if>
+</div>
+<div style="border-bottom: 1px solid var(--line)">
+<button class="faq-q" aria-expanded="{{open1}}" onClick="{{toggle1}}">How does SEO help my clinic?<span style="width: 36px; height: 36px; border-radius: 50%; background: var(--tint); color: var(--blue); display: flex; align-items: center; justify-content: center; flex: none; transform: {{rot1}}; transition: transform .2s"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></span></button>
+<sc-if value="{{open1}}" hint-placeholder-val="{{ false }}"><p style="padding: 0 52px 24px 0; font-size: 16px">Most patients start with a Google search like “Botox near me” or “dental implants” plus their suburb or city. SEO helps your clinic appear in those results and on Google Maps, so you're found by people already looking for the treatments you offer.</p></sc-if>
+</div>
+<div style="border-bottom: 1px solid var(--line)">
+<button class="faq-q" aria-expanded="{{open2}}" onClick="{{toggle2}}">How long until I see results?<span style="width: 36px; height: 36px; border-radius: 50%; background: var(--tint); color: var(--blue); display: flex; align-items: center; justify-content: center; flex: none; transform: {{rot2}}; transition: transform .2s"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></span></button>
+<sc-if value="{{open2}}" hint-placeholder-val="{{ false }}"><p style="padding: 0 52px 24px 0; font-size: 16px">It depends on your starting point and your market. Paid ads can start bringing enquiries soon after launch, while SEO builds steadily over months. Your free audit includes a realistic timeline for your clinic.</p></sc-if>
+</div>
+<div style="border-bottom: 1px solid var(--line)">
+<button class="faq-q" aria-expanded="{{open3}}" onClick="{{toggle3}}">Do you work with clinics outside the Philippines?<span style="width: 36px; height: 36px; border-radius: 50%; background: var(--tint); color: var(--blue); display: flex; align-items: center; justify-content: center; flex: none; transform: {{rot3}}; transition: transform .2s"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></span></button>
+<sc-if value="{{open3}}" hint-placeholder-val="{{ false }}"><p style="padding: 0 52px 24px 0; font-size: 16px">Yes. We work with clinics in both the Philippines and Australia, and our whole process runs smoothly online, from the first audit call to launch and reporting.</p></sc-if>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ CTA BAND (component: CtaBand) ============ -->
+<section style="background: #fff; padding: 0 clamp(16px, 4vw, 32px) clamp(72px, 9vw, 120px)">
+<div style="max-width: 1240px; margin: 0 auto; background: var(--navy); border-radius: 36px; padding: clamp(48px, 7vw, 88px) clamp(24px, 6vw, 80px); position: relative; overflow: hidden; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px">
+<div aria-hidden="true" style="position: absolute; width: 420px; height: 420px; border-radius: 50%; background: #1E42B1; right: -120px; top: -180px; opacity: 0.7"></div>
+<div aria-hidden="true" style="position: absolute; width: 120px; height: 120px; border-radius: 50%; background: #00C5D3; right: 22%; bottom: -60px; opacity: 0.35"></div>
+<div style="position: relative; display: flex; flex-direction: column; gap: 16px; max-width: 620px">
+<h2 style="font-size: clamp(32px, 3.6vw, 50px); line-height: 1.1; letter-spacing: -0.03em; font-weight: 800; color: #fff">Let's grow your clinic's bookings</h2>
+<p style="color: #C9D3F2; font-size: 18px">Get a free Clinic Growth Audit: a clear look at your website, Google visibility and ads, with practical next steps.</p>
+</div>
+<div style="position: relative; display: flex; flex-wrap: wrap; gap: 14px">
+<a class="btn btn-cta" href="Contact.dc.html">Book a Free Clinic Growth Audit</a>
+<a class="btn btn-light" href="Contact.dc.html">Get in Touch</a>
+</div>
+</div>
+</section>
+
+<!-- ============ FOOTER (component: SiteFooter) ============ -->
+<footer class="foot" style="background: var(--navy); color: #B9C3E3; font-size: 15px">
+<div style="max-width: 1240px; margin: 0 auto; padding: 80px clamp(16px, 4vw, 32px) 32px; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-wrap: wrap; gap: 48px">
+<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 18px; min-width: 0; max-width: 400px">
+<a href="Main.dc.html" aria-label="Digital Services Master home" style="display: flex; align-items: center; gap: 12px"><img src="../images/dsm-light.png" alt="Dsm" style="display: block; height: 38px; width: auto"><span style="font-size: 12px; font-weight: 600; line-height: 1.25; color: #B9C3E3; border-left: 1px solid rgba(255,255,255,0.2); padding-left: 12px">Digital<br>Services Master</span></a>
+<p style="line-height: 1.7">Web development and digital marketing for aesthetic and dental clinics in the Philippines and Australia. From Garage to the Top: guided by values, driven by results.</p>
+<div style="display: flex; gap: 12px">
+<a href="https://www.facebook.com/share/1A71p5ifma/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook" style="width: 44px; height: 44px; border-radius: 50%; background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V10H6.5v3.5H9V21h3.5v-7.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15Z"></path></svg></a>
+<a href="https://www.instagram.com/digitalservicesmaster?psln=OXo4MHlrems4cnhm" target="_blank" rel="noopener" aria-label="Instagram" style="width: 44px; height: 44px; border-radius: 50%; background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor"></circle></svg></a>
+</div>
+</div>
+<div style="flex: 2 1 520px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 32px">
+<nav aria-label="Company" style="display: flex; flex-direction: column; gap: 12px"><p style="font-weight: 700; color: #fff; margin-bottom: 4px">Company</p><a href="About.dc.html">About Us</a><a href="Pricing.dc.html">Pricing</a><a href="FAQ.dc.html">FAQ</a><a href="Contact.dc.html">Contact</a><a href="Contact.dc.html">Book an Audit</a></nav>
+<nav aria-label="Services" style="display: flex; flex-direction: column; gap: 12px"><p style="font-weight: 700; color: #fff; margin-bottom: 4px">Services</p><a href="Service-WebDev.dc.html">Web Development</a><a href="Service-SEO.dc.html">SEO</a><a href="Service-Ads.dc.html">Paid Advertising</a></nav>
+<nav aria-label="Portfolio" style="display: flex; flex-direction: column; gap: 12px"><p style="font-weight: 700; color: #fff; margin-bottom: 4px">Portfolio</p><a href="Portfolio-Aesthetic.dc.html">Aesthetic Clinics</a><a href="Portfolio-Dental.dc.html">Dental Clinics</a><a href="Portfolio-Business.dc.html">Business Websites</a><a href="Portfolio-Ecommerce.dc.html">E-commerce</a><a href="CaseStudies.dc.html">Case Studies</a></nav>
+<nav aria-label="Resources" style="display: flex; flex-direction: column; gap: 12px"><p style="font-weight: 700; color: #fff; margin-bottom: 4px">Resources</p><a href="Blog.dc.html">Blog</a><a href="Privacy.dc.html">Privacy Policy</a><a href="Terms.dc.html">Terms of Service</a></nav>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px 40px; padding: 24px 0; border-top: 1px solid rgba(255,255,255,0.12); border-bottom: 1px solid rgba(255,255,255,0.12)">
+<span style="display: inline-flex; align-items: center; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8BE9F0" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg><a href="mailto:digitalservicesmaster@gmail.com" style="color: inherit">digitalservicesmaster@gmail.com</a></span>
+<span style="display: inline-flex; align-items: center; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8BE9F0" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"></path></svg><a href="tel:+639176777717" style="color: inherit">0917 677 7717</a></span>
+<span style="display: inline-flex; align-items: center; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8BE9F0" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12Z"></path><circle cx="12" cy="9" r="2.5"></circle></svg>Philippines &amp; Australia</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px">
+<span>© 2026 Digital Services Master. All rights reserved.</span>
+<span style="display: flex; gap: 24px"><a href="Privacy.dc.html">Privacy</a><a href="Terms.dc.html">Terms</a></span>
+</div>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#FB9A3E","options":["#FB9A3E","#FFB547","#00C5D3"]},"$preview":{"width":1440,"height":7300}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { open: 0 };
+  }
+  _rv() {
+    const open = this.state.open;
+    const v = { accent: this.props.accent ?? '#FB9A3E' };
+    for (let i = 0; i < 4; i++) {
+      v['open' + i] = open === i;
+      v['rot' + i] = open === i ? 'rotate(180deg)' : 'rotate(0deg)';
+      v['toggle' + i] = () => this.setState({ open: this.state.open === i ? -1 : i });
+    }
+    return v;
+  }
+  renderVals() {
+    const v = this._rv() || {};
+    const st = this.state || {};
+    v.menuOpen = !!st.menuOpen;
+    v.toggleMenu = () => this.setState({ menuOpen: !st.menuOpen });
+    v.shareFb = () => { try { window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'noopener'); } catch (e) {} };
+    v.copyLink = () => { try { navigator.clipboard && navigator.clipboard.writeText(window.location.href); } catch (e) {} this.setState({ copied: true }); setTimeout(() => this.setState({ copied: false }), 1600); };
+    v.copyLabel = st.copied ? 'Link copied' : 'Copy link';
+    return v;
+  }
+}
+</script>
+</body>
+</html>

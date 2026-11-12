@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/pages/legal.css';
+---
+<BaseLayout title={'Terms of Service — Digital Services Master'} description={'The terms that apply when you use the Digital Services Master website and our web development, SEO and advertising services.'} logic="base">
+<!-- ============ LEGAL HERO (LegalHero) ============ -->
+<section style="background: var(--tint2); border-bottom: 1px solid var(--line)">
+<div style="max-width: 1100px; margin: 0 auto; padding: clamp(40px, 6vw, 72px) clamp(16px, 4vw, 32px); display: flex; flex-direction: column; gap: 16px">
+<nav aria-label="Breadcrumb" style="display: flex; gap: 8px; font-size: 14px; font-weight: 600; color: var(--muted)"><a href="/" style="color: var(--muted)">Home</a><span aria-hidden="true">/</span><span style="color: var(--ink)">Terms of Service</span></nav>
+<h1 style="font-size: clamp(36px, 4vw, 52px); line-height: 1.1; letter-spacing: -0.03em; font-weight: 800; color: var(--ink)">Terms of Service</h1>
+<p style="font-size: 15px; font-weight: 600; color: var(--muted); display: flex; align-items: center; gap: 10px">Status: <span style="font-size: 12px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: #6E4B00; background: #FFF4D6; border-radius: 999px; padding: 4px 12px">Draft</span></p>
+<p style="font-size: 14px; color: #6E4B00; background: #FFF4D6; border-radius: 12px; padding: 12px 16px; max-width: 720px">Draft for review. Have these terms checked by a lawyer before publishing.</p>
+</div>
+</section>
+
+<!-- ============ LEGAL BODY (LegalLayout) ============ -->
+<section style="background: #fff">
+<div style="max-width: 1100px; margin: 0 auto; padding: clamp(48px, 6vw, 72px) clamp(16px, 4vw, 32px) clamp(72px, 9vw, 112px); display: flex; flex-wrap: wrap; gap: clamp(32px, 5vw, 64px); align-items: flex-start">
+<aside style="flex: 1 1 220px; max-width: 260px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+<p style="font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink)">On this page</p>
+<nav class="toc" aria-label="Sections">
+<a href="#t1">About these terms</a><a href="#t2">Using this website</a><a href="#t3">Our services</a><a href="#t4">Free Clinic Growth Audit</a><a href="#t5">Intellectual property</a><a href="#t6">Third-party links</a><a href="#t7">Disclaimer &amp; liability</a><a href="#t8">Changes &amp; contact</a>
+</nav>
+</aside>
+<article class="legal" style="flex: 999 1 560px; min-width: 0; max-width: 740px">
+<p style="font-size: 19px; color: var(--ink)">These terms explain the rules for using the Digital Services Master website. By using this site, you agree to them.</p>
+<h2 id="t1">1. About these terms</h2>
+<p>This website is operated by Digital Services Master (“we”, “us”, “our”). These terms apply to your use of this website only. Work we do for clients is covered by a separate proposal or agreement.</p>
+<h2 id="t2">2. Using this website</h2>
+<p>You agree to use this website lawfully and not to:</p>
+<ul><li>Interfere with or disrupt the site or its security</li><li>Copy or reuse our content for commercial purposes without permission</li><li>Submit false information or someone else's details through our forms</li></ul>
+<h2 id="t3">3. Our services</h2>
+<p>Descriptions of our web development, SEO and paid advertising services on this site are general information. The scope, timelines, fees and deliverables for any project are set out in the proposal or agreement we provide to you.</p>
+<h2 id="t4">4. Free Clinic Growth Audit</h2>
+<p>Our Clinic Growth Audit is free and carries no obligation. Its findings and recommendations are based on the information available to us at the time and are general in nature.</p>
+<h2 id="t5">5. Intellectual property</h2>
+<p>The content, design and branding on this website belong to Digital Services Master or are used with permission. Client names, logos and website screenshots in our portfolio belong to their respective owners.</p>
+<h2 id="t6">6. Third-party links</h2>
+<p>This site may link to other websites, including client sites. We're not responsible for the content or practices of those sites.</p>
+<h2 id="t7">7. Disclaimer &amp; limitation of liability</h2>
+<p>We work hard to keep this site accurate and available, but we can't guarantee it will always be error-free or uninterrupted. Search rankings and advertising results depend on factors outside our control, so we don't guarantee specific outcomes. To the extent permitted by law, we're not liable for any loss arising from your use of this website.</p>
+<h2 id="t8">8. Changes &amp; contact</h2>
+<p>We may update these terms from time to time; the latest version will always be on this page. Questions? Email us at <a href="mailto:digitalservicesmaster@gmail.com" style="color: inherit">digitalservicesmaster@gmail.com</a>.</p>
+<div style="margin-top: 40px; padding: 28px; border-radius: 24px; background: var(--tint2); border: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px"><p style="margin: 0; font-weight: 700; color: var(--ink)">Have a question about these terms?</p><a class="btn btn-ghost" href="/contact/">Get in Touch</a></div>
+</article>
+</div>
+</section>
+</BaseLayout>

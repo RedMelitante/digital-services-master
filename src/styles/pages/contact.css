@@ -1,0 +1,11 @@
+/* Page styles from the design file(s): Contact.dc.html */
+.btn-cta:hover{color:#131A33;filter:brightness(.95);transform:translateY(-1px);box-shadow:0 12px 24px -12px rgba(19,26,51,.45)}
+.card{transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 28px 48px -28px rgba(13,24,56,.35)}
+.ph{background:#FFF4D6;color:#6E4B00;outline:1.5px dashed #D9A93C;outline-offset:-1.5px;border-radius:6px;padding:0 6px}
+.lbl{font-size:14px;font-weight:700;color:#131A33}
+.fld{width:100%;min-height:52px;border:1.5px solid #DCE2EF;border-radius:14px;padding:12px 16px;font:inherit;font-size:16px;color:#131A33;background:#fff;transition:border-color .2s,box-shadow .2s}
+.fld::placeholder{color:#7C839E}
+.fld:focus{outline:none;border-color:#3D66E4;box-shadow:0 0 0 4px rgba(61,102,228,.15)}
+.chip{all:unset;box-sizing:border-box;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;transition:background .2s,color .2s,box-shadow .2s}
+.chip:focus-visible{outline:2px solid #3D66E4;outline-offset:3px}

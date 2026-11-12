@@ -1,0 +1,530 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-11-10T13:55:00Z"
+ },
+ "title": "Digital Services Master — Website Redesign",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 7300,
+   "title": "01 · Home — Desktop",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Home-Mobile.dc.html": {
+   "x": 1520,
+   "y": 0,
+   "w": 390,
+   "h": 9700,
+   "title": "01 · Home — Mobile",
+   "is_interactive": true
+  },
+  "Service-WebDev.dc.html": {
+   "x": 1990,
+   "y": 0,
+   "w": 1440,
+   "h": 6000,
+   "title": "02 · Service — Web Development",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Portfolio.dc.html": {
+   "x": 3510,
+   "y": 0,
+   "w": 1440,
+   "h": 3700,
+   "title": "03 · Portfolio (filters)",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "CaseStudy-CoastalLuxe.dc.html": {
+   "x": 5030,
+   "y": 0,
+   "w": 1440,
+   "h": 4900,
+   "title": "04 · Case Study — Coastal Luxe Aesthetics",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Contact.dc.html": {
+   "x": 6550,
+   "y": 0,
+   "w": 1440,
+   "h": 2500,
+   "title": "05 · Contact / Book an Audit",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "About.dc.html": {
+   "x": 0,
+   "y": 10220,
+   "w": 1440,
+   "h": 4700,
+   "title": "06 · About Us",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Services.dc.html": {
+   "x": 1520,
+   "y": 10220,
+   "w": 1440,
+   "h": 4400,
+   "title": "07 · Services overview",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Service-SEO.dc.html": {
+   "x": 3040,
+   "y": 10220,
+   "w": 1440,
+   "h": 5100,
+   "title": "08 · Service — SEO",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Service-Ads.dc.html": {
+   "x": 4560,
+   "y": 10220,
+   "w": 1440,
+   "h": 5200,
+   "title": "09 · Service — Paid Advertising",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Pricing.dc.html": {
+   "x": 6080,
+   "y": 10220,
+   "w": 1440,
+   "h": 3600,
+   "title": "10 · Pricing",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Blog.dc.html": {
+   "x": 7600,
+   "y": 10220,
+   "w": 1440,
+   "h": 4200,
+   "title": "11 · Blog listing",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "BlogPost.dc.html": {
+   "x": 9120,
+   "y": 10220,
+   "w": 1440,
+   "h": 4100,
+   "title": "12 · Blog post",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Privacy.dc.html": {
+   "x": 10640,
+   "y": 10220,
+   "w": 1440,
+   "h": 2800,
+   "title": "13 · Privacy Policy",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Terms.dc.html": {
+   "x": 12160,
+   "y": 10220,
+   "w": 1440,
+   "h": 2800,
+   "title": "14 · Terms of Service",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Industry-Landing.dc.html": {
+   "x": 13680,
+   "y": 10220,
+   "w": 1440,
+   "h": 4600,
+   "title": "15 · Industry — Cosmetic Clinics",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "FAQ.dc.html": {
+   "x": 15200,
+   "y": 10220,
+   "w": 1440,
+   "h": 3400,
+   "title": "16 · FAQ",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Project.dc.html": {
+   "x": 16720,
+   "y": 10220,
+   "w": 1440,
+   "h": 3900,
+   "title": "17 · Project page template (Above Dental Care)",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Project-SiaTankiko.dc.html": {
+   "x": 0,
+   "y": 15900,
+   "w": 1440,
+   "h": 3900,
+   "title": "Project: Sia-Tankiko Dental Clinic",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Project-MillenniumSmiles.dc.html": {
+   "x": 1520,
+   "y": 15900,
+   "w": 1440,
+   "h": 3900,
+   "title": "Project: Millennium Smiles Dental Center",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Project-DrKCDental.dc.html": {
+   "x": 3040,
+   "y": 15900,
+   "w": 1440,
+   "h": 3900,
+   "title": "Project: Dr. KC Dental Aesthetic Center",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Project-AplusHealth.dc.html": {
+   "x": 4560,
+   "y": 15900,
+   "w": 1440,
+   "h": 3900,
+   "title": "Project: Aplus Health Services",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Project-ConstantinFloors.dc.html": {
+   "x": 6080,
+   "y": 15900,
+   "w": 1440,
+   "h": 3900,
+   "title": "Project: Constantin Floors",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Project-Camco.dc.html": {
+   "x": 7600,
+   "y": 15900,
+   "w": 1440,
+   "h": 3900,
+   "title": "Project: CAMCO Prefabricated Structures",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Project-GoodForce.dc.html": {
+   "x": 9120,
+   "y": 15900,
+   "w": 1440,
+   "h": 3900,
+   "title": "Project: Good Force",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Project-Kulaman.dc.html": {
+   "x": 10640,
+   "y": 15900,
+   "w": 1440,
+   "h": 3900,
+   "title": "Project: Kulaman Ranch",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Project-LanaNaturalis.dc.html": {
+   "x": 12160,
+   "y": 15900,
+   "w": 1440,
+   "h": 3900,
+   "title": "Project: Lana Naturalis",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Project-MangKikos.dc.html": {
+   "x": 13680,
+   "y": 15900,
+   "w": 1440,
+   "h": 3900,
+   "title": "Project: Mang Kiko's Cacao",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Post-GoogleAds-Aesthetic.dc.html": {
+   "x": 0,
+   "y": 22500,
+   "w": 1440,
+   "h": 6005,
+   "title": "Google Ads for Aesthetic Clinics: Complete Campaign Setup Guide",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Post-LocalSEO-Aesthetic.dc.html": {
+   "x": 1520,
+   "y": 22500,
+   "w": 1440,
+   "h": 6005,
+   "title": "Local SEO & Google Maps Playbook for Aesthetic Clinics",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Post-DigitalMarketing-Aesthetic.dc.html": {
+   "x": 3040,
+   "y": 22500,
+   "w": 1440,
+   "h": 5510,
+   "title": "Digital Marketing for Aesthetic Clinics: The Complete Guide to Bookings, Local SEO & Compliant Ads",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Post-SEO-Expert-Philippines.dc.html": {
+   "x": 4560,
+   "y": 22500,
+   "w": 1440,
+   "h": 4520,
+   "title": "How to Choose the Right SEO Expert in the Philippines",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Post-Responsive-Design-Priority.dc.html": {
+   "x": 6080,
+   "y": 22500,
+   "w": 1440,
+   "h": 4520,
+   "title": "Why Website Developers Prioritize Responsive Design",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Post-Dental-Content-Ideas.dc.html": {
+   "x": 7600,
+   "y": 22500,
+   "w": 1440,
+   "h": 4685,
+   "title": "Content Ideas for Dental Marketing",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Post-Dental-Marketing-Trends.dc.html": {
+   "x": 9120,
+   "y": 22500,
+   "w": 1440,
+   "h": 4685,
+   "title": "Trending Dental Marketing Topics",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Post-Responsive-Web-Design.dc.html": {
+   "x": 10640,
+   "y": 22500,
+   "w": 1440,
+   "h": 4520,
+   "title": "Responsive Web Design and Development: Reaching All Devices",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Post-Web-Design-Agency.dc.html": {
+   "x": 12160,
+   "y": 22500,
+   "w": 1440,
+   "h": 4520,
+   "title": "Transform Your Website: How a Web Design Agency Can Revitalize Your Online Presence",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Post-UI-Design-Principles.dc.html": {
+   "x": 13680,
+   "y": 22500,
+   "w": 1440,
+   "h": 5015,
+   "title": "7 Essential Principles of Effective UI Designs",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Post-SEO-Best-Practices-2024.dc.html": {
+   "x": 15200,
+   "y": 22500,
+   "w": 1440,
+   "h": 5015,
+   "title": "SEO Best Practices for 2024: Focus on the Latest Strategies and Techniques",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Post-Future-Digital-Services.dc.html": {
+   "x": 16720,
+   "y": 22500,
+   "w": 1440,
+   "h": 4520,
+   "title": "The Future of Digital Services: Embracing Digital Transformation",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Post-Offline-to-Online.dc.html": {
+   "x": 18240,
+   "y": 22500,
+   "w": 1440,
+   "h": 5345,
+   "title": "From Offline to Online: Your Guide to Building a Winning Website Development in the Philippines",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Portfolio-Aesthetic.dc.html": {
+   "x": 0,
+   "y": 29300,
+   "w": 1440,
+   "h": 2664,
+   "title": "Aesthetic Clinics — Portfolio",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Portfolio-Dental.dc.html": {
+   "x": 1520,
+   "y": 29300,
+   "w": 1440,
+   "h": 2664,
+   "title": "Dental Clinics — Portfolio",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Portfolio-Business.dc.html": {
+   "x": 3040,
+   "y": 29300,
+   "w": 1440,
+   "h": 2664,
+   "title": "Business & Service Websites — Portfolio",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Portfolio-Ecommerce.dc.html": {
+   "x": 4560,
+   "y": 29300,
+   "w": 1440,
+   "h": 2210,
+   "title": "E-commerce Websites — Portfolio",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Industry-Dental.dc.html": {
+   "x": 18240,
+   "y": 10220,
+   "w": 1440,
+   "h": 4600,
+   "title": "15b · Industry — Dental Clinics",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "CaseStudies.dc.html": {
+   "x": 6080,
+   "y": 29300,
+   "w": 1440,
+   "h": 5200,
+   "title": "Case Studies — Dental clinics with results",
+   "expand": "fill",
+   "is_interactive": true
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "Home-Mobile.dc.html",
+  "Service-WebDev.dc.html",
+  "Portfolio.dc.html",
+  "CaseStudies.dc.html",
+  "CaseStudy-CoastalLuxe.dc.html",
+  "Contact.dc.html",
+  "About.dc.html",
+  "Services.dc.html",
+  "Service-SEO.dc.html",
+  "Service-Ads.dc.html",
+  "Pricing.dc.html",
+  "Blog.dc.html",
+  "BlogPost.dc.html",
+  "Privacy.dc.html",
+  "Terms.dc.html",
+  "Industry-Landing.dc.html",
+  "Industry-Dental.dc.html",
+  "FAQ.dc.html",
+  "Project.dc.html",
+  "Project-SiaTankiko.dc.html",
+  "Project-MillenniumSmiles.dc.html",
+  "Project-DrKCDental.dc.html",
+  "Project-AplusHealth.dc.html",
+  "Project-ConstantinFloors.dc.html",
+  "Project-Camco.dc.html",
+  "Project-GoodForce.dc.html",
+  "Project-Kulaman.dc.html",
+  "Project-LanaNaturalis.dc.html",
+  "Project-MangKikos.dc.html",
+  "Post-GoogleAds-Aesthetic.dc.html",
+  "Post-LocalSEO-Aesthetic.dc.html",
+  "Post-DigitalMarketing-Aesthetic.dc.html",
+  "Post-SEO-Expert-Philippines.dc.html",
+  "Post-Responsive-Design-Priority.dc.html",
+  "Post-Dental-Content-Ideas.dc.html",
+  "Post-Dental-Marketing-Trends.dc.html",
+  "Post-Responsive-Web-Design.dc.html",
+  "Post-Web-Design-Agency.dc.html",
+  "Post-UI-Design-Principles.dc.html",
+  "Post-SEO-Best-Practices-2024.dc.html",
+  "Post-Future-Digital-Services.dc.html",
+  "Post-Offline-to-Online.dc.html",
+  "Portfolio-Aesthetic.dc.html",
+  "Portfolio-Dental.dc.html",
+  "Portfolio-Business.dc.html",
+  "Portfolio-Ecommerce.dc.html"
+ ],
+ "notes": {
+  "title": {
+   "x": 0,
+   "y": -300,
+   "text": "digitalservicesmaster.com — redesign on the Medicsare layout",
+   "kind": "title1",
+   "maxW": 7990
+  },
+  "title2": {
+   "x": 0,
+   "y": 9920,
+   "text": "Remaining pages — About, Services, SEO, Ads, Pricing, Blog, Legal, Industry, FAQ, Project",
+   "kind": "title1",
+   "maxW": 18160
+  },
+  "industryTip": {
+   "x": 13680,
+   "y": 14900,
+   "text": "Industry landing template: switch between Cosmetic, Dental, Eye and Veterinary with the “industry” setting in this artboard's Tweaks panel. One template serves all four pages.",
+   "w": 520,
+   "fill": "orange"
+  },
+  "row_project": {
+   "x": 0,
+   "y": 15600,
+   "text": "Project pages — 10 portfolio projects (photo slots ready)",
+   "kind": "title1",
+   "maxW": 15120
+  },
+  "row_post": {
+   "x": 0,
+   "y": 22200,
+   "text": "Blog posts — 13 articles (featured + in-article image slots)",
+   "kind": "title1",
+   "maxW": 19680
+  },
+  "row_portfolio": {
+   "x": 0,
+   "y": 29000,
+   "text": "Portfolio category pages — Aesthetic, Dental, Business, E-commerce",
+   "kind": "title1",
+   "maxW": 6000
+  }
+ },
+ "designSystems": []
+}
