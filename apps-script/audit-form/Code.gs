@@ -9,12 +9,6 @@
 /** Where audit requests are emailed. */
 var RECIPIENT = 'digitalservicesmaster@gmail.com';
 
-/**
- * Extra recipients who get a blind copy (BCC): comma-separated, or '' for none.
- * Each address counts toward the account's daily email quota.
- */
-var BCC = 'redmelitante@digitalservicesmaster.com, redmelitante@gmail.com';
-
 /** Longest value kept per field, so a bad request can't send a huge email. */
 var MAX_FIELD_LENGTH = 5000;
 
@@ -39,7 +33,6 @@ function doPost(e) {
 
     // Spam trap: the hidden "company_website" field is left empty by people.
     if (data.company_website) {
-      console.log('Spam trap filled: request dropped, no email sent.');
       return json_({ ok: true });
     }
 
@@ -52,28 +45,20 @@ function doPost(e) {
       return !clean[k];
     });
     if (missing.length) {
-      console.log('Rejected: missing ' + missing.join(', '));
       return json_({ ok: false, error: 'Missing required fields: ' + missing.join(', ') });
     }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(clean.email)) {
       return json_({ ok: false, error: 'Invalid email address' });
     }
 
-    var message = {
+    MailApp.sendEmail({
       to: RECIPIENT,
       replyTo: clean.email,
       name: 'Digital Services Master website',
       subject: 'New audit request: ' + clean.clinic + ' (' + clean.name + ')',
       body: plainBody_(clean),
       htmlBody: htmlBody_(clean),
-    };
-    if (BCC) message.bcc = BCC;
-    MailApp.sendEmail(message);
-    // Visible only to the script owner, under Executions in the Apps Script editor.
-    console.log(
-      'Audit email sent. To: ' + message.to + ' | BCC: ' + (message.bcc || 'none') +
-        ' | Remaining daily email quota: ' + MailApp.getRemainingDailyQuota()
-    );
+    });
 
     return json_({ ok: true });
   } catch (err) {
