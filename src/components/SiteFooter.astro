@@ -4,7 +4,7 @@ interface Props {
   /** Target of the "Book an Audit" link (the Contact page links to its own form). */
   ctaHref?: string;
 }
-const { ctaHref = '/contact/' } = Astro.props;
+const { ctaHref = '/contact-website-development-services/' } = Astro.props;
 const year = new Date().getFullYear();
 ---
 
@@ -20,10 +20,10 @@ const year = new Date().getFullYear();
 </div>
 </div>
 <div style="flex: 2 1 520px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 32px">
-<nav aria-label="Company" style="display: flex; flex-direction: column; gap: 12px"><p style="font-weight: 700; color: #fff; margin-bottom: 4px">Company</p><a href="/about/">About Us</a><a href="/pricing/">Pricing</a><a href="/faq/">FAQ</a><a href="/contact/">Contact</a><a href={ctaHref}>Book an Audit</a></nav>
-<nav aria-label="Services" style="display: flex; flex-direction: column; gap: 12px"><p style="font-weight: 700; color: #fff; margin-bottom: 4px">Services</p><a href="/services/web-development/">Web Development</a><a href="/services/seo/">SEO</a><a href="/services/paid-advertising/">Paid Advertising</a></nav>
-<nav aria-label="Portfolio" style="display: flex; flex-direction: column; gap: 12px"><p style="font-weight: 700; color: #fff; margin-bottom: 4px">Portfolio</p><a href="/portfolio/aesthetic-clinic-websites/">Aesthetic Clinics</a><a href="/portfolio/dental-clinic-websites/">Dental Clinics</a><a href="/portfolio/custom-websites/">Business Websites</a><a href="/portfolio/ecommerce-websites/">E-commerce</a><a href="/case-studies/">Case Studies</a></nav>
-<nav aria-label="Resources" style="display: flex; flex-direction: column; gap: 12px"><p style="font-weight: 700; color: #fff; margin-bottom: 4px">Resources</p><a href="/blog/">Blog</a><a href="/privacy-policy/">Privacy Policy</a><a href="/terms-of-service/">Terms of Service</a></nav>
+<nav aria-label="Company" style="display: flex; flex-direction: column; gap: 12px"><p style="font-weight: 700; color: #fff; margin-bottom: 4px">Company</p><a href="/about-us-page-new/">About Us</a><a href="/pricing-plans/">Pricing</a><a href="/faqs-website-development/">FAQ</a><a href="/contact-website-development-services/">Contact</a><a href={ctaHref}>Book an Audit</a></nav>
+<nav aria-label="Services" style="display: flex; flex-direction: column; gap: 12px"><p style="font-weight: 700; color: #fff; margin-bottom: 4px">Services</p><a href="/web-development-seo-google-ads-services/website-development/">Web Development</a><a href="/seo-services-in-the-philippines/">SEO</a><a href="/google-ads-services/">Paid Advertising</a></nav>
+<nav aria-label="Portfolio" style="display: flex; flex-direction: column; gap: 12px"><p style="font-weight: 700; color: #fff; margin-bottom: 4px">Portfolio</p><a href="/aesthetics-clinic-website-design/">Aesthetic Clinics</a><a href="/dental-clinic-websites/">Dental Clinics</a><a href="/business-website-design/">Business Websites</a><a href="/e-commerce-websites/">E-commerce</a><a href="/case-studies/">Case Studies</a></nav>
+<nav aria-label="Resources" style="display: flex; flex-direction: column; gap: 12px"><p style="font-weight: 700; color: #fff; margin-bottom: 4px">Resources</p><a href="/website-development-insights-blog/">Blog</a><a href="/privacy-policy/">Privacy Policy</a><a href="/terms-of-service/">Terms of Service</a></nav>
 </div>
 </div>
 <div style="display: flex; flex-wrap: wrap; gap: 16px 40px; padding: 24px 0; border-top: 1px solid rgba(255,255,255,0.12); border-bottom: 1px solid rgba(255,255,255,0.12)">

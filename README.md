@@ -70,26 +70,37 @@ The homepage serves the desktop design above 640px and the dedicated phone desig
 ### Page metadata
 
 Titles, meta descriptions, social share images, publish/modified dates and blog authors
-come from `src/data/seo.ts`, keyed by URL. They were copied from the old WordPress site,
-and each entry's `oldUrl` records the page it came from. `BaseLayout` uses an entry's
+come from `src/data/seo.ts`, keyed by URL. They were copied from the old WordPress site
+page at the same URL. `BaseLayout` uses an entry's
 values instead of the `title`/`description` props, and builds the JSON-LD structured data
 (`src/lib/schema.ts`) in the same shape the old site's SEO plugin produced. Pages with no
 entry use the props passed to `BaseLayout`.
 
 ## Pages
 
+Pages keep the URLs of the old WordPress site, so links and search rankings carry over
+without redirects.
+
 | URL | Design file |
 | --- | --- |
 | `/` | Main, Home-Mobile |
-| `/about/` | About |
-| `/services/`, `/services/web-development/`, `/services/seo/`, `/services/paid-advertising/` | Services, Service-* |
-| `/portfolio/` and `/portfolio/{aesthetic-clinic,dental-clinic,custom,ecommerce}-websites/` | Portfolio, Portfolio-* |
-| `/portfolio/<project>/` (10 projects) | Project, Project-* |
-| `/case-studies/`, `/case-studies/coastal-luxe-aesthetics/` | CaseStudies, CaseStudy-CoastalLuxe |
-| `/industries/{cosmetic,dental,eye,veterinary}-clinics/` | Industry-Landing template (one page per industry) |
-| `/pricing/`, `/faq/`, `/contact/` | Pricing, FAQ, Contact |
-| `/blog/` and `/blog/<post>/` (14 articles) | Blog, BlogPost, Post-* |
+| `/about-us-page-new/` | About |
+| `/web-development-seo-google-ads-services/` | Services |
+| `/web-development-seo-google-ads-services/website-development/` | Service-WebDev |
+| `/seo-services-in-the-philippines/` | Service-SEO |
+| `/google-ads-services/` | Service-Ads |
+| `/web-design-portfolio/` | Portfolio |
+| `/aesthetics-clinic-website-design/`, `/dental-clinic-websites/`, `/business-website-design/`, `/e-commerce-websites/` | Portfolio-Aesthetic, -Dental, -Business, -Ecommerce |
+| `/dental-clinic-website-design-above-dental-care/` and the other project URLs (11 projects) | Project, Project-* |
+| `/case-studies/` | CaseStudies |
+| `/cosmetic-clinic-website-design-cla/` | CaseStudy-CoastalLuxe |
+| `/clinic-website/{cosmetic-clinic,dental-clinic-digital-services,eye-clinic,veterinary-clinic}/` | Industry-Landing template (one page per industry) |
+| `/pricing-plans/`, `/faqs-website-development/`, `/contact-website-development-services/` | Pricing, FAQ, Contact |
+| `/website-development-insights-blog/` and `/blogs/<post>/` (14 articles) | Blog, BlogPost, Post-* |
 | `/privacy-policy/`, `/terms-of-service/` | Privacy, Terms |
+
+New pages the old site didn't have: `/case-studies/`, `/dental-clinic-website-design-dr-kc/`,
+`/privacy-policy/` and `/terms-of-service/`.
 
 Also generated: `/404.html`, `/robots.txt` and `/sitemap-index.xml`.
 
@@ -100,6 +111,11 @@ Open items from the design handoff:
 - Privacy Policy and Terms: add business name and registration, address, analytics tools
   and governing law; get a lawyer's review; remove the "Draft" label.
 - Set `PUBLIC_AUDIT_FORM_ENDPOINT` to connect the audit form (email or Fluid CRM).
-- Add 301 redirects from the old site's URLs (the redirect list in the migration audit,
-  plus the old sitemap and feed URLs).
+- Add 301 redirects for the old URLs that no longer have their own page:
+  `/about-us-web-developer/`, `/website-development/`,
+  `/web-development-seo-google-ads-services/web-design-services/`,
+  `/web-development-seo-google-ads-services/digital-marketing-services/`, `/clinic-website/`,
+  `/category/blogs/`, `/gun-shop-website-surehit/`, plus the old sitemaps, `/feed/`, `/blogs/`,
+  `/category/blogs/page/2/`, `/websit-development/`, `/blogs/7-essential-principal-ui-designs/`
+  and `/author/…`.
 - Add Analytics and verify the site in Google Search Console.

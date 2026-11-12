@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/pages/portfolio-pages.css';
+---
+<BaseLayout nav="portfolio" logic="base">
+<!-- ============ PROJECT HERO (ProjectHero) ============ -->
+<section style="background: #EEF0FA; overflow: hidden">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(40px, 6vw, 72px) clamp(16px, 4vw, 32px) clamp(56px, 7vw, 88px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr)); gap: clamp(40px, 5vw, 72px); align-items: center">
+<div style="display: flex; flex-direction: column; gap: 22px; align-items: flex-start">
+<nav aria-label="Breadcrumb" style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; font-weight: 600; color: #4F5B88"><a href="/" style="color: #4F5B88">Home</a><span aria-hidden="true">/</span><a href="/web-design-portfolio/" style="color: #4F5B88">Portfolio</a><span aria-hidden="true">/</span><a href="/business-website-design/" style="color: #4F5B88">Business &amp; Service Websites</a><span aria-hidden="true">/</span><span style="color: var(--ink)">Aplus Health Services</span></nav>
+<span style="font-size: 12px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #3B4C9B; background: #fff; border-radius: 999px; padding: 5px 14px">Project · NDIS Provider</span>
+<h1 style="font-size: clamp(40px, 4.8vw, 62px); line-height: 1.05; letter-spacing: -0.03em; font-weight: 800; color: var(--ink); text-wrap: balance">Aplus Health Services</h1>
+<p style="font-size: clamp(18px, 1.6vw, 21px); color: var(--ink); opacity: 0.85; max-width: 520px">Digital accessibility for quality NDIS care.</p>
+<dl style="margin: 6px 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr)); gap: 16px 28px; width: 100%; font-size: 15px"><div><dt style="color: #4F5B88; font-weight: 600">Industry</dt><dd style="margin: 0; color: var(--ink); font-weight: 700">NDIS Provider</dd></div><div><dt style="color: #4F5B88; font-weight: 600">Services</dt><dd style="margin: 0; color: var(--ink); font-weight: 700">Website, booking system, SEO</dd></div><div><dt style="color: #4F5B88; font-weight: 600">Website</dt><dd style="margin: 0; color: var(--ink); font-weight: 700"><a href="https://aplushealthservices.com.au" target="_blank" rel="noopener" style="color: #3B4C9B">aplushealthservices.com.au ↗</a></dd></div></dl>
+</div>
+<div style="position: relative; min-height: 420px; display: flex; align-items: center; justify-content: center">
+<div style="width: 92%; background: #1A2036; border-radius: 18px 18px 6px 6px; padding: 11px 11px 15px; box-shadow: 0 40px 70px -30px rgba(13,24,56,0.45)">
+<img src="/images/aplus-desk.webp" alt="Aplus Health Services website homepage" style="display: block; width: 100%; height: auto; border-radius: 6px" decoding="async">
+</div>
+<div style="position: absolute; right: 0; bottom: -4%; width: 34%; background: #fff; border-radius: 22px; padding: 6px; box-shadow: 0 30px 50px -20px rgba(13,24,56,0.45)"><img src="/images/aplus-photo.webp" alt="" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 16px" decoding="async"></div>
+</div>
+</div>
+</section>
+
+<!-- ============ RESULTS (ResultStats) ============ -->
+<section style="background: #fff; border-bottom: 1px solid var(--line)">
+<div style="max-width: 1240px; margin: 0 auto; padding: 48px clamp(16px, 4vw, 32px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 16px"><div style="background: var(--tint2); border: 1px solid var(--line); border-radius: 24px; padding: 28px"><p style="font-size: 44px; line-height: 1; font-weight: 800; color: var(--blue); letter-spacing: -0.03em">70%</p><p style="margin-top: 10px; font-size: 15px; font-weight: 600; color: var(--ink)">Client inquiries</p></div><div style="background: var(--tint2); border: 1px solid var(--line); border-radius: 24px; padding: 28px"><p style="font-size: 44px; line-height: 1; font-weight: 800; color: var(--blue); letter-spacing: -0.03em">60%</p><p style="margin-top: 10px; font-size: 15px; font-weight: 600; color: var(--ink)">Client bookings</p></div></div>
+</section>
+
+<!-- ============ STORY (ProjectStory) ============ -->
+<section style="background: #fff">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(64px, 8vw, 96px) clamp(16px, 4vw, 32px); display: flex; flex-direction: column; gap: 24px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr)); gap: 24px">
+<article style="border: 1px solid var(--line); border-radius: 28px; padding: clamp(28px, 3.5vw, 44px); display: flex; flex-direction: column; gap: 14px"><p class="eb">The challenge</p><p>Aplus Health Services needed a professional, accessible website to build trust, streamline service bookings and enhance its online presence. The company aimed to make NDIS care and disability support services more accessible to individuals and families in need.</p></article>
+<article style="background: var(--navy); border-radius: 28px; padding: clamp(28px, 3.5vw, 44px); display: flex; flex-direction: column; gap: 14px"><p class="eb" style="color: #8BE9F0">What we built</p><p style="color: #C9D3F2">We created a user-friendly, SEO-optimised NDIS provider website with clear service categories, a secure contact form and an integrated booking system for easy scheduling. Our SEO strategies improved search visibility, making Aplus Health Services easier to find for those in need.</p></article>
+</div>
+<article style="background: var(--tint2); border: 1px solid var(--line); border-radius: 28px; padding: clamp(28px, 3.5vw, 44px); display: flex; flex-direction: column; gap: 16px"><p class="eb">The impact</p><ul style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 14px 32px; font-size: 16px; color: var(--ink); font-weight: 500"><li class="chk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3D66E4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="m5 12 5 5L20 7"></path></svg>Greater accessibility, allowing families to book care services with ease</li><li class="chk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3D66E4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="m5 12 5 5L20 7"></path></svg>Higher engagement, with educational blogs driving traffic</li><li class="chk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3D66E4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="m5 12 5 5L20 7"></path></svg>Strengthened credibility as a trusted provider</li></ul></article>
+</div>
+</section>
+
+<!-- ============ SCREENS (ScreenGallery) ============ -->
+<section style="background: #EEF0FA">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(64px, 8vw, 96px) clamp(16px, 4vw, 32px); display: flex; flex-direction: column; gap: 28px">
+<h2 style="font-size: clamp(26px, 2.6vw, 34px); line-height: 1.2; letter-spacing: -0.02em; font-weight: 800; color: var(--ink)">Inside the website</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 24px"><figure style="margin: 0; display: flex; flex-direction: column; gap: 12px"><img src="/images/aplus-desk.webp" alt="Aplus Health Services Homepage" style="display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: contain; object-position: center; padding: 14px; box-sizing: border-box; border: 1px solid var(--line); border-radius: 24px; background: #fff" loading="lazy" decoding="async"><figcaption style="font-size: 15px; font-weight: 600; color: var(--ink)">Homepage</figcaption></figure><figure style="margin: 0; display: flex; flex-direction: column; gap: 12px"><img src="/images/aplus-photo.webp" alt="Aplus Health Services Care in action" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center; border-radius: 24px; background: #fff" loading="lazy" decoding="async"><figcaption style="font-size: 15px; font-weight: 600; color: var(--ink)">Care in action</figcaption></figure></div>
+</div>
+</section>
+
+<!-- ============ MORE PROJECTS ============ -->
+<section style="background: #fff">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(64px, 8vw, 96px) clamp(16px, 4vw, 32px) 0; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px"><h2 style="font-size: clamp(28px, 2.8vw, 38px); line-height: 1.2; letter-spacing: -0.02em; font-weight: 800; color: var(--ink)">More business &amp; service websites</h2><a class="btn btn-ghost" href="/business-website-design/">See all</a></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 24px"><a class="card" href="/flooring-website-design-constantin-floors/" style="background: #fff; border: 1px solid var(--line); border-radius: 28px; overflow: hidden; display: flex; flex-direction: column; color: inherit"><img src="/images/con-photo.webp" alt="Constantin Floors" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #EFEBE6" loading="lazy" decoding="async"><div style="padding: 22px 26px 26px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; font-weight: 700; color: var(--muted)">Flooring Installations</span><h3 style="font-size: 20px; font-weight: 700; color: var(--ink)">Constantin Floors</h3></div></a><a class="card" href="/prefab-website-design-camco/" style="background: #fff; border: 1px solid var(--line); border-radius: 28px; overflow: hidden; display: flex; flex-direction: column; color: inherit"><img src="/images/camco-photo.webp" alt="CAMCO Prefabricated Structures" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #E7ECEF" loading="lazy" decoding="async"><div style="padding: 22px 26px 26px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; font-weight: 700; color: var(--muted)">Prefab Structures</span><h3 style="font-size: 20px; font-weight: 700; color: var(--ink)">CAMCO Prefabricated Structures</h3></div></a><a class="card" href="/e-commerce-website-design-good-force/" style="background: #fff; border: 1px solid var(--line); border-radius: 28px; overflow: hidden; display: flex; flex-direction: column; color: inherit"><img src="/images/gf-desk.webp" alt="Good Force" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: contain; padding: 22px; box-sizing: border-box; background: #FBF3E4" loading="lazy" decoding="async"><div style="padding: 22px 26px 26px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; font-weight: 700; color: var(--muted)">Supplier Website</span><h3 style="font-size: 20px; font-weight: 700; color: var(--ink)">Good Force</h3></div></a></div>
+</div>
+</section>
+
+<!-- ============ CTA BAND (CtaBand) ============ -->
+<section style="background: #fff; padding: clamp(72px, 9vw, 112px) clamp(16px, 4vw, 32px)">
+<div style="max-width: 1240px; margin: 0 auto; background: var(--navy); border-radius: 36px; padding: clamp(48px, 7vw, 88px) clamp(24px, 6vw, 80px); position: relative; overflow: hidden; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px">
+<div aria-hidden="true" style="position: absolute; width: 420px; height: 420px; border-radius: 50%; background: #1E42B1; right: -120px; top: -180px; opacity: 0.7"></div>
+<div aria-hidden="true" style="position: absolute; width: 120px; height: 120px; border-radius: 50%; background: #00C5D3; right: 22%; bottom: -60px; opacity: 0.35"></div>
+<div style="position: relative; display: flex; flex-direction: column; gap: 16px; max-width: 620px"><h2 style="font-size: clamp(32px, 3.6vw, 50px); line-height: 1.1; letter-spacing: -0.03em; font-weight: 800; color: #fff">Want a website like this?</h2><p style="color: #C9D3F2; font-size: 18px">Book a free Clinic Growth Audit and we'll show you what a better website could do for your business.</p></div>
+<div style="position: relative; display: flex; flex-wrap: wrap; gap: 14px"><a class="btn btn-cta" href="/contact-website-development-services/">Book a Free Clinic Growth Audit</a><a class="btn btn-light" href="/web-design-portfolio/">View Our Work</a></div>
+</div>
+</section>
+</BaseLayout>

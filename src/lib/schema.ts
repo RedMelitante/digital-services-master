@@ -29,7 +29,7 @@ export function buildSchema({ site, path, title, description, seo, image }: Sche
   const breadcrumbId = `${url}#breadcrumb`;
 
   const pageType: string | string[] =
-    path === '/faq/' ? ['WebPage', 'FAQPage'] : path === '/contact/' ? ['WebPage', 'ContactPage'] : 'WebPage';
+    path === '/faqs-website-development/' ? ['WebPage', 'FAQPage'] : path === '/contact-website-development-services/' ? ['WebPage', 'ContactPage'] : 'WebPage';
 
   const webPage: Record<string, unknown> = {
     '@type': pageType,
@@ -49,7 +49,7 @@ export function buildSchema({ site, path, title, description, seo, image }: Sche
     potentialAction: [{ '@type': 'ReadAction', target: [url] }],
   };
 
-  if (path === '/faq/') {
+  if (path === '/faqs-website-development/') {
     webPage.mainEntity = FAQ_GROUPS.flatMap((g) =>
       g.items.map(([question, answer]) => ({
         '@type': 'Question',
