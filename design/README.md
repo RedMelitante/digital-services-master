@@ -1,6 +1,6 @@
 # Design handoff (reference only)
 
-The original Claude Design export the site was built from (exported 12 November 2026).
+The original Claude Design export the site was built from (exported 12 November 2026; updated the same day: Case Studies now include aesthetic clinics).
 
 - `source/*.dc.html` — the 47 design pages and `canvas.json` (board order and notes).
   Image paths point to `../images/`, which now live in `/public/images`.

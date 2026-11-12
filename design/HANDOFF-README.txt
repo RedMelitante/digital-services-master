@@ -1,5 +1,5 @@
 DIGITAL SERVICES MASTER — WEBSITE DESIGN (47 pages)
-Exported from the Claude Design file on 12 November 2026.
+Exported from the Claude Design file on 12 November 2026 (updated: Case Studies now include aesthetic clinics).
 
 HOW TO VIEW
 Open index.html in any browser. It opens the homepage, and every link in the
