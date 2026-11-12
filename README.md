@@ -25,7 +25,7 @@ Copy `.env.example` to `.env` and set as needed:
 | Variable | Purpose |
 | --- | --- |
 | `SITE_URL` | Public URL used for canonical links, Open Graph URLs, `robots.txt` and the sitemap. Defaults to `https://digitalservicesmaster.com`. |
-| `PUBLIC_AUDIT_FORM_ENDPOINT` | URL that receives the audit form as a JSON `POST` (for example a Formspree, Make or Zapier webhook, or a CRM intake URL). If it is empty, the form only shows the thank-you message. |
+| `PUBLIC_AUDIT_FORM_ENDPOINT` | The Google Apps Script web app URL (ending in `/exec`) that emails audit form requests to redmelitante@digitalservicesmaster.com. See [`apps-script/audit-form/`](apps-script/audit-form/README.md). Required in production: without it the form shows an error instead of sending, and the build prints a warning. |
 
 ## Project structure
 
@@ -43,10 +43,11 @@ src/
   scripts/
     logic.ts                 page state (menus, accordions, filters, tabs, form) from the design
     bindings.ts              small runtime that applies that state to the page
-    audit-form.ts            Contact page form submission
+    audit-form.ts            Contact page form submission (posts to the Apps Script below)
   styles/
     global.css               design tokens and shared rules
     pages/*.css              page-specific rules from each design file
+apps-script/audit-form/      Google Apps Script that emails audit form requests
 design/                      original design handoff (reference only)
 ```
 
@@ -110,7 +111,8 @@ Open items from the design handoff:
 
 - Privacy Policy and Terms: add business name and registration, address, analytics tools
   and governing law; get a lawyer's review; remove the "Draft" label.
-- Set `PUBLIC_AUDIT_FORM_ENDPOINT` to connect the audit form (email or Fluid CRM).
+- Deploy `apps-script/audit-form/` and set `PUBLIC_AUDIT_FORM_ENDPOINT` to its web app URL,
+  so the audit form sends.
 - Add 301 redirects for the old URLs that no longer have their own page:
   `/about-us-web-developer/`, `/website-development/`,
   `/web-development-seo-google-ads-services/web-design-services/`,
