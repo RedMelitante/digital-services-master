@@ -13,7 +13,7 @@ var RECIPIENT = 'digitalservicesmaster@gmail.com';
  * Extra recipients who get a blind copy (BCC): comma-separated, or '' for none.
  * Each address counts toward the account's daily email quota.
  */
-var BCC = '';
+var BCC = 'redmelitante@digitalservicesmaster.com, redmelitante@gmail.com';
 
 /** Longest value kept per field, so a bad request can't send a huge email. */
 var MAX_FIELD_LENGTH = 5000;
