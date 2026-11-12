@@ -2,10 +2,14 @@
 import SiteHeader, { type NavKey } from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import type { LogicName } from '../scripts/logic';
+import { PAGE_SEO } from '../data/seo';
+import { buildSchema } from '../lib/schema';
 import '../styles/global.css';
 
 interface Props {
-  title: string;
+  /** Page title. Ignored when src/data/seo.ts has a title for this URL. */
+  title?: string;
+  /** Meta description. Ignored when src/data/seo.ts has one for this URL. */
   description?: string;
   /** Header item to highlight. */
   nav?: NavKey | null;
@@ -17,7 +21,7 @@ interface Props {
   logic?: LogicName;
   /** Open Graph type. */
   type?: 'website' | 'article';
-  /** Social share image (path or absolute URL). */
+  /** Social share image (path or absolute URL), used when src/data/seo.ts has none. */
   image?: string;
   /** Render the shared header and footer (the homepage renders its own). */
   chrome?: boolean;
@@ -25,20 +29,32 @@ interface Props {
 }
 
 const {
-  title,
-  description = 'Web development, SEO and paid advertising for aesthetic and dental clinics in the Philippines and Australia.',
+  title: titleProp,
+  description: descriptionProp = 'Web development, SEO and paid advertising for aesthetic and dental clinics in the Philippines and Australia.',
   nav = null,
   ctaHref,
   vars,
   logic = 'base',
-  type = 'website',
-  image = '/images/og-default.jpg',
+  type: typeProp = 'website',
+  image: imageProp = '/images/og-default.jpg',
   chrome = true,
   noindex = false,
 } = Astro.props;
 
-const canonical = new URL(Astro.url.pathname, Astro.site);
-const ogImage = new URL(image, Astro.site);
+const path = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
+const seo = PAGE_SEO[path] ?? {};
+const title = seo.title ?? titleProp;
+if (!title) throw new Error(`No title for ${path}: pass one to BaseLayout or add it to src/data/seo.ts`);
+const description = seo.description ?? descriptionProp;
+const ogTitle = seo.ogTitle ?? title;
+const ogDescription = seo.ogDescription ?? description;
+const ogType = seo.ogType ?? (seo.article ? 'article' : typeProp);
+const canonical = new URL(path, Astro.site);
+const ogImage = seo.image
+  ? { url: new URL(seo.image.src, Astro.site).href, width: seo.image.width, height: seo.image.height, type: seo.image.type }
+  : { url: new URL(imageProp, Astro.site).href, width: imageProp === '/images/og-default.jpg' ? 1200 : undefined, height: imageProp === '/images/og-default.jpg' ? 630 : undefined, type: undefined };
+const schema = noindex ? [] : buildSchema({ site: Astro.site!, path, title, description, seo, image: ogImage });
+const ROBOTS = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
 ---
 <!doctype html>
 <html lang="en">
@@ -47,20 +63,34 @@ const ogImage = new URL(image, Astro.site);
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
 <meta name="description" content={description}>
+<meta name="robots" content={noindex ? 'noindex, follow' : ROBOTS}>
 <link rel="canonical" href={canonical}>
-{noindex && <meta name="robots" content="noindex">}
 <meta name="theme-color" content="#0D1838">
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="sitemap" href="/sitemap-index.xml">
 
-<meta property="og:site_name" content="Digital Services Master">
-<meta property="og:type" content={type}>
-<meta property="og:title" content={title}>
-<meta property="og:description" content={description}>
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content={ogType}>
+<meta property="og:title" content={ogTitle}>
+<meta property="og:description" content={ogDescription}>
 <meta property="og:url" content={canonical}>
-<meta property="og:image" content={ogImage}>
+<meta property="og:site_name" content="Digital Services Master">
+{seo.article && <meta property="article:published_time" content={seo.article.datePublished}>}
+{seo.dateModified && <meta property="article:modified_time" content={seo.dateModified}>}
+<meta property="og:image" content={ogImage.url}>
+{ogImage.width && <meta property="og:image:width" content={String(ogImage.width)}>}
+{ogImage.height && <meta property="og:image:height" content={String(ogImage.height)}>}
+{ogImage.type && <meta property="og:image:type" content={ogImage.type}>}
+{seo.article && <meta name="author" content={seo.article.author}>}
 <meta name="twitter:card" content="summary_large_image">
+{seo.twitterLabels?.map(([label, data], i) => (
+  <Fragment>
+    <meta name={`twitter:label${i + 1}`} content={label}>
+    <meta name={`twitter:data${i + 1}`} content={data}>
+  </Fragment>
+))}
+{schema.map((block) => <script type="application/ld+json" set:html={JSON.stringify(block).replace(/</g, "\\u003c")} />)}
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

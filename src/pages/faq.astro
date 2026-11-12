@@ -7,7 +7,7 @@ import '../styles/pages/faq.css';
 const v = ssrValues('faq');
 const tabs = [{ key: 'All', label: 'All questions' }, ...FAQ_GROUPS.map((g) => ({ key: g.id, label: g.name }))];
 ---
-<BaseLayout title={'FAQ — Digital Services Master'} description={'Quick answers about our services, process and pricing. Can\'t find what you need? We\'re happy to talk it through.'} logic="faq">
+<BaseLayout logic="faq">
 <!-- ============ FAQ HERO ============ -->
 <section style="background: var(--tint2); position: relative; overflow: hidden">
 <div aria-hidden="true" style="position: absolute; width: 420px; height: 420px; border-radius: 50%; background: #DFE7FF; right: -140px; top: -160px"></div>

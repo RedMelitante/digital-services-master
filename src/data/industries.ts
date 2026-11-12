@@ -120,10 +120,10 @@ export const INDUSTRIES: Record<'cosmetic' | 'dental' | 'eye' | 'veterinary', In
   }
 };
 
-/** URL slug and page title for each industry. */
+/** URL slug for each industry (titles and descriptions are in src/data/seo.ts). */
 export const INDUSTRY_PAGES = [
-  { slug: 'cosmetic-clinics', key: 'cosmetic', title: 'Cosmetic Clinic Marketing' },
-  { slug: 'dental-clinics', key: 'dental', title: 'Dental Clinic Marketing' },
-  { slug: 'eye-clinics', key: 'eye', title: 'Eye Clinic Marketing' },
-  { slug: 'veterinary-clinics', key: 'veterinary', title: 'Veterinary Clinic Marketing' },
+  { slug: 'cosmetic-clinics', key: 'cosmetic' },
+  { slug: 'dental-clinics', key: 'dental' },
+  { slug: 'eye-clinics', key: 'eye' },
+  { slug: 'veterinary-clinics', key: 'veterinary' },
 ] as const;
