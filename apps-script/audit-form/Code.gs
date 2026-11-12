@@ -6,8 +6,8 @@
  * Setup and deployment steps: apps-script/audit-form/README.md
  */
 
-/** Where audit requests are emailed. */
-var RECIPIENT = 'digitalservicesmaster@gmail.com';
+/** Where audit requests are emailed (comma-separated). Each address counts toward the daily email quota. */
+var RECIPIENT = 'digitalservicesmaster@gmail.com, redmelitante@digitalservicesmaster.com, redmelitante@gmail.com';
 
 /** Longest value kept per field, so a bad request can't send a huge email. */
 var MAX_FIELD_LENGTH = 5000;

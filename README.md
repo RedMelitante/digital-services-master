@@ -25,7 +25,7 @@ Copy `.env.example` to `.env` and set as needed:
 | Variable | Purpose |
 | --- | --- |
 | `SITE_URL` | Public URL used for canonical links, Open Graph URLs, `robots.txt` and the sitemap. Defaults to `https://digitalservicesmaster.com`. |
-| `PUBLIC_AUDIT_FORM_ENDPOINT` | Optional. Overrides the Google Apps Script web app URL that emails audit form requests to digitalservicesmaster@gmail.com. The deployed URL is already set in `src/scripts/audit-form.ts`. See [`apps-script/audit-form/`](apps-script/audit-form/README.md). |
+| `PUBLIC_AUDIT_FORM_ENDPOINT` | Optional. Overrides the Google Apps Script web app URL that emails audit form requests to digitalservicesmaster@gmail.com, redmelitante@digitalservicesmaster.com and redmelitante@gmail.com. The deployed URL is already set in `src/scripts/audit-form.ts`. See [`apps-script/audit-form/`](apps-script/audit-form/README.md). |
 
 ## Project structure
 

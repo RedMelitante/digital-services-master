@@ -1,8 +1,9 @@
 # Audit form handler (Google Apps Script)
 
 Receives the "Book a Free Clinic Growth Audit" form from the Contact page and emails
-each request to **digitalservicesmaster@gmail.com**. The recipient is set in
-`RECIPIENT` at the top of `Code.gs`.
+each request to **digitalservicesmaster@gmail.com**, **redmelitante@digitalservicesmaster.com**
+and **redmelitante@gmail.com**. The recipients are set, comma-separated, in `RECIPIENT`
+at the top of `Code.gs`.
 
 Each email has:
 - **Subject:** `New audit request: <clinic> (<name>)`
