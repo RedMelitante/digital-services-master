@@ -1,0 +1,146 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { ssrValues } from '../../scripts/logic';
+import '../../styles/pages/service-ads.css';
+
+const v = ssrValues('accordion4');
+---
+<BaseLayout title={'Paid Advertising for Clinics — Digital Services Master'} description={'Strategic campaigns that put your clinic in front of people ready to book, tracked to the phone calls and consultation requests they bring in.'} nav="services" logic="accordion4">
+<!-- ============ SERVICE HERO + AD MOCKUPS ============ -->
+<section style="background: var(--tint2); overflow: hidden">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(40px, 6vw, 72px) clamp(16px, 4vw, 32px) clamp(64px, 8vw, 104px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(480px, 100%), 1fr)); gap: clamp(48px, 5vw, 72px); align-items: center">
+<div style="display: flex; flex-direction: column; gap: 26px; align-items: flex-start">
+<nav aria-label="Breadcrumb" style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; font-weight: 600; color: var(--muted)"><a href="/" style="color: var(--muted)">Home</a><span aria-hidden="true">/</span><a href="/services/" style="color: var(--muted)">Services</a><span aria-hidden="true">/</span><span style="color: var(--ink)">Paid Advertising</span></nav>
+<span style="display: inline-flex; align-items: center; gap: 10px; background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 8px 16px 8px 10px; font-size: 14px; font-weight: 600; color: var(--ink)"><span style="width: 24px; height: 24px; border-radius: 50%; background: var(--tint); color: var(--blue); display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="4"></circle></svg></span>Google, Facebook &amp; Instagram ads</span>
+<h1 style="font-size: clamp(38px, 4.4vw, 58px); line-height: 1.08; letter-spacing: -0.03em; font-weight: 800; color: var(--ink); text-wrap: balance">Ads that drive real enquiries, <span style="color: var(--blue)">not clicks</span></h1>
+<p style="font-size: clamp(17px, 1.4vw, 19px); max-width: 540px; text-wrap: pretty">Strategic campaigns that put your clinic in front of people ready to book, tracked to the phone calls and consultation requests they bring in.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px"><a class="btn btn-cta" href="/contact/">Book a Free Clinic Growth Audit</a><a class="btn btn-ghost" href="/portfolio/">View Our Work</a></div>
+</div>
+<div style="position: relative; min-height: 500px; display: flex; align-items: center; justify-content: center">
+<div aria-hidden="true" style="position: absolute; width: 84%; aspect-ratio: 1; border-radius: 50%; background: #DFE7FF; right: -6%; top: 50%; transform: translateY(-50%)"></div>
+<!-- Phone with social ad -->
+<div style="position: relative; width: 250px; background: #1A2036; border-radius: 36px; padding: 10px; box-shadow: 0 40px 70px -30px rgba(13,24,56,0.5); margin-left: 18%">
+<div style="border-radius: 28px; background: #fff; overflow: hidden; display: flex; flex-direction: column">
+<div style="display: flex; align-items: center; gap: 10px; padding: 34px 14px 12px"><span style="width: 32px; height: 32px; border-radius: 50%; background: #F2DFD7"></span><span style="display: flex; flex-direction: column; line-height: 1.2"><span style="font-size: 13px; font-weight: 700; color: var(--ink)">yourclinic</span><span style="font-size: 11px; color: var(--muted)">Sponsored</span></span></div>
+<div style="aspect-ratio: 4 / 5; position: relative; overflow: hidden"><img src="/images/post-aesthetic-clinic-website-design-what-act-fm.webp" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% center" decoding="async"><div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 42%)"></div><span style="position: absolute; left: 14px; top: 14px; font-family: Georgia, serif; font-size: 20px; line-height: 1.15; color: #3A2C26; max-width: 75%">Your glow-up starts with a consult</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; background: var(--tint2)"><span style="font-size: 13px; font-weight: 700; color: var(--ink)">Book now</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#131A33" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"></path></svg></div>
+<div style="padding: 12px 14px 22px; display: flex; flex-direction: column; gap: 6px"><span style="width: 80%; height: 8px; border-radius: 6px; background: #E3E8F4"></span><span style="width: 56%; height: 8px; border-radius: 6px; background: #EEF1F7"></span></div>
+</div>
+</div>
+<!-- Google ad card -->
+<div style="position: absolute; left: 0; bottom: 8%; width: 300px; background: #fff; border: 1px solid var(--line); border-radius: 20px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px; box-shadow: 0 24px 40px -24px rgba(13,24,56,0.4)">
+<span style="font-size: 12px; font-weight: 700; color: var(--ink)">Sponsored</span>
+<span style="font-size: 13px; color: var(--muted)">yourdental.com</span>
+<span style="font-size: 17px; font-weight: 700; color: #1A3FB0; line-height: 1.3">Dental Implants Consultation | Book Online</span>
+<span style="font-size: 13px; line-height: 1.5">Friendly team. Flexible appointments. Book your consultation today.</span>
+</div>
+<!-- Enquiry notification -->
+<div style="position: absolute; top: 40%; right: -2%; z-index: 2; background: #fff; border-radius: 18px; padding: 14px 18px 14px 14px; display: flex; gap: 12px; align-items: center; box-shadow: 0 24px 40px -20px rgba(13,24,56,0.35); border: 1px solid var(--line)">
+<span style="width: 42px; height: 42px; border-radius: 12px; background: #FFF1E3; color: #B35A00; display: flex; align-items: center; justify-content: center; flex: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"></path></svg></span>
+<span style="display: flex; flex-direction: column; line-height: 1.3"><span style="font-size: 14px; font-weight: 700; color: var(--ink)">New call from your ad</span><span style="font-size: 13px; color: var(--muted)">Tracked to campaign</span></span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ WHAT'S INCLUDED (FeatureGrid) ============ -->
+<section style="background: #fff">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(72px, 9vw, 120px) clamp(16px, 4vw, 32px); display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px; max-width: 720px; margin: 0 auto"><p class="eb">What's included</p><h2 class="h2">Campaigns we manage from start to finish</h2><p>From audience targeting to performance tracking, we handle the strategy so you can focus on your patients.</p></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 20px">
+<div class="feat"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg></span><span style="display: flex; flex-direction: column; gap: 8px"><h3 style="font-size: 19px; font-weight: 700; color: var(--ink)">Google Search campaigns</h3><p style="font-size: 16px">Reach patients searching for your treatments right when they're ready to book.</p></span></div>
+<div class="feat"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg></span><span style="display: flex; flex-direction: column; gap: 8px"><h3 style="font-size: 19px; font-weight: 700; color: var(--ink)">Facebook &amp; Instagram campaigns</h3><p style="font-size: 16px">Show your treatments and offers to the right local audience, where they scroll every day.</p></span></div>
+<div class="feat"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"></rect><circle cx="9" cy="10" r="2"></circle><path d="m21 16-5-5-9 9"></path></svg></span><span style="display: flex; flex-direction: column; gap: 8px"><h3 style="font-size: 19px; font-weight: 700; color: var(--ink)">Ad creative &amp; copy</h3><p style="font-size: 16px">Scroll-stopping visuals and clear messages that feel true to your clinic's brand.</p></span></div>
+<div class="feat"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"></rect><path d="M8 20h8M12 16v4"></path></svg></span><span style="display: flex; flex-direction: column; gap: 8px"><h3 style="font-size: 19px; font-weight: 700; color: var(--ink)">Landing pages that convert</h3><p style="font-size: 16px">Focused pages for each campaign, so the people you pay to reach actually enquire.</p></span></div>
+<div class="feat"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"></path></svg></span><span style="display: flex; flex-direction: column; gap: 8px"><h3 style="font-size: 19px; font-weight: 700; color: var(--ink)">Call &amp; form tracking</h3><p style="font-size: 16px">Every call and enquiry tracked back to the campaign that brought it in.</p></span></div>
+<div class="feat"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg></span><span style="display: flex; flex-direction: column; gap: 8px"><h3 style="font-size: 19px; font-weight: 700; color: var(--ink)">Optimisation &amp; reporting</h3><p style="font-size: 16px">Ongoing testing and clear reports, so every dollar works harder.</p></span></div>
+</div>
+</div>
+</section>
+
+<!-- ============ TWO CHANNELS ============ -->
+<section style="background: var(--tint)">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(72px, 9vw, 120px) clamp(16px, 4vw, 32px); display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px; max-width: 720px; margin: 0 auto"><p class="eb">The right channel for the job</p><h2 class="h2">Capture demand on Google. Create it on social.</h2></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 24px">
+<div style="background: #fff; border-radius: 28px; padding: 40px; display: flex; flex-direction: column; gap: 16px">
+<span style="align-self: flex-start; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--blue); background: var(--tint); border-radius: 999px; padding: 4px 12px">Google Ads</span>
+<h3 style="font-size: 26px; line-height: 1.25; font-weight: 800; color: var(--ink); letter-spacing: -0.02em">Be there when patients are already searching</h3>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 16px; color: var(--ink); font-weight: 500">
+<li class="chk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3D66E4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="m5 12 5 5L20 7"></path></svg>High-intent treatment and “near me” searches</li>
+<li class="chk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3D66E4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="m5 12 5 5L20 7"></path></svg>Call-focused ads for mobile searchers</li>
+<li class="chk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3D66E4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="m5 12 5 5L20 7"></path></svg>Great while your SEO is still building</li>
+</ul>
+</div>
+<div style="background: var(--blue); border-radius: 28px; padding: 40px; display: flex; flex-direction: column; gap: 16px; color: #fff; position: relative; overflow: hidden">
+<div aria-hidden="true" style="position: absolute; width: 260px; height: 260px; border-radius: 50%; background: rgba(255,255,255,0.08); right: -90px; top: -90px"></div>
+<span style="position: relative; align-self: flex-start; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--blue); background: #fff; border-radius: 999px; padding: 4px 12px">Facebook &amp; Instagram</span>
+<h3 style="position: relative; font-size: 26px; line-height: 1.25; font-weight: 800; color: #fff; letter-spacing: -0.02em">Inspire local people to book their next treatment</h3>
+<ul style="position: relative; list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 16px; color: #EEF2FF; font-weight: 500">
+<li class="chk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="m5 12 5 5L20 7"></path></svg>Treatment launches, offers and seasonal campaigns</li>
+<li class="chk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="m5 12 5 5L20 7"></path></svg>Lead forms and messages straight to your team</li>
+<li class="chk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="m5 12 5 5L20 7"></path></svg>Retargeting people who visited your site</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ PROCESS (ProcessSteps) ============ -->
+<section style="background: #fff">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(72px, 9vw, 120px) clamp(16px, 4vw, 32px); display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px"><p class="eb">How a campaign runs</p><h2 class="h2">From first audit to steady enquiries</h2></div>
+<ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 24px">
+<li style="display: flex; flex-direction: column; gap: 14px; padding: 32px; border-radius: 28px; background: var(--tint2); border: 1px solid var(--line)"><span style="width: 52px; height: 52px; border-radius: 50%; background: var(--blue); color: #fff; font-weight: 800; font-size: 17px; display: flex; align-items: center; justify-content: center">01</span><h3 style="font-size: 21px; font-weight: 700; color: var(--ink); margin-top: 6px">Audit &amp; goals</h3><p style="font-size: 16px">We review any current campaigns and agree which treatments and audiences to focus on.</p></li>
+<li style="display: flex; flex-direction: column; gap: 14px; padding: 32px; border-radius: 28px; background: var(--tint2); border: 1px solid var(--line)"><span style="width: 52px; height: 52px; border-radius: 50%; background: var(--blue); color: #fff; font-weight: 800; font-size: 17px; display: flex; align-items: center; justify-content: center">02</span><h3 style="font-size: 21px; font-weight: 700; color: var(--ink); margin-top: 6px">Setup &amp; tracking</h3><p style="font-size: 16px">Accounts, audiences, landing pages and call and form tracking, set up properly.</p></li>
+<li style="display: flex; flex-direction: column; gap: 14px; padding: 32px; border-radius: 28px; background: var(--tint2); border: 1px solid var(--line)"><span style="width: 52px; height: 52px; border-radius: 50%; background: var(--blue); color: #fff; font-weight: 800; font-size: 17px; display: flex; align-items: center; justify-content: center">03</span><h3 style="font-size: 21px; font-weight: 700; color: var(--ink); margin-top: 6px">Launch &amp; creative</h3><p style="font-size: 16px">Campaigns go live with ad creative and copy built for your clinic.</p></li>
+<li style="display: flex; flex-direction: column; gap: 14px; padding: 32px; border-radius: 28px; background: var(--tint2); border: 1px solid var(--line)"><span style="width: 52px; height: 52px; border-radius: 50%; background: var(--accent); color: var(--ink); font-weight: 800; font-size: 17px; display: flex; align-items: center; justify-content: center">04</span><h3 style="font-size: 21px; font-weight: 700; color: var(--ink); margin-top: 6px">Optimise &amp; report</h3><p style="font-size: 16px">We test, refine and report on the calls and enquiries your ads bring in.</p></li>
+</ol>
+</div>
+</section>
+
+<!-- ============ TESTIMONIAL ============ -->
+<section style="background: var(--tint2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line)">
+<div style="max-width: 1000px; margin: 0 auto; padding: clamp(64px, 8vw, 104px) clamp(16px, 4vw, 32px)">
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 26px; align-items: center; text-align: center">
+<svg width="44" height="36" viewBox="0 0 40 32" aria-hidden="true"><path d="M0 32V19C0 8.5 5.5 2 16 0l2 5c-6 1.6-8.6 5-9 10h8v17H0Zm22 0V19c0-10.5 5.5-17 16-19l2 5c-6 1.6-8.6 5-9 10h8v17H22Z" fill="#3D66E4"></path></svg>
+<blockquote style="margin: 0; font-size: clamp(20px, 2vw, 26px); line-height: 1.5; color: var(--ink); font-weight: 600; max-width: 800px">What sets Digital Services Master apart is their ability to infuse fun and relevance into our social media campaigns and website creating. They create engaging content that resonates with our audience, making our brand more relatable.</blockquote>
+<figcaption style="display: flex; align-items: center; gap: 14px"><img src="/images/av-dennis.webp" alt="Dennis" style="width: 52px; height: 52px; border-radius: 50%; object-fit: cover; flex: none" loading="lazy" decoding="async"><span style="display: flex; flex-direction: column; line-height: 1.35; text-align: left"><span style="font-weight: 700; color: var(--ink)">Dennis</span><span style="font-size: 15px; color: var(--muted)">Co-Founder, A+ Health Services</span></span></figcaption>
+</figure>
+</div>
+</section>
+
+<!-- ============ FAQ (FaqAccordion) ============ -->
+<section style="background: #fff">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(72px, 9vw, 112px) clamp(16px, 4vw, 32px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: clamp(40px, 6vw, 96px); align-items: start">
+<div style="display: flex; flex-direction: column; gap: 16px; align-items: flex-start"><p class="eb">Advertising FAQ</p><h2 class="h2">Questions about paid ads</h2><a class="btn btn-ghost" href="/contact/" style="margin-top: 8px">Get in Touch</a></div>
+<div style="display: flex; flex-direction: column; border-top: 1px solid var(--line)">
+<div style="border-bottom: 1px solid var(--line)"><button data-b class="faq-q" aria-expanded={v.open0 ? 'true' : 'false'} data-b-aria-expanded="{{open0}}" data-b-click="toggle0">Which platforms do you advertise on?<span data-b style={`width: 36px; height: 36px; border-radius: 50%; background: var(--tint); color: var(--blue); display: flex; align-items: center; justify-content: center; flex: none; transform: ${v.rot0}; transition: transform .2s`} data-b-style="width: 36px; height: 36px; border-radius: 50%; background: var(--tint); color: var(--blue); display: flex; align-items: center; justify-content: center; flex: none; transform: {{rot0}}; transition: transform .2s"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></span></button><p data-b data-b-if="open0" hidden={!v.open0} style="padding: 0 52px 24px 0; font-size: 16px">Google, Facebook and Instagram. We'll recommend the right mix for your treatments and goals during your audit.</p></div>
+<div style="border-bottom: 1px solid var(--line)"><button data-b class="faq-q" aria-expanded={v.open1 ? 'true' : 'false'} data-b-aria-expanded="{{open1}}" data-b-click="toggle1">How much should I spend on ads?<span data-b style={`width: 36px; height: 36px; border-radius: 50%; background: var(--tint); color: var(--blue); display: flex; align-items: center; justify-content: center; flex: none; transform: ${v.rot1}; transition: transform .2s`} data-b-style="width: 36px; height: 36px; border-radius: 50%; background: var(--tint); color: var(--blue); display: flex; align-items: center; justify-content: center; flex: none; transform: {{rot1}}; transition: transform .2s"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></span></button><p data-b data-b-if="open1" hidden={!v.open1} style="padding: 0 52px 24px 0; font-size: 16px">It depends on your market, your treatments and how many new patients you want. We'll suggest a starting budget after your free audit.</p></div>
+<div style="border-bottom: 1px solid var(--line)"><button data-b class="faq-q" aria-expanded={v.open2 ? 'true' : 'false'} data-b-aria-expanded="{{open2}}" data-b-click="toggle2">Can ads promote specific treatments or offers?<span data-b style={`width: 36px; height: 36px; border-radius: 50%; background: var(--tint); color: var(--blue); display: flex; align-items: center; justify-content: center; flex: none; transform: ${v.rot2}; transition: transform .2s`} data-b-style="width: 36px; height: 36px; border-radius: 50%; background: var(--tint); color: var(--blue); display: flex; align-items: center; justify-content: center; flex: none; transform: {{rot2}}; transition: transform .2s"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></span></button><p data-b data-b-if="open2" hidden={!v.open2} style="padding: 0 52px 24px 0; font-size: 16px">Yes. We can build campaigns around the treatments you want to grow, new services or seasonal offers.</p></div>
+<div style="border-bottom: 1px solid var(--line)"><button data-b class="faq-q" aria-expanded={v.open3 ? 'true' : 'false'} data-b-aria-expanded="{{open3}}" data-b-click="toggle3">How do you measure results?<span data-b style={`width: 36px; height: 36px; border-radius: 50%; background: var(--tint); color: var(--blue); display: flex; align-items: center; justify-content: center; flex: none; transform: ${v.rot3}; transition: transform .2s`} data-b-style="width: 36px; height: 36px; border-radius: 50%; background: var(--tint); color: var(--blue); display: flex; align-items: center; justify-content: center; flex: none; transform: {{rot3}}; transition: transform .2s"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></span></button><p data-b data-b-if="open3" hidden={!v.open3} style="padding: 0 52px 24px 0; font-size: 16px">By the calls and enquiries your ads bring in, not just clicks. We set up tracking before launch and report on it regularly.</p></div>
+</div>
+</div>
+</section>
+
+<!-- ============ RELATED SERVICES ============ -->
+<section style="background: var(--tint2); border-top: 1px solid var(--line)">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(64px, 8vw, 96px) clamp(16px, 4vw, 32px); display: flex; flex-direction: column; gap: 32px">
+<h2 style="font-size: clamp(26px, 2.6vw, 34px); line-height: 1.2; letter-spacing: -0.02em; font-weight: 800; color: var(--ink)">Pair your ads with</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 20px">
+<a class="card" href="/services/web-development/" style="background: #fff; border: 1px solid var(--line); border-radius: 24px; padding: 28px 32px; display: flex; align-items: center; gap: 20px; color: inherit"><span class="ic" style="width: 56px; height: 56px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"></rect><path d="M8 20h8M12 16v4"></path></svg></span><span style="display: flex; flex-direction: column; gap: 4px; flex: 1"><span style="font-size: 20px; font-weight: 700; color: var(--ink)">Web Development</span><span style="font-size: 15px">A website that turns ad clicks into consultations.</span></span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3D66E4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+<a class="card" href="/services/seo/" style="background: #fff; border: 1px solid var(--line); border-radius: 24px; padding: 28px 32px; display: flex; align-items: center; gap: 20px; color: inherit"><span class="ic" style="width: 56px; height: 56px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg></span><span style="display: flex; flex-direction: column; gap: 4px; flex: 1"><span style="font-size: 20px; font-weight: 700; color: var(--ink)">SEO</span><span style="font-size: 15px">Organic visibility that keeps working long term.</span></span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3D66E4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</section>
+
+<!-- ============ CTA BAND (CtaBand) ============ -->
+<section style="background: var(--tint2); padding: 0 clamp(16px, 4vw, 32px) clamp(72px, 9vw, 112px)">
+<div style="max-width: 1240px; margin: 0 auto; background: var(--navy); border-radius: 36px; padding: clamp(48px, 7vw, 88px) clamp(24px, 6vw, 80px); position: relative; overflow: hidden; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px">
+<div aria-hidden="true" style="position: absolute; width: 420px; height: 420px; border-radius: 50%; background: #1E42B1; right: -120px; top: -180px; opacity: 0.7"></div>
+<div aria-hidden="true" style="position: absolute; width: 120px; height: 120px; border-radius: 50%; background: #00C5D3; right: 22%; bottom: -60px; opacity: 0.35"></div>
+<div style="position: relative; display: flex; flex-direction: column; gap: 16px; max-width: 620px"><h2 style="font-size: clamp(32px, 3.6vw, 50px); line-height: 1.1; letter-spacing: -0.03em; font-weight: 800; color: #fff">Turn ad spend into booked consultations</h2><p style="color: #C9D3F2; font-size: 18px">Your free Clinic Growth Audit includes a review of your current ads, or a plan to start.</p></div>
+<div style="position: relative; display: flex; flex-wrap: wrap; gap: 14px"><a class="btn btn-cta" href="/contact/">Book a Free Clinic Growth Audit</a><a class="btn btn-light" href="/pricing/">See Pricing</a></div>
+</div>
+</section>
+</BaseLayout>

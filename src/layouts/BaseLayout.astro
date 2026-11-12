@@ -1,0 +1,83 @@
+---
+import SiteHeader, { type NavKey } from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import type { LogicName } from '../scripts/logic';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  /** Header item to highlight. */
+  nav?: NavKey | null;
+  /** Target of header/footer audit links. */
+  ctaHref?: string;
+  /** Extra CSS custom properties for the page wrapper (e.g. project colours). */
+  vars?: string;
+  /** Page state logic (see src/scripts/logic.ts). */
+  logic?: LogicName;
+  /** Open Graph type. */
+  type?: 'website' | 'article';
+  /** Social share image (path or absolute URL). */
+  image?: string;
+  /** Render the shared header and footer (the homepage renders its own). */
+  chrome?: boolean;
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description = 'Web development, SEO and paid advertising for aesthetic and dental clinics in the Philippines and Australia.',
+  nav = null,
+  ctaHref,
+  vars,
+  logic = 'base',
+  type = 'website',
+  image = '/images/og-default.jpg',
+  chrome = true,
+  noindex = false,
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL(image, Astro.site);
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{title}</title>
+<meta name="description" content={description}>
+<link rel="canonical" href={canonical}>
+{noindex && <meta name="robots" content="noindex">}
+<meta name="theme-color" content="#0D1838">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="sitemap" href="/sitemap-index.xml">
+
+<meta property="og:site_name" content="Digital Services Master">
+<meta property="og:type" content={type}>
+<meta property="og:title" content={title}>
+<meta property="og:description" content={description}>
+<meta property="og:url" content={canonical}>
+<meta property="og:image" content={ogImage}>
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body data-logic={logic}>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="site" style={vars}>
+{chrome && <SiteHeader nav={nav} ctaHref={ctaHref} />}
+<main id="main">
+<slot />
+</main>
+{chrome && <SiteFooter ctaHref={ctaHref} />}
+</div>
+<script>
+  import { mount } from '../scripts/bindings';
+  mount(document.body.dataset.logic ?? 'base');
+</script>
+</body>
+</html>

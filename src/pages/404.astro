@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Page not found — Digital Services Master" description="The page you were looking for could not be found." noindex>
+<section style="background: var(--tint2); position: relative; overflow: hidden">
+<div aria-hidden="true" style="position: absolute; width: 420px; height: 420px; border-radius: 50%; background: #DFE7FF; right: -140px; top: -160px"></div>
+<div style="position: relative; max-width: 820px; margin: 0 auto; padding: clamp(72px, 10vw, 140px) clamp(16px, 4vw, 32px); display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px">
+<p style="font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue)">Error 404</p>
+<h1 style="font-size: clamp(38px, 4.4vw, 58px); line-height: 1.08; letter-spacing: -0.03em; font-weight: 800; color: var(--ink); text-wrap: balance">We couldn't find <span style="color: var(--blue)">that page</span></h1>
+<p style="font-size: clamp(17px, 1.4vw, 19px); max-width: 560px">The page may have moved or no longer exists. Try one of these instead, or book a free Clinic Growth Audit.</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 8px">
+<a class="btn btn-cta" href="/contact/">Book a Free Clinic Growth Audit</a>
+<a class="btn btn-ghost" href="/">Back to Home</a>
+</div>
+<nav aria-label="Popular pages" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 24px; margin-top: 16px; font-size: 15px; font-weight: 700">
+<a href="/services/">Services</a><a href="/portfolio/">Portfolio</a><a href="/pricing/">Pricing</a><a href="/blog/">Blog</a><a href="/faq/">FAQ</a>
+</nav>
+</div>
+</section>
+</BaseLayout>

@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Book a Free Clinic Growth Audit — Digital Services Master</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#fff}
+*{box-sizing:border-box}
+a{color:#3D66E4;text-decoration:none}a:hover{color:#1E42B1}
+h1,h2,h3,h4,p{margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font-weight:700;font-size:15px;line-height:1.2;text-align:center;transition:filter .2s,transform .2s,box-shadow .2s,background .2s,color .2s;cursor:pointer;border:0;font-family:inherit}
+.btn-cta{background:var(--accent);color:#131A33}.btn-cta:hover{color:#131A33;filter:brightness(.95);transform:translateY(-1px);box-shadow:0 12px 24px -12px rgba(19,26,51,.45)}
+.btn-ghost{background:#fff;color:#3D66E4;box-shadow:inset 0 0 0 1.5px #3D66E4}.btn-ghost:hover{background:#3D66E4;color:#fff}
+.navlink{color:#3A4262;font-weight:500;font-size:15px}.navlink:hover{color:#3D66E4}
+.card{transition:transform .25s,box-shadow .25s}.card:hover{transform:translateY(-4px);box-shadow:0 28px 48px -28px rgba(13,24,56,.35)}
+.foot a{color:#B9C3E3}.foot a:hover{color:#fff}
+.ph{background:#FFF4D6;color:#6E4B00;outline:1.5px dashed #D9A93C;outline-offset:-1.5px;border-radius:6px;padding:0 6px}
+.lbl{font-size:14px;font-weight:700;color:#131A33}
+.fld{width:100%;min-height:52px;border:1.5px solid #DCE2EF;border-radius:14px;padding:12px 16px;font:inherit;font-size:16px;color:#131A33;background:#fff;transition:border-color .2s,box-shadow .2s}
+.fld::placeholder{color:#7C839E}
+.fld:focus{outline:none;border-color:#3D66E4;box-shadow:0 0 0 4px rgba(61,102,228,.15)}
+.chip{all:unset;box-sizing:border-box;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;transition:background .2s,color .2s,box-shadow .2s}
+.chip:focus-visible{outline:2px solid #3D66E4;outline-offset:3px}
+@media (max-width:1080px){.hide-md{display:none !important}}
+@media (min-width:1081px){.show-md{display:none !important}}
+@media (max-width:640px){.hide-sm{display:none !important}}
+.dd{position:relative;display:flex;align-items:center}.dd::after{content:"";position:absolute;left:-12px;right:-12px;top:100%;height:20px}.dd-menu{position:absolute;top:calc(100% + 18px);left:-18px;min-width:280px;padding:10px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 28px 56px -24px rgba(13,24,56,.32);display:flex;flex-direction:column;gap:2px;opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .16s ease,transform .16s ease,visibility .16s;z-index:70}.dd:hover .dd-menu,.dd:focus-within .dd-menu{opacity:1;visibility:visible;transform:none}.dd:hover>.navlink svg,.dd:focus-within>.navlink svg{transform:rotate(180deg)}.dd>.navlink svg{transition:transform .16s ease}.dd-menu a{display:flex;flex-direction:column;gap:2px;padding:10px 14px;border-radius:12px;color:var(--ink);font-size:15px;font-weight:700}.dd-menu a span{font-size:13px;font-weight:500;color:var(--muted)}.dd-menu a:hover,.dd-menu a:focus-visible{background:var(--tint2);color:var(--blue)}
+</style>
+</helmet>
+<div style="--accent: {{accent}}; --ink: #131A33; --body: #4B5371; --muted: #646B88; --blue: #3D66E4; --blue-deep: #1E42B1; --navy: #0D1838; --tint: #EEF3FF; --tint2: #F6F8FE; --line: #E3E8F4; font-family: 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif; color: var(--body); font-size: 17px; line-height: 1.65; background: #fff">
+
+<!-- ============ HEADER (SiteHeader) ============ -->
+<header style="position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,0.95); border-bottom: 1px solid var(--line)">
+<div style="max-width: 1240px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 32px); height: 80px; display: flex; align-items: center; justify-content: space-between; gap: 24px">
+<a href="Main.dc.html" aria-label="Digital Services Master home" style="display: flex; align-items: center; gap: 12px">
+<img src="../images/dsm.png" alt="Dsm" style="display: block; height: 38px; width: auto">
+<span class="hide-sm" style="font-size: 12px; font-weight: 600; line-height: 1.25; color: var(--muted); border-left: 1px solid var(--line); padding-left: 12px">Digital<br>Services Master</span>
+</a>
+<nav aria-label="Main" class="hide-md" style="display: flex; align-items: center; gap: 28px">
+<a class="navlink" href="Main.dc.html">Home</a>
+<a class="navlink" href="About.dc.html">About Us</a>
+<div class="dd"><a class="navlink" href="Services.dc.html" style="display: inline-flex; align-items: center; gap: 4px">Services <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a><div class="dd-menu" role="menu" aria-label="Services"><a href="Service-WebDev.dc.html" role="menuitem">Web Development<span>Clinic websites that convert</span></a><a href="Service-SEO.dc.html" role="menuitem">SEO<span>Get found on Google and Maps</span></a><a href="Service-Ads.dc.html" role="menuitem">Paid Advertising<span>Google, Facebook &amp; Instagram ads</span></a></div></div>
+<div class="dd"><a class="navlink" href="Portfolio.dc.html" style="display: inline-flex; align-items: center; gap: 4px">Portfolio <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a><div class="dd-menu" role="menu" aria-label="Portfolio"><a href="Portfolio-Aesthetic.dc.html" role="menuitem">Aesthetic Clinic Websites<span>Cosmetic clinics &amp; med spas</span></a><a href="Portfolio-Dental.dc.html" role="menuitem">Dental Clinic Websites<span>Family &amp; cosmetic dentistry</span></a><a href="Portfolio-Business.dc.html" role="menuitem">Custom Websites<span>Businesses outside healthcare</span></a><a href="Portfolio-Ecommerce.dc.html" role="menuitem">E-commerce Websites<span>Online stores</span></a><a href="CaseStudies.dc.html" role="menuitem">Case Studies<span>Real results for dental clinics</span></a></div></div>
+<a class="navlink" href="Pricing.dc.html">Pricing</a>
+<a class="navlink" href="Blog.dc.html">Blog</a>
+<a class="navlink" href="Contact.dc.html" style="color: var(--blue); font-weight: 700">Contact</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 12px">
+<a class="btn btn-cta hide-sm" href="#audit-form" style="min-height: 48px; padding: 0 22px">Book a Free Clinic Growth Audit</a>
+<button class="show-md" aria-label="Open menu" aria-expanded="{{menuOpen}}" onClick="{{toggleMenu}}" style="width: 48px; height: 48px; border-radius: 14px; border: 1px solid var(--line); background: #fff; color: var(--ink); display: flex; align-items: center; justify-content: center; cursor: pointer"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+</div>
+</div>
+<sc-if value="{{menuOpen}}" hint-placeholder-val="{{ false }}"><nav aria-label="Mobile menu" style="position: absolute; top: 100%; left: 0; right: 0; z-index: 60; background: #fff; border-bottom: 1px solid var(--line); box-shadow: 0 24px 40px -24px rgba(13,24,56,0.35); padding: 8px clamp(16px, 4vw, 32px) 20px; display: flex; flex-direction: column; max-height: calc(100vh - 80px); overflow-y: auto"><a href="Main.dc.html" style="padding: 13px 4px; font-size: 17px; color: var(--ink); font-weight: 600; border-bottom: 1px solid var(--line)">Home</a><a href="About.dc.html" style="padding: 13px 4px; font-size: 17px; color: var(--ink); font-weight: 600; border-bottom: 1px solid var(--line)">About Us</a><a href="Services.dc.html" style="padding: 13px 4px; font-size: 17px; color: var(--ink); font-weight: 600; border-bottom: 1px solid var(--line)">Services</a><a href="Service-WebDev.dc.html" style="padding: 13px 4px; font-size: 15px; color: var(--muted); padding-left: 18px; font-weight: 600; border-bottom: 1px solid var(--line)">Web Development</a><a href="Service-SEO.dc.html" style="padding: 13px 4px; font-size: 15px; color: var(--muted); padding-left: 18px; font-weight: 600; border-bottom: 1px solid var(--line)">SEO</a><a href="Service-Ads.dc.html" style="padding: 13px 4px; font-size: 15px; color: var(--muted); padding-left: 18px; font-weight: 600; border-bottom: 1px solid var(--line)">Paid Advertising</a><a href="Portfolio.dc.html" style="padding: 13px 4px; font-size: 17px; color: var(--ink); font-weight: 600; border-bottom: 1px solid var(--line)">Portfolio</a><a href="Portfolio-Aesthetic.dc.html" style="padding: 13px 4px; font-size: 15px; color: var(--muted); padding-left: 18px; font-weight: 600; border-bottom: 1px solid var(--line)">Aesthetic Clinic Websites</a><a href="Portfolio-Dental.dc.html" style="padding: 13px 4px; font-size: 15px; color: var(--muted); padding-left: 18px; font-weight: 600; border-bottom: 1px solid var(--line)">Dental Clinic Websites</a><a href="Portfolio-Business.dc.html" style="padding: 13px 4px; font-size: 15px; color: var(--muted); padding-left: 18px; font-weight: 600; border-bottom: 1px solid var(--line)">Custom Websites</a><a href="Portfolio-Ecommerce.dc.html" style="padding: 13px 4px; font-size: 15px; color: var(--muted); padding-left: 18px; font-weight: 600; border-bottom: 1px solid var(--line)">E-commerce Websites</a><a href="CaseStudies.dc.html" style="padding: 13px 4px; font-size: 15px; color: var(--muted); padding-left: 18px; font-weight: 600; border-bottom: 1px solid var(--line)">Case Studies</a><a href="Pricing.dc.html" style="padding: 13px 4px; font-size: 17px; color: var(--ink); font-weight: 600; border-bottom: 1px solid var(--line)">Pricing</a><a href="Blog.dc.html" style="padding: 13px 4px; font-size: 17px; color: var(--ink); font-weight: 600; border-bottom: 1px solid var(--line)">Blog</a><a href="FAQ.dc.html" style="padding: 13px 4px; font-size: 17px; color: var(--ink); font-weight: 600; border-bottom: 1px solid var(--line)">FAQ</a><a href="Contact.dc.html" style="padding: 13px 4px; font-size: 17px; color: var(--ink); font-weight: 600; border-bottom: 1px solid var(--line)">Contact</a><a class="btn btn-cta" href="#audit-form" style="margin-top: 16px; width: 100%">Book a Free Clinic Growth Audit</a></nav></sc-if>
+</header>
+
+<!-- ============ AUDIT HERO + FORM (AuditForm) ============ -->
+<section style="background: var(--tint2); position: relative; overflow: hidden">
+<div aria-hidden="true" style="position: absolute; width: 520px; height: 520px; border-radius: 50%; background: #DFE7FF; right: -180px; top: -200px"></div>
+<div style="position: relative; max-width: 1240px; margin: 0 auto; padding: clamp(40px, 6vw, 72px) clamp(16px, 4vw, 32px) clamp(64px, 8vw, 104px); display: flex; flex-wrap: wrap; gap: clamp(40px, 5vw, 72px); align-items: flex-start">
+
+<!-- Left: offer -->
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<nav aria-label="Breadcrumb" style="display: flex; gap: 8px; font-size: 14px; font-weight: 600; color: var(--muted)"><a href="Main.dc.html" style="color: var(--muted)">Home</a><span aria-hidden="true">/</span><span style="color: var(--ink)">Contact</span></nav>
+<div style="display: flex; flex-direction: column; gap: 18px">
+<p style="font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue)">Free Clinic Growth Audit</p>
+<h1 style="font-size: clamp(36px, 4vw, 54px); line-height: 1.08; letter-spacing: -0.03em; font-weight: 800; color: var(--ink); text-wrap: balance">Find out what's standing between your clinic and <span style="color: var(--blue)">more bookings</span></h1>
+<p style="font-size: 18px; text-wrap: pretty">Tell us a little about your clinic. We'll review your website, Google visibility and ads, then walk you through what to fix first. No cost, no obligation.</p>
+</div>
+<div style="background: #fff; border: 1px solid var(--line); border-radius: 24px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
+<h2 style="font-size: 18px; font-weight: 800; color: var(--ink)">What your audit covers</h2>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; font-size: 16px; color: var(--ink); font-weight: 500">
+<li style="display: flex; gap: 12px; align-items: flex-start"><span style="width: 26px; height: 26px; border-radius: 50%; background: var(--tint); color: var(--blue); display: flex; align-items: center; justify-content: center; flex: none; margin-top: 1px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"></path></svg></span>Your website's speed, design and booking path</li>
+<li style="display: flex; gap: 12px; align-items: flex-start"><span style="width: 26px; height: 26px; border-radius: 50%; background: var(--tint); color: var(--blue); display: flex; align-items: center; justify-content: center; flex: none; margin-top: 1px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"></path></svg></span>Where you show up on Google for your key treatments</li>
+<li style="display: flex; gap: 12px; align-items: flex-start"><span style="width: 26px; height: 26px; border-radius: 50%; background: var(--tint); color: var(--blue); display: flex; align-items: center; justify-content: center; flex: none; margin-top: 1px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"></path></svg></span>How your current ads are performing, if you run any</li>
+<li style="display: flex; gap: 12px; align-items: flex-start"><span style="width: 26px; height: 26px; border-radius: 50%; background: var(--tint); color: var(--blue); display: flex; align-items: center; justify-content: center; flex: none; margin-top: 1px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"></path></svg></span>A clear, prioritised plan for more consultations</li>
+</ul>
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px">
+<h2 style="font-size: 18px; font-weight: 800; color: var(--ink)">What happens next</h2>
+<ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 12px">
+<li style="display: flex; flex-direction: column; gap: 8px; padding: 18px; border-radius: 18px; background: #fff; border: 1px solid var(--line)"><span style="font-size: 13px; font-weight: 800; color: var(--blue)">01</span><span style="font-size: 15px; font-weight: 700; color: var(--ink); line-height: 1.4">You send the form</span></li>
+<li style="display: flex; flex-direction: column; gap: 8px; padding: 18px; border-radius: 18px; background: #fff; border: 1px solid var(--line)"><span style="font-size: 13px; font-weight: 800; color: var(--blue)">02</span><span style="font-size: 15px; font-weight: 700; color: var(--ink); line-height: 1.4">We review your online presence</span></li>
+<li style="display: flex; flex-direction: column; gap: 8px; padding: 18px; border-radius: 18px; background: #fff; border: 1px solid var(--line)"><span style="font-size: 13px; font-weight: 800; color: var(--blue)">03</span><span style="font-size: 15px; font-weight: 700; color: var(--ink); line-height: 1.4">We walk you through the findings</span></li>
+</ol>
+</div>
+</div>
+
+<!-- Right: form card -->
+<div id="audit-form" style="flex: 1 1 480px; min-width: 0; background: #fff; border-radius: 32px; padding: clamp(24px, 3.5vw, 44px); box-shadow: 0 40px 80px -40px rgba(13,24,56,0.35); border: 1px solid var(--line)">
+<sc-if value="{{notSent}}" hint-placeholder-val="{{ true }}">
+<form style="display: flex; flex-direction: column; gap: 20px" aria-label="Book a Free Clinic Growth Audit">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="font-size: 26px; line-height: 1.2; font-weight: 800; color: var(--ink); letter-spacing: -0.02em">Request your free audit</h2>
+<p style="font-size: 15px; color: var(--muted)">Takes about 2 minutes. Fields marked * are required.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 16px">
+<label style="display: flex; flex-direction: column; gap: 8px"><span class="lbl">Full name *</span><input class="fld" type="text" name="name" autocomplete="name" placeholder="Your name"></label>
+<label style="display: flex; flex-direction: column; gap: 8px"><span class="lbl">Clinic name *</span><input class="fld" type="text" name="clinic" autocomplete="organization" placeholder="Your clinic"></label>
+<label style="display: flex; flex-direction: column; gap: 8px"><span class="lbl">Email *</span><input class="fld" type="email" name="email" autocomplete="email" placeholder="you@clinic.com"></label>
+<label style="display: flex; flex-direction: column; gap: 8px"><span class="lbl">Phone</span><input class="fld" type="tel" name="phone" autocomplete="tel" placeholder="Best number to reach you"></label>
+</div>
+<label style="display: flex; flex-direction: column; gap: 8px"><span class="lbl">Current website</span><input class="fld" type="url" name="website" placeholder="https://"></label>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 16px">
+<label style="grid-column: 1 / -1; display: flex; flex-direction: column; gap: 8px"><span class="lbl">Type of business *</span>
+<select class="fld" name="type" style="appearance: none; background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23646B88' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E&quot;); background-repeat: no-repeat; background-position: right 16px center; padding-right: 44px">
+<option>Aesthetic clinic</option>
+<option>Med spa</option>
+<option>Dental clinic</option>
+<option>Other business</option>
+</select></label>
+<fieldset style="border: 0; margin: 0; padding: 0; grid-column: 1 / -1; min-width: 0; display: flex; flex-direction: column; gap: 8px"><legend class="lbl" style="padding: 0; margin-bottom: 8px">Country *</legend>
+<div style="display: flex; gap: 6px; padding: 4px; background: var(--tint2); border: 1.5px solid #DCE2EF; border-radius: 14px">
+<button type="button" class="chip" aria-pressed="{{cPH}}" onClick="{{setPH}}" style="flex: 1 1 0; min-width: 0; padding: 0 8px; justify-content: center; border-radius: 10px; background: {{bgPH}}; color: {{fgPH}}; box-shadow: {{shPH}}">Philippines</button>
+<button type="button" class="chip" aria-pressed="{{cAU}}" onClick="{{setAU}}" style="flex: 1 1 0; min-width: 0; padding: 0 8px; justify-content: center; border-radius: 10px; background: {{bgAU}}; color: {{fgAU}}; box-shadow: {{shAU}}">Australia</button>
+<button type="button" class="chip" aria-pressed="{{cOT}}" onClick="{{setOT}}" style="flex: 1 1 0; min-width: 0; padding: 0 8px; justify-content: center; border-radius: 10px; background: {{bgOT}}; color: {{fgOT}}; box-shadow: {{shOT}}">Other</button>
+</div>
+</fieldset>
+</div>
+<fieldset style="border: 0; margin: 0; padding: 0"><legend class="lbl" style="padding: 0; margin-bottom: 10px">What are you interested in?</legend>
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<button type="button" class="chip" aria-pressed="{{sWeb}}" onClick="{{tWeb}}" style="background: {{bgWeb}}; color: {{fgWeb}}; box-shadow: inset 0 0 0 1.5px {{bdWeb}}">Web Development</button>
+<button type="button" class="chip" aria-pressed="{{sSeo}}" onClick="{{tSeo}}" style="background: {{bgSeo}}; color: {{fgSeo}}; box-shadow: inset 0 0 0 1.5px {{bdSeo}}">SEO</button>
+<button type="button" class="chip" aria-pressed="{{sAds}}" onClick="{{tAds}}" style="background: {{bgAds}}; color: {{fgAds}}; box-shadow: inset 0 0 0 1.5px {{bdAds}}">Paid Advertising</button>
+<button type="button" class="chip" aria-pressed="{{sNs}}" onClick="{{tNs}}" style="background: {{bgNs}}; color: {{fgNs}}; box-shadow: inset 0 0 0 1.5px {{bdNs}}">Not sure yet</button>
+</div>
+</fieldset>
+<label style="display: flex; flex-direction: column; gap: 8px"><span class="lbl">What's your biggest goal right now?</span><textarea class="fld" name="goal" rows="4" placeholder="e.g. more consultation requests for fillers, or a new website that matches our brand" style="resize: vertical; min-height: 120px"></textarea></label>
+<button type="button" class="btn btn-cta" onClick="{{submit}}" style="width: 100%; min-height: 58px; font-size: 16px">Book a Free Clinic Growth Audit <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button>
+<p style="font-size: 13.5px; color: var(--muted); text-align: center">We'll be in touch by email to book your audit call. Your details stay private. See our <a href="Privacy.dc.html">Privacy Policy</a>.</p>
+</form>
+</sc-if>
+<sc-if value="{{sent}}" hint-placeholder-val="{{ false }}">
+<div style="min-height: 520px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 18px; padding: 24px">
+<span style="width: 72px; height: 72px; border-radius: 50%; background: var(--tint); color: var(--blue); display: flex; align-items: center; justify-content: center"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"></path></svg></span>
+<h2 style="font-size: 28px; font-weight: 800; color: var(--ink); letter-spacing: -0.02em">Thanks, your audit request is in</h2>
+<p style="max-width: 400px">We'll review your clinic's online presence and get in touch to book your walkthrough.</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 8px">
+<a class="btn btn-ghost" href="Portfolio.dc.html">View Our Work</a>
+<button type="button" class="btn" onClick="{{reset}}" style="background: transparent; color: var(--muted)">Send another request</button>
+</div>
+</div>
+</sc-if>
+</div>
+</div>
+</section>
+
+<!-- ============ CONTACT OPTIONS (ContactCards) ============ -->
+<section style="background: #fff">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(64px, 8vw, 104px) clamp(16px, 4vw, 32px); display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px">
+<p style="font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue)">Get in Touch</p>
+<h2 style="font-size: clamp(30px, 3.2vw, 44px); line-height: 1.15; letter-spacing: -0.025em; font-weight: 800; color: var(--ink)">Prefer to talk first?</h2>
+<p>Reach our team directly. We work with clinics across the Philippines and Australia.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 20px">
+<a class="card" href="mailto:digitalservicesmaster@gmail.com" style="background: var(--tint2); border: 1px solid var(--line); border-radius: 24px; padding: 30px; display: flex; flex-direction: column; gap: 12px; color: inherit"><span style="width: 52px; height: 52px; border-radius: 16px; background: #fff; color: var(--blue); display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg></span><span style="font-size: 18px; font-weight: 700; color: var(--ink)">Email us</span><span style="font-size: 16px">digitalservicesmaster@<wbr>gmail.com</span></a>
+<a class="card" href="tel:+639176777717" style="background: var(--tint2); border: 1px solid var(--line); border-radius: 24px; padding: 30px; display: flex; flex-direction: column; gap: 12px; color: inherit"><span style="width: 52px; height: 52px; border-radius: 16px; background: #fff; color: var(--blue); display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"></path></svg></span><span style="font-size: 18px; font-weight: 700; color: var(--ink)">Call us</span><span style="font-size: 16px">0917 677 7717</span></a>
+<div style="background: var(--tint2); border: 1px solid var(--line); border-radius: 24px; padding: 30px; display: flex; flex-direction: column; gap: 12px"><span style="width: 52px; height: 52px; border-radius: 16px; background: #fff; color: var(--blue); display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12Z"></path><circle cx="12" cy="9" r="2.5"></circle></svg></span><span style="font-size: 18px; font-weight: 700; color: var(--ink)">Where we work</span><span style="font-size: 16px">Philippines &amp; Australia</span></div>
+<div style="background: var(--tint2); border: 1px solid var(--line); border-radius: 24px; padding: 30px; display: flex; flex-direction: column; gap: 12px"><span style="width: 52px; height: 52px; border-radius: 16px; background: #fff; color: var(--blue); display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.8A8 8 0 1 1 21 12Z"></path></svg></span><span style="font-size: 18px; font-weight: 700; color: var(--ink)">Follow us</span><span style="display: flex; gap: 16px; font-size: 16px; font-weight: 700"><a href="https://www.facebook.com/share/1A71p5ifma/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/digitalservicesmaster?psln=OXo4MHlrems4cnhm" target="_blank" rel="noopener">Instagram</a></span></div>
+</div>
+</div>
+</section>
+
+<!-- ============ FOOTER (SiteFooter) ============ -->
+<footer class="foot" style="background: var(--navy); color: #B9C3E3; font-size: 15px">
+<div style="max-width: 1240px; margin: 0 auto; padding: 80px clamp(16px, 4vw, 32px) 32px; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-wrap: wrap; gap: 48px">
+<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 18px; min-width: 0; max-width: 400px">
+<a href="Main.dc.html" aria-label="Digital Services Master home" style="display: flex; align-items: center; gap: 12px"><img src="../images/dsm-light.png" alt="Dsm" style="display: block; height: 38px; width: auto"><span style="font-size: 12px; font-weight: 600; line-height: 1.25; color: #B9C3E3; border-left: 1px solid rgba(255,255,255,0.2); padding-left: 12px">Digital<br>Services Master</span></a>
+<p style="line-height: 1.7">Web development and digital marketing for aesthetic and dental clinics in the Philippines and Australia. From Garage to the Top: guided by values, driven by results.</p>
+<div style="display: flex; gap: 12px">
+<a href="https://www.facebook.com/share/1A71p5ifma/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook" style="width: 44px; height: 44px; border-radius: 50%; background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V10H6.5v3.5H9V21h3.5v-7.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15Z"></path></svg></a>
+<a href="https://www.instagram.com/digitalservicesmaster?psln=OXo4MHlrems4cnhm" target="_blank" rel="noopener" aria-label="Instagram" style="width: 44px; height: 44px; border-radius: 50%; background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor"></circle></svg></a>
+</div>
+</div>
+<div style="flex: 2 1 520px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 32px">
+<nav aria-label="Company" style="display: flex; flex-direction: column; gap: 12px"><p style="font-weight: 700; color: #fff; margin-bottom: 4px">Company</p><a href="About.dc.html">About Us</a><a href="Pricing.dc.html">Pricing</a><a href="FAQ.dc.html">FAQ</a><a href="Contact.dc.html">Contact</a><a href="#audit-form">Book an Audit</a></nav>
+<nav aria-label="Services" style="display: flex; flex-direction: column; gap: 12px"><p style="font-weight: 700; color: #fff; margin-bottom: 4px">Services</p><a href="Service-WebDev.dc.html">Web Development</a><a href="Service-SEO.dc.html">SEO</a><a href="Service-Ads.dc.html">Paid Advertising</a></nav>
+<nav aria-label="Portfolio" style="display: flex; flex-direction: column; gap: 12px"><p style="font-weight: 700; color: #fff; margin-bottom: 4px">Portfolio</p><a href="Portfolio-Aesthetic.dc.html">Aesthetic Clinics</a><a href="Portfolio-Dental.dc.html">Dental Clinics</a><a href="Portfolio-Business.dc.html">Business Websites</a><a href="Portfolio-Ecommerce.dc.html">E-commerce</a><a href="CaseStudies.dc.html">Case Studies</a></nav>
+<nav aria-label="Resources" style="display: flex; flex-direction: column; gap: 12px"><p style="font-weight: 700; color: #fff; margin-bottom: 4px">Resources</p><a href="Blog.dc.html">Blog</a><a href="Privacy.dc.html">Privacy Policy</a><a href="Terms.dc.html">Terms of Service</a></nav>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px 40px; padding: 24px 0; border-top: 1px solid rgba(255,255,255,0.12); border-bottom: 1px solid rgba(255,255,255,0.12)">
+<span style="display: inline-flex; align-items: center; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8BE9F0" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg><a href="mailto:digitalservicesmaster@gmail.com" style="color: inherit">digitalservicesmaster@gmail.com</a></span>
+<span style="display: inline-flex; align-items: center; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8BE9F0" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"></path></svg><a href="tel:+639176777717" style="color: inherit">0917 677 7717</a></span>
+<span style="display: inline-flex; align-items: center; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8BE9F0" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12Z"></path><circle cx="12" cy="9" r="2.5"></circle></svg>Philippines &amp; Australia</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px">
+<span>© 2026 Digital Services Master. All rights reserved.</span>
+<span style="display: flex; gap: 24px"><a href="Privacy.dc.html">Privacy</a><a href="Terms.dc.html">Terms</a></span>
+</div>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#FB9A3E","options":["#FB9A3E","#FFB547","#00C5D3"]},"$preview":{"width":1440,"height":2500}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { country: 'PH', web: true, seo: false, ads: false, ns: false, sent: false };
+  }
+  _rv() {
+    const s = this.state;
+    const v = { accent: this.props.accent ?? '#FB9A3E', sent: s.sent, notSent: !s.sent };
+    ['PH', 'AU', 'OT'].forEach((c) => {
+      const on = s.country === c;
+      v['c' + c] = on;
+      v['bg' + c] = on ? '#FFFFFF' : 'transparent';
+      v['fg' + c] = on ? '#131A33' : '#646B88';
+      v['sh' + c] = on ? '0 2px 8px rgba(13,24,56,0.12)' : 'none';
+      v['set' + c] = () => this.setState({ country: c });
+    });
+    const chips = { Web: 'web', Seo: 'seo', Ads: 'ads', Ns: 'ns' };
+    Object.keys(chips).forEach((k) => {
+      const key = chips[k];
+      const on = !!s[key];
+      v['s' + k] = on;
+      v['bg' + k] = on ? '#3D66E4' : '#FFFFFF';
+      v['fg' + k] = on ? '#FFFFFF' : '#3A4262';
+      v['bd' + k] = on ? '#3D66E4' : '#DCE2EF';
+      v['t' + k] = () => this.setState({ [key]: !this.state[key] });
+    });
+    v.submit = () => this.setState({ sent: true });
+    v.reset = () => this.setState({ sent: false });
+    return v;
+  }
+  renderVals() {
+    const v = this._rv() || {};
+    const st = this.state || {};
+    v.menuOpen = !!st.menuOpen;
+    v.toggleMenu = () => this.setState({ menuOpen: !st.menuOpen });
+    v.shareFb = () => { try { window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank', 'noopener'); } catch (e) {} };
+    v.copyLink = () => { try { navigator.clipboard && navigator.clipboard.writeText(window.location.href); } catch (e) {} this.setState({ copied: true }); setTimeout(() => this.setState({ copied: false }), 1600); };
+    v.copyLabel = st.copied ? 'Link copied' : 'Copy link';
+    return v;
+  }
+}
+</script>
+</body>
+</html>

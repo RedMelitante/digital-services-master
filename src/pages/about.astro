@@ -1,0 +1,126 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/pages/about.css';
+---
+<BaseLayout title={'About Us — Digital Services Master'} description={'We\'re a web development and digital marketing agency for aesthetic and dental clinics in the Philippines and Australia. Guided by values, driven by results…'} nav="about" logic="base">
+<!-- ============ ABOUT HERO ============ -->
+<section style="background: var(--tint2); overflow: hidden">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(40px, 6vw, 80px) clamp(16px, 4vw, 32px) clamp(64px, 8vw, 104px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(480px, 100%), 1fr)); gap: clamp(40px, 5vw, 72px); align-items: center">
+<div style="display: flex; flex-direction: column; gap: 24px; align-items: flex-start">
+<nav aria-label="Breadcrumb" style="display: flex; gap: 8px; font-size: 14px; font-weight: 600; color: var(--muted)"><a href="/" style="color: var(--muted)">Home</a><span aria-hidden="true">/</span><span style="color: var(--ink)">About Us</span></nav>
+<p class="eb">About Us</p>
+<h1 style="font-size: clamp(40px, 4.8vw, 64px); line-height: 1.05; letter-spacing: -0.03em; font-weight: 800; color: var(--ink)">From Garage <span style="color: var(--blue)">to the Top</span></h1>
+<p style="font-size: clamp(17px, 1.4vw, 19px); max-width: 540px; text-wrap: pretty">We're a web development and digital marketing agency for aesthetic and dental clinics in the Philippines and Australia. Guided by values, driven by results, and focused on one thing: helping clinics get more bookings.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<a class="btn btn-cta" href="/contact/">Book a Free Clinic Growth Audit</a>
+<a class="btn btn-ghost" href="/portfolio/">View Our Work</a>
+</div>
+</div>
+<div style="position: relative; min-height: 460px">
+<!-- Client work mosaic (replaces team photo) -->
+<div style="position: absolute; inset: 0 0 40px 60px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 12px">
+<img src="/images/cla-photo.webp" alt="Coastal Luxe Aesthetics clinic" style="grid-row: span 2; width: 100%; height: 100%; object-fit: cover; border-radius: 24px; background: #F3ECE4" decoding="async">
+<img src="/images/above-photo.webp" alt="Above Dental Care dentists" style="width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 24px; background: #E3F5F6" decoding="async">
+<img src="/images/venus-photo.webp" alt="Venus Medispa" style="width: 100%; height: 100%; object-fit: cover; border-radius: 24px; background: #EEEAF7" decoding="async">
+<img src="/images/sia-photo.webp" alt="Patient at Sia-Tankiko Dental Clinic" style="width: 100%; height: 100%; object-fit: cover; border-radius: 24px; background: #E6F4EC" decoding="async">
+<img src="/images/mil-photo.webp" alt="Millennium Smiles Dental Center reception" style="width: 100%; height: 100%; object-fit: cover; border-radius: 24px; background: #E8F1FB" decoding="async">
+</div>
+<span style="position: absolute; top: 16px; right: 16px; display: inline-flex; align-items: center; gap: 8px; background: #fff; border-radius: 999px; padding: 8px 14px; font-size: 13px; font-weight: 700; color: var(--ink); box-shadow: 0 12px 24px -12px rgba(13,24,56,0.35)"><span style="width: 8px; height: 8px; border-radius: 50%; background: var(--blue)"></span>Clinics we've helped grow</span>
+<div style="position: absolute; left: 0; bottom: 0; background: #fff; border-radius: 24px; padding: 24px 28px; box-shadow: 0 30px 50px -24px rgba(13,24,56,0.35); border: 1px solid var(--line); display: flex; gap: 28px">
+<div><p style="font-size: 40px; line-height: 1; font-weight: 800; color: var(--blue); letter-spacing: -0.03em">10+</p><p style="font-size: 14px; font-weight: 600; color: var(--ink); margin-top: 6px">Years of Experience</p></div>
+<div style="width: 1px; background: var(--line)"></div>
+<div><p style="font-size: 40px; line-height: 1; font-weight: 800; color: var(--blue); letter-spacing: -0.03em">PH &amp; AU</p><p style="font-size: 14px; font-weight: 600; color: var(--ink); margin-top: 6px">Clinics we serve</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ OUR PURPOSE ============ -->
+<section style="background: #fff">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(72px, 9vw, 120px) clamp(16px, 4vw, 32px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr)); gap: clamp(40px, 6vw, 88px); align-items: start">
+<div style="display: flex; flex-direction: column; gap: 18px">
+<p class="eb">Our purpose</p>
+<h2 class="h2">The “Master” in Digital Services Master</h2>
+<p>The ‘Master’ in Digital Services Master serves as a constant reminder of our ultimate authority: Jesus Christ. We see our craft as more than a service; it is an act of worship. We strive for excellence to glorify Him and serve our clients with integrity.</p>
+<blockquote style="margin: 8px 0 0; padding: 24px 28px; background: var(--tint2); border-radius: 20px; font-size: 18px; line-height: 1.6; color: var(--ink); font-weight: 500">“And whatever you do, whether in word or deed, do it all in the name of the Lord Jesus, giving thanks to God the Father through him.”<span style="display: block; margin-top: 10px; font-size: 14px; font-weight: 700; color: var(--muted)">Colossians 3:17 (NIV)</span></blockquote>
+<p style="font-weight: 600; color: var(--ink)">Our commitment to you: no matter your background or beliefs, we are here to serve you with honesty, humility, and care.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 18px">
+<p style="font-weight: 700; color: var(--ink); font-size: 18px">Four goals guide everything we do</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 16px">
+<div style="border: 1px solid var(--line); border-radius: 24px; padding: 28px; display: flex; flex-direction: column; gap: 12px"><span style="font-size: 14px; font-weight: 800; color: var(--blue)">01</span><h3 style="font-size: 19px; font-weight: 700; color: var(--ink); line-height: 1.35">To honor God in all we do</h3></div>
+<div style="background: var(--blue); border-radius: 24px; padding: 28px; display: flex; flex-direction: column; gap: 12px"><span style="font-size: 14px; font-weight: 800; color: #D7E0FF">02</span><h3 style="font-size: 19px; font-weight: 700; color: #fff; line-height: 1.35">To help people develop and grow</h3></div>
+<div style="border: 1px solid var(--line); border-radius: 24px; padding: 28px; display: flex; flex-direction: column; gap: 12px"><span style="font-size: 14px; font-weight: 800; color: var(--blue)">03</span><h3 style="font-size: 19px; font-weight: 700; color: var(--ink); line-height: 1.35">To pursue excellence in every project</h3></div>
+<div style="border: 1px solid var(--line); border-radius: 24px; padding: 28px; display: flex; flex-direction: column; gap: 12px"><span style="font-size: 14px; font-weight: 800; color: var(--blue)">04</span><h3 style="font-size: 19px; font-weight: 700; color: var(--ink); line-height: 1.35">To grow profitably to further our mission</h3></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ WHO WE SERVE ============ -->
+<section style="background: var(--tint)">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(72px, 9vw, 120px) clamp(16px, 4vw, 32px); display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px; max-width: 720px; margin: 0 auto">
+<p class="eb">Who we serve</p>
+<h2 class="h2">We understand clinics, and how to speak to their patients online</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 24px">
+<div style="background: #fff; border-radius: 28px; padding: 36px; display: flex; flex-direction: column; gap: 14px"><span style="width: 56px; height: 56px; border-radius: 16px; background: #F6E9E4; color: #9A5A47; display: flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8Z"></path></svg></span><h3 style="font-size: 22px; font-weight: 700; color: var(--ink); margin-top: 6px">Aesthetic clinics in Australia</h3><p style="font-size: 16px">Beautiful, high-converting websites and targeted advertising that help aesthetic clinics grow.</p></div>
+<div style="background: #fff; border-radius: 28px; padding: 36px; display: flex; flex-direction: column; gap: 14px"><span style="width: 56px; height: 56px; border-radius: 16px; background: #E3F5F6; color: #0E7C86; display: flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3c-2.5 0-4 2-4 4.5 0 3 1.5 4.5 2 7 .5 3 1 6.5 2.5 6.5S9.5 17 12 17s3 4 4.5 4 2-3.5 2.5-6.5c.5-2.5 2-4 2-7C21 5 19.5 3 17 3c-2 0-3 1-5 1S9 3 7 3Z"></path></svg></span><h3 style="font-size: 22px; font-weight: 700; color: var(--ink); margin-top: 6px">Dental clinics in the Philippines</h3><p style="font-size: 16px">A stronger digital presence, better Google rankings and more local patients.</p></div>
+<div style="background: #fff; border-radius: 28px; padding: 36px; display: flex; flex-direction: column; gap: 14px"><span style="width: 56px; height: 56px; border-radius: 16px; background: #EEF0F5; color: #3A4262; display: flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M3 9h18M8 13h4M8 16h8"></path></svg></span><h3 style="font-size: 22px; font-weight: 700; color: var(--ink); margin-top: 6px">Growing businesses</h3><p style="font-size: 16px">Custom websites for flooring, prefab structures, interior design, events and food brands.</p></div>
+</div>
+</div>
+</section>
+
+<!-- ============ STATS (StatsBand) ============ -->
+<section style="background: var(--blue-deep); color: #fff; position: relative; overflow: hidden">
+<div aria-hidden="true" style="position: absolute; width: 520px; height: 520px; border-radius: 50%; background: rgba(255,255,255,0.05); left: -160px; top: -200px"></div>
+<div style="position: relative; max-width: 1240px; margin: 0 auto; padding: clamp(56px, 7vw, 88px) clamp(16px, 4vw, 32px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 16px">
+<div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.14); border-radius: 24px; padding: 28px"><p style="font-size: 48px; line-height: 1; font-weight: 800; letter-spacing: -0.03em">10+</p><p style="margin-top: 10px; font-size: 15px; font-weight: 600; color: #D7E0FF">Years of Experience</p></div>
+<div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.14); border-radius: 24px; padding: 28px"><p style="font-size: 48px; line-height: 1; font-weight: 800; letter-spacing: -0.03em">2</p><p style="margin-top: 10px; font-size: 15px; font-weight: 600; color: #D7E0FF">Countries served: Philippines &amp; Australia</p></div>
+<div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.14); border-radius: 24px; padding: 28px"><p style="font-size: 48px; line-height: 1; font-weight: 800; letter-spacing: -0.03em">20+</p><p style="margin-top: 10px; font-size: 15px; font-weight: 600; color: #D7E0FF">Websites in our portfolio</p></div>
+<div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.14); border-radius: 24px; padding: 28px"><p style="font-size: 48px; line-height: 1; font-weight: 800; letter-spacing: -0.03em">3</p><p style="margin-top: 10px; font-size: 15px; font-weight: 600; color: #D7E0FF">Services under one roof: Web, SEO &amp; Ads</p></div>
+</div>
+</section>
+
+<!-- ============ WHAT WE DO ============ -->
+<section style="background: #fff">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(72px, 9vw, 120px) clamp(16px, 4vw, 32px); display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 640px"><p class="eb">What we do</p><h2 class="h2">Website, Google visibility and ads, working together</h2></div>
+<a class="btn btn-ghost" href="/services/">All Services</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 24px">
+<a class="card" href="/services/web-development/" style="background: var(--tint2); border: 1px solid var(--line); border-radius: 28px; padding: 32px; display: flex; flex-direction: column; gap: 12px; color: inherit"><h3 style="font-size: 21px; font-weight: 700; color: var(--ink)">Web Development</h3><p style="font-size: 16px">Keyword research, custom design and fast, SEO-optimised builds that help you rank and convert.</p><span class="tlink" style="margin-top: auto; padding-top: 8px">Learn more →</span></a>
+<a class="card" href="/services/seo/" style="background: var(--tint2); border: 1px solid var(--line); border-radius: 28px; padding: 32px; display: flex; flex-direction: column; gap: 12px; color: inherit"><h3 style="font-size: 21px; font-weight: 700; color: var(--ink)">SEO</h3><p style="font-size: 16px">Content and structure optimised so more people find your clinic on Google.</p><span class="tlink" style="margin-top: auto; padding-top: 8px">Learn more →</span></a>
+<a class="card" href="/services/paid-advertising/" style="background: var(--tint2); border: 1px solid var(--line); border-radius: 28px; padding: 32px; display: flex; flex-direction: column; gap: 12px; color: inherit"><h3 style="font-size: 21px; font-weight: 700; color: var(--ink)">Paid Advertising</h3><p style="font-size: 16px">Data-driven Google, Facebook and Instagram campaigns built to attract leads and make every dollar count.</p><span class="tlink" style="margin-top: auto; padding-top: 8px">Learn more →</span></a>
+</div>
+</div>
+</section>
+
+<!-- ============ TESTIMONIALS (TestimonialCard) ============ -->
+<section style="background: var(--tint)">
+<div style="max-width: 1240px; margin: 0 auto; padding: clamp(72px, 9vw, 120px) clamp(16px, 4vw, 32px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 24px">
+<figure style="margin: 0; background: #fff; border-radius: 28px; padding: 40px; display: flex; flex-direction: column; gap: 24px">
+<svg width="40" height="32" viewBox="0 0 40 32" aria-hidden="true"><path d="M0 32V19C0 8.5 5.5 2 16 0l2 5c-6 1.6-8.6 5-9 10h8v17H0Zm22 0V19c0-10.5 5.5-17 16-19l2 5c-6 1.6-8.6 5-9 10h8v17H22Z" fill="#3D66E4"></path></svg>
+<blockquote style="margin: 0; font-size: 19px; line-height: 1.6; color: var(--ink); font-weight: 500">Red's company in general is awesome and I absolutely love working with them. His output is excellent and I have gained clients from his work.</blockquote>
+<figcaption style="display: flex; align-items: center; gap: 14px; margin-top: auto; padding-top: 22px; border-top: 1px solid var(--line)"><img src="/images/av-aubry.webp" alt="Aubry Ann" style="width: 52px; height: 52px; border-radius: 50%; object-fit: cover; flex: none" loading="lazy" decoding="async"><span style="display: flex; flex-direction: column; line-height: 1.35"><span style="font-weight: 700; color: var(--ink)">Aubry Ann</span><span style="font-size: 15px; color: var(--muted)">CEO, Coastal Luxe Aesthetics</span></span></figcaption>
+</figure>
+<figure style="margin: 0; background: #fff; border-radius: 28px; padding: 40px; display: flex; flex-direction: column; gap: 24px">
+<svg width="40" height="32" viewBox="0 0 40 32" aria-hidden="true"><path d="M0 32V19C0 8.5 5.5 2 16 0l2 5c-6 1.6-8.6 5-9 10h8v17H0Zm22 0V19c0-10.5 5.5-17 16-19l2 5c-6 1.6-8.6 5-9 10h8v17H22Z" fill="#3D66E4"></path></svg>
+<blockquote style="margin: 0; font-size: 19px; line-height: 1.6; color: var(--ink); font-weight: 500">With their expertise and focused approach, they excel in understanding and meeting our unique needs.</blockquote>
+<figcaption style="display: flex; align-items: center; gap: 14px; margin-top: auto; padding-top: 22px; border-top: 1px solid var(--line)"><img src="/images/av-dennis.webp" alt="Dennis" style="width: 52px; height: 52px; border-radius: 50%; object-fit: cover; flex: none" loading="lazy" decoding="async"><span style="display: flex; flex-direction: column; line-height: 1.35"><span style="font-weight: 700; color: var(--ink)">Dennis</span><span style="font-size: 15px; color: var(--muted)">Co-Founder, A+ Health Services</span></span></figcaption>
+</figure>
+</div>
+</section>
+
+<!-- ============ CTA BAND (CtaBand) ============ -->
+<section style="background: #fff; padding: clamp(72px, 9vw, 120px) clamp(16px, 4vw, 32px)">
+<div style="max-width: 1240px; margin: 0 auto; background: var(--navy); border-radius: 36px; padding: clamp(48px, 7vw, 88px) clamp(24px, 6vw, 80px); position: relative; overflow: hidden; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px">
+<div aria-hidden="true" style="position: absolute; width: 420px; height: 420px; border-radius: 50%; background: #1E42B1; right: -120px; top: -180px; opacity: 0.7"></div>
+<div aria-hidden="true" style="position: absolute; width: 120px; height: 120px; border-radius: 50%; background: #00C5D3; right: 22%; bottom: -60px; opacity: 0.35"></div>
+<div style="position: relative; display: flex; flex-direction: column; gap: 16px; max-width: 620px"><h2 style="font-size: clamp(32px, 3.6vw, 50px); line-height: 1.1; letter-spacing: -0.03em; font-weight: 800; color: #fff">Let's build something meaningful</h2><p style="color: #C9D3F2; font-size: 18px">If you're ready to take your clinic to the next level, we're here to help, with purpose, creativity and care.</p></div>
+<div style="position: relative; display: flex; flex-wrap: wrap; gap: 14px"><a class="btn btn-cta" href="/contact/">Book a Free Clinic Growth Audit</a><a class="btn btn-light" href="/contact/">Get in Touch</a></div>
+</div>
+</section>
+</BaseLayout>

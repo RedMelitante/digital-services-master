@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/pages/legal.css';
+---
+<BaseLayout title={'Privacy Policy — Digital Services Master'} description={'How Digital Services Master collects, uses and protects the information you share with us through our website and services.'} logic="base">
+<!-- ============ LEGAL HERO (LegalHero) ============ -->
+<section style="background: var(--tint2); border-bottom: 1px solid var(--line)">
+<div style="max-width: 1100px; margin: 0 auto; padding: clamp(40px, 6vw, 72px) clamp(16px, 4vw, 32px); display: flex; flex-direction: column; gap: 16px">
+<nav aria-label="Breadcrumb" style="display: flex; gap: 8px; font-size: 14px; font-weight: 600; color: var(--muted)"><a href="/" style="color: var(--muted)">Home</a><span aria-hidden="true">/</span><span style="color: var(--ink)">Privacy Policy</span></nav>
+<h1 style="font-size: clamp(36px, 4vw, 52px); line-height: 1.1; letter-spacing: -0.03em; font-weight: 800; color: var(--ink)">Privacy Policy</h1>
+<p style="font-size: 15px; font-weight: 600; color: var(--muted); display: flex; align-items: center; gap: 10px">Status: <span style="font-size: 12px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: #6E4B00; background: #FFF4D6; border-radius: 999px; padding: 4px 12px">Draft</span></p>
+<p style="font-size: 14px; color: #6E4B00; background: #FFF4D6; border-radius: 12px; padding: 12px 16px; max-width: 720px">Draft for review. Have this policy checked against the Philippine Data Privacy Act and the Australian Privacy Act before publishing.</p>
+</div>
+</section>
+
+<!-- ============ LEGAL BODY (LegalLayout) ============ -->
+<section style="background: #fff">
+<div style="max-width: 1100px; margin: 0 auto; padding: clamp(48px, 6vw, 72px) clamp(16px, 4vw, 32px) clamp(72px, 9vw, 112px); display: flex; flex-wrap: wrap; gap: clamp(32px, 5vw, 64px); align-items: flex-start">
+<aside style="flex: 1 1 220px; max-width: 260px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+<p style="font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink)">On this page</p>
+<nav class="toc" aria-label="Sections">
+<a href="#p1">Who we are</a><a href="#p2">Information we collect</a><a href="#p3">How we use it</a><a href="#p4">Cookies &amp; analytics</a><a href="#p5">Sharing your information</a><a href="#p6">Storage &amp; security</a><a href="#p7">Your rights</a><a href="#p8">Changes to this policy</a><a href="#p9">Contact us</a>
+</nav>
+</aside>
+<article class="legal" style="flex: 999 1 560px; min-width: 0; max-width: 740px">
+<p style="font-size: 19px; color: var(--ink)">Your privacy matters to us. This policy explains what information Digital Services Master collects through this website, how we use it, and the choices you have.</p>
+<h2 id="p1">1. Who we are</h2>
+<p>Digital Services Master (“we”, “us”, “our”) is a web development and digital marketing agency serving clinics and businesses in the Philippines and Australia.</p>
+<h2 id="p2">2. Information we collect</h2>
+<p>We collect information you choose to give us, for example when you book a Clinic Growth Audit or contact us:</p>
+<ul><li>Your name, clinic or business name, email address and phone number</li><li>Your website address and the services you're interested in</li><li>Anything you tell us in a message</li></ul>
+<p>We also collect some information automatically when you visit, such as your browser type, device, pages viewed and approximate location, through cookies and analytics tools.</p>
+<h2 id="p3">3. How we use your information</h2>
+<ul><li>To respond to your enquiry and prepare your audit</li><li>To provide and manage the services you engage us for</li><li>To improve our website and understand how visitors use it</li><li>To send you updates or marketing, only where you've agreed to receive them</li></ul>
+<h2 id="p4">4. Cookies &amp; analytics</h2>
+<p>We may use cookies and analytics tools to understand how our site is used. You can block or delete cookies in your browser settings, although some parts of the site may not work as intended.</p>
+<h2 id="p5">5. Sharing your information</h2>
+<p>We don't sell your personal information. We share it only with trusted providers who help us run our website and business (such as hosting, email and analytics services), or where we're required to by law.</p>
+<h2 id="p6">6. Storage &amp; security</h2>
+<p>We take reasonable steps to protect your information from loss, misuse and unauthorised access, and we keep it only for as long as we need it for the purposes above or as required by law.</p>
+<h2 id="p7">7. Your rights</h2>
+<p>You can ask to access, correct or delete the personal information we hold about you, or withdraw your consent to marketing at any time. Depending on where you live, you may have further rights under the Data Privacy Act of 2012 (Philippines) or the Privacy Act 1988 (Australia).</p>
+<h2 id="p8">8. Changes to this policy</h2>
+<p>We may update this policy from time to time. The latest version will always be on this page, with the date it was last updated.</p>
+<h2 id="p9">9. Contact us</h2>
+<p>For privacy questions or requests, email us at <a href="mailto:digitalservicesmaster@gmail.com" style="color: inherit">digitalservicesmaster@gmail.com</a>.</p>
+<div style="margin-top: 40px; padding: 28px; border-radius: 24px; background: var(--tint2); border: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px"><p style="margin: 0; font-weight: 700; color: var(--ink)">Questions about how we handle your data?</p><a class="btn btn-ghost" href="/contact/">Get in Touch</a></div>
+</article>
+</div>
+</section>
+</BaseLayout>

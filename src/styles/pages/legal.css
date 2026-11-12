@@ -1,0 +1,10 @@
+/* Page styles from the design file(s): Privacy.dc.html, Terms.dc.html */
+.btn-cta:hover{color:#131A33;filter:brightness(.95)}
+.ph{background:#FFF4D6;color:#6E4B00;outline:1.5px dashed #D9A93C;outline-offset:-1.5px;border-radius:6px;padding:0 6px}
+.toc a{display:block;padding:7px 0 7px 14px;border-left:2px solid #E3E8F4;color:#4B5371;font-size:14px;font-weight:600;line-height:1.4}
+.toc a:hover{color:#3D66E4;border-left-color:#3D66E4}
+.legal{font-size:17px;line-height:1.8;color:#3A4262}
+.legal h2{font-size:24px;line-height:1.3;letter-spacing:-.01em;font-weight:800;color:#131A33;margin:44px 0 12px;scroll-margin-top:100px}
+.legal p{margin:0 0 16px}
+.legal ul{margin:0 0 16px;padding-left:22px}
+.legal li{margin-bottom:8px}

@@ -1,0 +1,71 @@
+---
+/**
+ * SiteHeader (design component). Sticky header with hover dropdowns on
+ * desktop and a toggled menu on tablet/phone.
+ */
+export type NavKey = 'home' | 'about' | 'services' | 'portfolio' | 'pricing' | 'blog' | 'contact';
+
+interface Props {
+  /** Top-level item to highlight. */
+  nav?: NavKey | null;
+  /** Target of the header's audit buttons (the Contact page links to its own form). */
+  ctaHref?: string;
+}
+
+const { nav = null, ctaHref = '/contact/' } = Astro.props;
+
+const ACTIVE = 'color: var(--blue); font-weight: 700';
+const DD_LINK = 'display: inline-flex; align-items: center; gap: 4px';
+const linkStyle = (key: NavKey) => (nav === key ? ACTIVE : undefined);
+const ddStyle = (key: NavKey) => (nav === key ? `${DD_LINK}; ${ACTIVE}` : DD_LINK);
+
+const services = [
+  { href: '/services/web-development/', label: 'Web Development', sub: 'Clinic websites that convert' },
+  { href: '/services/seo/', label: 'SEO', sub: 'Get found on Google and Maps' },
+  { href: '/services/paid-advertising/', label: 'Paid Advertising', sub: 'Google, Facebook & Instagram ads' },
+];
+const portfolio = [
+  { href: '/portfolio/aesthetic-clinic-websites/', label: 'Aesthetic Clinic Websites', sub: 'Cosmetic clinics & med spas' },
+  { href: '/portfolio/dental-clinic-websites/', label: 'Dental Clinic Websites', sub: 'Family & cosmetic dentistry' },
+  { href: '/portfolio/custom-websites/', label: 'Custom Websites', sub: 'Businesses outside healthcare' },
+  { href: '/portfolio/ecommerce-websites/', label: 'E-commerce Websites', sub: 'Online stores' },
+  { href: '/case-studies/', label: 'Case Studies', sub: 'Real results for dental clinics' },
+];
+
+const M_TOP = 'padding: 13px 4px; font-size: 17px; color: var(--ink); font-weight: 600; border-bottom: 1px solid var(--line)';
+const M_SUB = 'padding: 13px 4px; font-size: 15px; color: var(--muted); padding-left: 18px; font-weight: 600; border-bottom: 1px solid var(--line)';
+const mobile: [href: string, label: string, sub?: boolean][] = [
+  ['/', 'Home'],
+  ['/about/', 'About Us'],
+  ['/services/', 'Services'],
+  ...services.map((s): [string, string, boolean] => [s.href, s.label, true]),
+  ['/portfolio/', 'Portfolio'],
+  ...portfolio.map((p): [string, string, boolean] => [p.href, p.label, true]),
+  ['/pricing/', 'Pricing'],
+  ['/blog/', 'Blog'],
+  ['/faq/', 'FAQ'],
+  ['/contact/', 'Contact'],
+];
+---
+<header style="position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,0.95); border-bottom: 1px solid var(--line)">
+<div style="max-width: 1240px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 32px); height: 80px; display: flex; align-items: center; justify-content: space-between; gap: 24px">
+<a href="/" aria-label="Digital Services Master home" style="display: flex; align-items: center; gap: 12px">
+<img src="/images/dsm.png" alt="Dsm" style="display: block; height: 38px; width: auto" decoding="async">
+<span class="hide-sm" style="font-size: 12px; font-weight: 600; line-height: 1.25; color: var(--muted); border-left: 1px solid var(--line); padding-left: 12px">Digital<br>Services Master</span>
+</a>
+<nav aria-label="Main" class="hide-md" style="display: flex; align-items: center; gap: 28px">
+<a class="navlink" href="/" style={linkStyle('home')}>Home</a>
+<a class="navlink" href="/about/" style={linkStyle('about')}>About Us</a>
+<div class="dd"><a class="navlink" href="/services/" style={ddStyle('services')}>Services <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a><div class="dd-menu" role="menu" aria-label="Services">{services.map((s) => <a href={s.href} role="menuitem">{s.label}<span>{s.sub}</span></a>)}</div></div>
+<div class="dd"><a class="navlink" href="/portfolio/" style={ddStyle('portfolio')}>Portfolio <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a><div class="dd-menu" role="menu" aria-label="Portfolio">{portfolio.map((p) => <a href={p.href} role="menuitem">{p.label}<span>{p.sub}</span></a>)}</div></div>
+<a class="navlink" href="/pricing/" style={linkStyle('pricing')}>Pricing</a>
+<a class="navlink" href="/blog/" style={linkStyle('blog')}>Blog</a>
+<a class="navlink" href="/contact/" style={linkStyle('contact')}>Contact</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 12px">
+<a class="btn btn-cta hide-sm" href={ctaHref} style="min-height: 48px; padding: 0 22px">Book a Free Clinic Growth Audit</a>
+<button data-b class="show-md" aria-label="Open menu" aria-expanded="false" data-b-aria-expanded="{{menuOpen}}" data-b-click="toggleMenu" style="width: 48px; height: 48px; border-radius: 14px; border: 1px solid var(--line); background: #fff; color: var(--ink); display: flex; align-items: center; justify-content: center; cursor: pointer"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+</div>
+</div>
+<nav data-b data-b-if="menuOpen" hidden aria-label="Mobile menu" style="position: absolute; top: 100%; left: 0; right: 0; z-index: 60; background: #fff; border-bottom: 1px solid var(--line); box-shadow: 0 24px 40px -24px rgba(13,24,56,0.35); padding: 8px clamp(16px, 4vw, 32px) 20px; display: flex; flex-direction: column; max-height: calc(100vh - 80px); overflow-y: auto">{mobile.map(([href, label, sub]) => <a href={href} style={sub ? M_SUB : M_TOP}>{label}</a>)}<a class="btn btn-cta" href={ctaHref} style="margin-top: 16px; width: 100%">Book a Free Clinic Growth Audit</a></nav>
+</header>

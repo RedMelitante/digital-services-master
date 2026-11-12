@@ -1,0 +1,11 @@
+/* Page styles from the design file(s): Main.dc.html, Service-WebDev.dc.html */
+.btn-cta:hover{color:#131A33;filter:brightness(.95);transform:translateY(-1px);box-shadow:0 12px 24px -12px rgba(19,26,51,.45)}
+.btn-light{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.5)}
+.btn-light:hover{background:#fff;color:#0D1838}
+.card{transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 28px 48px -28px rgba(13,24,56,.35)}
+.tlink{color:#3D66E4;font-weight:700;font-size:15px;display:inline-flex;align-items:center;gap:8px}
+.tlink:hover{color:#1E42B1}
+.ph{background:#FFF4D6;color:#6E4B00;outline:1.5px dashed #D9A93C;outline-offset:-1.5px;border-radius:6px;padding:0 6px}
+.faq-q{all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 0;cursor:pointer;font-weight:700;font-size:18px;color:#131A33;min-height:44px}
+.faq-q:focus-visible{outline:2px solid #3D66E4;outline-offset:4px;border-radius:8px}
