@@ -39,6 +39,7 @@ function doPost(e) {
 
     // Spam trap: the hidden "company_website" field is left empty by people.
     if (data.company_website) {
+      console.log('Spam trap filled: request dropped, no email sent.');
       return json_({ ok: true });
     }
 
@@ -51,6 +52,7 @@ function doPost(e) {
       return !clean[k];
     });
     if (missing.length) {
+      console.log('Rejected: missing ' + missing.join(', '));
       return json_({ ok: false, error: 'Missing required fields: ' + missing.join(', ') });
     }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(clean.email)) {
@@ -67,6 +69,11 @@ function doPost(e) {
     };
     if (BCC) message.bcc = BCC;
     MailApp.sendEmail(message);
+    // Visible only to the script owner, under Executions in the Apps Script editor.
+    console.log(
+      'Audit email sent. To: ' + message.to + ' | BCC: ' + (message.bcc || 'none') +
+        ' | Remaining daily email quota: ' + MailApp.getRemainingDailyQuota()
+    );
 
     return json_({ ok: true });
   } catch (err) {
