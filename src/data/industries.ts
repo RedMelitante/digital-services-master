@@ -36,9 +36,9 @@ export interface Industry {
 }
 
 const clinicWork: IndustryWork[] = [
-  { name: 'Coastal Luxe Aesthetics', img: '/images/cla-photo.webp', type: 'Aesthetic Clinic', bg: '#F3ECE4', ink: '#5B463A', href: '/case-studies/coastal-luxe-aesthetics/' },
-  { name: 'Above Dental Care', img: '/images/above-photo.webp', type: 'Dental Clinic', bg: '#E3F5F6', ink: '#0E6F78', href: '/portfolio/above-dental-care/' },
-  { name: 'Sia-Tankiko Dental Clinic', img: '/images/sia-photo.webp', type: 'Dental Clinic', bg: '#E6F4EC', ink: '#1F6B48', href: '/portfolio/sia-tankiko-dental-clinic/' }
+  { name: 'Coastal Luxe Aesthetics', img: '/images/cla-photo.webp', type: 'Aesthetic Clinic', bg: '#F3ECE4', ink: '#5B463A', href: '/cosmetic-clinic-website-design-cla/' },
+  { name: 'Above Dental Care', img: '/images/above-photo.webp', type: 'Dental Clinic', bg: '#E3F5F6', ink: '#0E6F78', href: '/dental-clinic-website-design-above-dental-care/' },
+  { name: 'Sia-Tankiko Dental Clinic', img: '/images/sia-photo.webp', type: 'Dental Clinic', bg: '#E6F4EC', ink: '#1F6B48', href: '/dental-care-website-design-sia-tankiko/' }
 ];
 
 export const INDUSTRIES: Record<'cosmetic' | 'dental' | 'eye' | 'veterinary', Industry> = {
@@ -58,9 +58,9 @@ export const INDUSTRIES: Record<'cosmetic' | 'dental' | 'eye' | 'veterinary', In
     keywords: ['Botox near me', 'Dermal fillers', 'Lip filler', 'Anti-wrinkle injections', 'Skin needling', 'Laser hair removal'],
     workTitle: 'Cosmetic clinic websites we’ve built',
     work: [
-      { name: 'Coastal Luxe Aesthetics', img: '/images/cla-photo.webp', type: 'Aesthetic Clinic', bg: '#F3ECE4', ink: '#5B463A', href: '/case-studies/coastal-luxe-aesthetics/' },
-      { name: 'La Maison Beaute', img: '/images/lamaison-photo.webp', type: 'Aesthetic Clinic', bg: '#F7E8EC', ink: '#7A3349', href: '/portfolio/' },
-      { name: 'Venus Medispa', img: '/images/venus-photo.webp', type: 'Med Spa', bg: '#EEEAF7', ink: '#4B3A7A', href: '/portfolio/' }
+      { name: 'Coastal Luxe Aesthetics', img: '/images/cla-photo.webp', type: 'Aesthetic Clinic', bg: '#F3ECE4', ink: '#5B463A', href: '/cosmetic-clinic-website-design-cla/' },
+      { name: 'La Maison Beaute', img: '/images/lamaison-photo.webp', type: 'Aesthetic Clinic', bg: '#F7E8EC', ink: '#7A3349', href: '/web-design-portfolio/' },
+      { name: 'Venus Medispa', img: '/images/venus-photo.webp', type: 'Med Spa', bg: '#EEEAF7', ink: '#4B3A7A', href: '/web-design-portfolio/' }
     ]
   },
   dental: {
@@ -79,9 +79,9 @@ export const INDUSTRIES: Record<'cosmetic' | 'dental' | 'eye' | 'veterinary', In
     keywords: ['Dentist near me', 'Dental implants', 'Veneers', 'Teeth whitening', 'Braces', 'Emergency dentist'],
     workTitle: 'Dental clinic websites we’ve built',
     work: [
-      { name: 'Above Dental Care', img: '/images/above-photo.webp', type: 'Dental Clinic', bg: '#E3F5F6', ink: '#0E6F78', href: '/portfolio/above-dental-care/' },
-      { name: 'Sia-Tankiko Dental Clinic', img: '/images/sia-photo.webp', type: 'Dental Clinic', bg: '#E6F4EC', ink: '#1F6B48', href: '/portfolio/sia-tankiko-dental-clinic/' },
-      { name: 'Millennium Smiles', img: '/images/mil-photo.webp', type: 'Dental Center', bg: '#E8F1FB', ink: '#1F4F8A', href: '/portfolio/millennium-smiles-dental-center/' }
+      { name: 'Above Dental Care', img: '/images/above-photo.webp', type: 'Dental Clinic', bg: '#E3F5F6', ink: '#0E6F78', href: '/dental-clinic-website-design-above-dental-care/' },
+      { name: 'Sia-Tankiko Dental Clinic', img: '/images/sia-photo.webp', type: 'Dental Clinic', bg: '#E6F4EC', ink: '#1F6B48', href: '/dental-care-website-design-sia-tankiko/' },
+      { name: 'Millennium Smiles', img: '/images/mil-photo.webp', type: 'Dental Center', bg: '#E8F1FB', ink: '#1F4F8A', href: '/dentistry-website-development-millennium/' }
     ]
   },
   eye: {
@@ -122,8 +122,8 @@ export const INDUSTRIES: Record<'cosmetic' | 'dental' | 'eye' | 'veterinary', In
 
 /** URL slug for each industry (titles and descriptions are in src/data/seo.ts). */
 export const INDUSTRY_PAGES = [
-  { slug: 'cosmetic-clinics', key: 'cosmetic' },
-  { slug: 'dental-clinics', key: 'dental' },
-  { slug: 'eye-clinics', key: 'eye' },
-  { slug: 'veterinary-clinics', key: 'veterinary' },
+  { slug: 'cosmetic-clinic', key: 'cosmetic' },
+  { slug: 'dental-clinic-digital-services', key: 'dental' },
+  { slug: 'eye-clinic', key: 'eye' },
+  { slug: 'veterinary-clinic', key: 'veterinary' },
 ] as const;

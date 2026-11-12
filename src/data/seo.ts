@@ -1,9 +1,9 @@
 /**
  * Page metadata (title, description, social image, dates, authors, breadcrumbs),
- * keyed by URL path. Titles, descriptions, social images and dates were copied
- * from the old WordPress site (digitalservicesmaster.com, crawled 12 Nov 2026);
- * `oldUrl` records the page each entry came from. Breadcrumbs follow the
- * visible breadcrumb on each new page.
+ * keyed by URL path. Pages keep the URLs of the old WordPress site
+ * (digitalservicesmaster.com), and their titles, descriptions, social images and
+ * dates were copied from it (crawled 12 Nov 2026). Breadcrumbs follow the
+ * visible breadcrumb on each page.
  *
  * BaseLayout reads this file; an entry here overrides the title and
  * description passed to the layout.
@@ -25,7 +25,6 @@ export interface SeoArticle {
 }
 
 export interface PageSeo {
-  oldUrl?: string;
   title?: string;
   description?: string;
   ogTitle?: string;
@@ -54,7 +53,6 @@ export const AUTHORS: Record<string, { id: string; image: string }> = {
 
 export const PAGE_SEO: Record<string, PageSeo> = {
   "/": {
-    "oldUrl": "/",
     "title": "Trusted Digital Marketing for Aesthetic & Dental Clinic | AU & PH",
     "description": "We provide digital marketing for aesthetic clinics in Australia and dental clinics in the Philippines—web design, SEO, and ads by a PH-based team.",
     "ogType": "website",
@@ -73,8 +71,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ]
     ]
   },
-  "/about/": {
-    "oldUrl": "/about-us-page-new/",
+  "/about-us-page-new/": {
     "title": "Healthcare Digital Marketing Agency for Clinics That Care, AU & PH",
     "description": "Digital Services Master is a healthcare digital marketing agency helping dental, aesthetic and wellness clinics grow with SEO, web design and Google Ads.",
     "ogType": "article",
@@ -102,8 +99,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ]
     ]
   },
-  "/blog/": {
-    "oldUrl": "/website-development-insights-blog/",
+  "/website-development-insights-blog/": {
     "title": "Website Development Insights | Tips & Strategies",
     "description": "Get insights on website development, design trends, and digital strategies to boost your online presence. Stay ahead with our latest tips.",
     "ogType": "article",
@@ -125,8 +121,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ]
     ]
   },
-  "/blog/7-essential-principles-of-effective-ui-designs/": {
-    "oldUrl": "/blogs/7-essential-principles-of-effective-ui-designs/",
+  "/blogs/7-essential-principles-of-effective-ui-designs/": {
     "title": "UI Design Principles: 7 Rules for Better Interfaces",
     "description": "Discover how to enhance your UI designs with these essential principles, ensuring your interfaces are both functional and visually appealing.",
     "ogType": "article",
@@ -163,15 +158,14 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Blog",
-        "/blog/"
+        "/website-development-insights-blog/"
       ],
       [
         "7 Essential Principles of Effective UI Designs"
       ]
     ]
   },
-  "/blog/aesthetic-clinic-website-design/": {
-    "oldUrl": "/blogs/aesthetic-clinic-website-design-what-actually-converts-visitors-into-consultations/",
+  "/blogs/aesthetic-clinic-website-design-what-actually-converts-visitors-into-consultations/": {
     "title": "Aesthetic Clinic Website Design That Converts",
     "description": "What aesthetic clinic website design gets right: booking flows that convert, mobile speed benchmarks, compliant before-and-after galleries, and homepages.",
     "ogType": "article",
@@ -208,15 +202,14 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Blog",
-        "/blog/"
+        "/website-development-insights-blog/"
       ],
       [
         "Aesthetic Clinic Website Design: What Actually Converts Visitors Into Consultations"
       ]
     ]
   },
-  "/blog/content-ideas-for-dental-marketing/": {
-    "oldUrl": "/blogs/digital-marketing-for-dental-clinics/",
+  "/blogs/digital-marketing-for-dental-clinics/": {
     "title": "Digital Marketing for Dental Clinics: Top Content Ideas",
     "description": "Discover top content ideas for Digital Marketing for Dental Clinics, from patient stories to oral health tips, to boost engagement and trust.",
     "ogType": "article",
@@ -253,15 +246,14 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Blog",
-        "/blog/"
+        "/website-development-insights-blog/"
       ],
       [
         "Content Ideas for Dental Marketing"
       ]
     ]
   },
-  "/blog/digital-marketing-for-aesthetic-clinics/": {
-    "oldUrl": "/blogs/digital-marketing-for-aesthetic-clinics-the-complete-guide-to-bookings-local-seo-compliant-ads/",
+  "/blogs/digital-marketing-for-aesthetic-clinics-the-complete-guide-to-bookings-local-seo-compliant-ads/": {
     "title": "Digital Marketing for Aesthetic Clinics: Full Guide",
     "description": "A complete guide to digital marketing for aesthetic clinics – channel mix, a 4-phase growth framework, ad compliance risks, and the ROI metrics to track.",
     "ogType": "article",
@@ -298,15 +290,14 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Blog",
-        "/blog/"
+        "/website-development-insights-blog/"
       ],
       [
         "Digital Marketing for Aesthetic Clinics: The Complete Guide to Bookings, Local SEO & Compliant Ads"
       ]
     ]
   },
-  "/blog/from-offline-to-online/": {
-    "oldUrl": "/blogs/from-offline-to-online-your-guide-to-building-a-winning-website-in-the-philippines/",
+  "/blogs/from-offline-to-online-your-guide-to-building-a-winning-website-in-the-philippines/": {
     "title": "Building a Winning Website in the Philippines: Full Guide",
     "description": "Boost your Philippine business online! Learn how to build a winning website with expert Website Development Philippines services.",
     "ogType": "article",
@@ -343,15 +334,14 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Blog",
-        "/blog/"
+        "/website-development-insights-blog/"
       ],
       [
         "From Offline to Online: Your Guide to Building a Winning Website Development in the Philippines"
       ]
     ]
   },
-  "/blog/google-ads-for-aesthetic-clinics/": {
-    "oldUrl": "/blogs/google-ads-for-aesthetic-clinics-complete-campaign-setup-guide/",
+  "/blogs/google-ads-for-aesthetic-clinics-complete-campaign-setup-guide/": {
     "title": "Google Ads for Aesthetic Clinics: Setup Guide",
     "description": "Google Ads for aesthetic clinics: campaign structure by treatment, the negative keyword lists you need, conversion tracking, and budget benchmarks.",
     "ogType": "article",
@@ -388,15 +378,14 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Blog",
-        "/blog/"
+        "/website-development-insights-blog/"
       ],
       [
         "Google Ads for Aesthetic Clinics: Complete Campaign Setup Guide"
       ]
     ]
   },
-  "/blog/how-to-choose-the-right-seo-expert-in-the-philippines/": {
-    "oldUrl": "/blogs/how-to-choose-the-right-seo-expert-in-the-philippines/",
+  "/blogs/how-to-choose-the-right-seo-expert-in-the-philippines/": {
     "title": "How to Choose the Right SEO Expert in the Philippines",
     "description": "Find the best SEO expert in the Philippines. Discover key factors to boost your website’s rankings and online presence",
     "ogType": "article",
@@ -433,15 +422,14 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Blog",
-        "/blog/"
+        "/website-development-insights-blog/"
       ],
       [
         "How to Choose the Right SEO Expert in the Philippines"
       ]
     ]
   },
-  "/blog/local-seo-google-maps-playbook-for-aesthetic-clinics/": {
-    "oldUrl": "/blogs/local-seo-google-maps-playbook-for-aesthetic-clinics/",
+  "/blogs/local-seo-google-maps-playbook-for-aesthetic-clinics/": {
     "title": "Local SEO & Google Maps Playbook for Clinics",
     "description": "Local SEO for aesthetic clinics: the three ranking factors Google uses, a Business Profile checklist, NAP consistency, and a review acquisition system.",
     "ogType": "article",
@@ -478,15 +466,14 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Blog",
-        "/blog/"
+        "/website-development-insights-blog/"
       ],
       [
         "Local SEO & Google Maps Playbook for Aesthetic Clinics"
       ]
     ]
   },
-  "/blog/responsive-web-design-and-development/": {
-    "oldUrl": "/blogs/responsive-web-design-and-development/",
+  "/blogs/responsive-web-design-and-development/": {
     "title": "Web Design and Development: Mobile-First",
     "description": "Is your website losing mobile customers? Our web design and development services create responsive, user-friendly sites.",
     "ogType": "article",
@@ -523,15 +510,14 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Blog",
-        "/blog/"
+        "/website-development-insights-blog/"
       ],
       [
         "Responsive Web Design and Development: Reaching All Devices"
       ]
     ]
   },
-  "/blog/seo-best-practices-for-2024/": {
-    "oldUrl": "/blogs/seo-best-practices-for-2024-focus-on-the-latest-strategies-and-techniques/",
+  "/blogs/seo-best-practices-for-2024-focus-on-the-latest-strategies-and-techniques/": {
     "title": "SEO Best Practices 2024: A Guide to Staying Ahead of the Curve",
     "description": "Master the latest SEO best practices for 2024 and boost your website's visibility and traffic. Learn about user intent, content quality, etc.",
     "ogType": "article",
@@ -568,15 +554,14 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Blog",
-        "/blog/"
+        "/website-development-insights-blog/"
       ],
       [
         "SEO Best Practices for 2024: Focus on the Latest Strategies and Techniques"
       ]
     ]
   },
-  "/blog/the-future-of-digital-services/": {
-    "oldUrl": "/blogs/the-future-of-digital-services-embracing-digital-transformation/",
+  "/blogs/the-future-of-digital-services-embracing-digital-transformation/": {
     "title": "Digital Transformation: The Future of Digital Services",
     "description": "Discover how digital transformation is reshaping the future of digital services. Learn about AI, automation, data, and more!",
     "ogType": "article",
@@ -613,15 +598,14 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Blog",
-        "/blog/"
+        "/website-development-insights-blog/"
       ],
       [
         "The Future of Digital Services: Embracing Digital Transformation"
       ]
     ]
   },
-  "/blog/trending-dental-marketing-topics/": {
-    "oldUrl": "/blogs/trending-dental-marketing-topics/",
+  "/blogs/trending-dental-marketing-topics/": {
     "title": "Trending in Dental Marketing: AI, Local SEO & Innovation",
     "description": "Discover top dental marketing trends, from AI and local SEO to high-tech innovations, transforming patient engagement and clinic growth.",
     "ogType": "article",
@@ -658,15 +642,14 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Blog",
-        "/blog/"
+        "/website-development-insights-blog/"
       ],
       [
         "Trending Dental Marketing Topics"
       ]
     ]
   },
-  "/blog/web-design-agency/": {
-    "oldUrl": "/blogs/web-design-agency/",
+  "/blogs/web-design-agency/": {
     "title": "How a Web Design Agency Can Revitalize Your Online Presence",
     "description": "Learn how partnering with a professional web design agency can improve your website’s functionality, and user experience to stand out online.",
     "ogType": "article",
@@ -703,15 +686,14 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Blog",
-        "/blog/"
+        "/website-development-insights-blog/"
       ],
       [
         "Transform Your Website: How a Web Design Agency Can Revitalize Your Online Presence"
       ]
     ]
   },
-  "/blog/why-website-developers-prioritize-responsive-design/": {
-    "oldUrl": "/blogs/why-website-developers-prioritize-responsive-design/",
+  "/blogs/why-website-developers-prioritize-responsive-design/": {
     "title": "Why Website Developers Prioritize Responsive Design",
     "description": "Discover why website developers prioritize responsive design for better UX, SEO, and seamless performance on all devices.",
     "ogType": "article",
@@ -748,7 +730,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Blog",
-        "/blog/"
+        "/website-development-insights-blog/"
       ],
       [
         "Why Website Developers Prioritize Responsive Design"
@@ -763,15 +745,14 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Portfolio",
-        "/portfolio/"
+        "/web-design-portfolio/"
       ],
       [
         "Case Studies"
       ]
     ]
   },
-  "/case-studies/coastal-luxe-aesthetics/": {
-    "oldUrl": "/cosmetic-clinic-website-design-cla/",
+  "/cosmetic-clinic-website-design-cla/": {
     "title": "Cosmetic Clinic Website Design | CLA Luxury Beauty",
     "description": "See how our cosmetic clinic website design and SEO helped Coastal Luxe Aesthetics attract more clients and boost brand reputation.",
     "ogType": "article",
@@ -796,15 +777,14 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Portfolio",
-        "/portfolio/"
+        "/web-design-portfolio/"
       ],
       [
         "Coastal Luxe Aesthetics"
       ]
     ]
   },
-  "/contact/": {
-    "oldUrl": "/contact-website-development-services/",
+  "/contact-website-development-services/": {
     "title": "Contact Us | Website Development Services for Your Business",
     "description": "Contact us for website development services and let’s build a high-performing site that boosts your online presence and results.",
     "ogType": "article",
@@ -826,8 +806,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ]
     ]
   },
-  "/faq/": {
-    "oldUrl": "/faqs-website-development/",
+  "/faqs-website-development/": {
     "title": "Website Development FAQs | Answers to Your Questions",
     "description": "Find answers to common questions about website development. Learn about design, functionality, SEO, and more to build a successful website.",
     "ogType": "article",
@@ -855,8 +834,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ]
     ]
   },
-  "/industries/cosmetic-clinics/": {
-    "oldUrl": "/clinic-website/cosmetic-clinic/",
+  "/clinic-website/cosmetic-clinic/": {
     "title": "Cosmetic Clinic Website Design & Marketing",
     "description": "Cosmetic clinic website design and marketing that builds brand authority, lifts your local rankings, and turns enquiries into booked consultations.",
     "ogType": "article",
@@ -884,8 +862,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ]
     ]
   },
-  "/industries/dental-clinics/": {
-    "oldUrl": "/clinic-website/dental-clinic-digital-services/",
+  "/clinic-website/dental-clinic-digital-services/": {
     "title": "Dental Clinic Website Design & Digital Services",
     "description": "Dental clinic website design and digital marketing – attract new patients, showcase treatments, and fill your calendar with online booking that works.",
     "ogType": "article",
@@ -913,8 +890,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ]
     ]
   },
-  "/industries/eye-clinics/": {
-    "oldUrl": "/clinic-website/eye-clinic/",
+  "/clinic-website/eye-clinic/": {
     "title": "Eye Clinic Website Design & Digital Marketing",
     "description": "Eye clinic website design and digital marketing: clear treatment pages, strong local search visibility, and a booking flow patients actually finish.",
     "ogType": "article",
@@ -942,8 +918,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ]
     ]
   },
-  "/industries/veterinary-clinics/": {
-    "oldUrl": "/clinic-website/veterinary-clinic/",
+  "/clinic-website/veterinary-clinic/": {
     "title": "Veterinary Clinic Website Design & Marketing",
     "description": "Veterinary clinic website design and marketing to reach local pet owners, showcase your services, and make booking an appointment simple on any device.",
     "ogType": "article",
@@ -971,8 +946,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ]
     ]
   },
-  "/portfolio/": {
-    "oldUrl": "/web-design-portfolio/",
+  "/web-design-portfolio/": {
     "title": "Web Design Philippines | Our Portfolio of Stunning Websites",
     "description": "Explore our portfolio of web design projects in the Philippines. See how we craft stunning, user-friendly, and SEO-optimised websites.",
     "ogType": "article",
@@ -1000,8 +974,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ]
     ]
   },
-  "/portfolio/above-dental-care/": {
-    "oldUrl": "/dental-clinic-website-design-above-dental-care/",
+  "/dental-clinic-website-design-above-dental-care/": {
     "title": "Dental Clinic Website Design & SEO Services | Above Dental Care",
     "description": "See how our dental clinic website design and SEO boosted Above Dental Care’s new patient inquiries by 80%.",
     "ogType": "article",
@@ -1026,15 +999,14 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Portfolio",
-        "/portfolio/"
+        "/web-design-portfolio/"
       ],
       [
         "Above Dental Care"
       ]
     ]
   },
-  "/portfolio/aesthetic-clinic-websites/": {
-    "oldUrl": "/aesthetics-clinic-website-design/",
+  "/aesthetics-clinic-website-design/": {
     "title": "Aesthetic Clinic Website Design That Drives Bookings",
     "description": "Get a stunning Aesthetic Clinic website design. We create SEO-optimized, user-friendly sites that drive bookings and boost online presence.",
     "ogType": "article",
@@ -1059,15 +1031,14 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Portfolio",
-        "/portfolio/"
+        "/web-design-portfolio/"
       ],
       [
         "Aesthetic Clinics"
       ]
     ]
   },
-  "/portfolio/aplus-health-services/": {
-    "oldUrl": "/ndis-provider-website-design-aplus-health-services/",
+  "/ndis-provider-website-design-aplus-health-services/": {
     "title": "NDIS Provider Website Design & SEO | Aplus Health Services",
     "description": "See how our NDIS provider website design and SEO increased Aplus Health Services’ client inquiries by 70% and improved accessibility.",
     "ogType": "article",
@@ -1092,19 +1063,18 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Portfolio",
-        "/portfolio/"
+        "/web-design-portfolio/"
       ],
       [
         "Business & Service Websites",
-        "/portfolio/custom-websites/"
+        "/business-website-design/"
       ],
       [
         "Aplus Health Services"
       ]
     ]
   },
-  "/portfolio/camco-prefabricated-structures/": {
-    "oldUrl": "/prefab-website-design-camco/",
+  "/prefab-website-design-camco/": {
     "title": "Prefab Website Design for More Project Inquiries | Camco",
     "description": "See how our prefab website design and SEO boosted Camco Prefabricated Structures' project inquiries by 55% and enhanced industry credibility.",
     "ogType": "article",
@@ -1129,19 +1099,18 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Portfolio",
-        "/portfolio/"
+        "/web-design-portfolio/"
       ],
       [
         "Business & Service Websites",
-        "/portfolio/custom-websites/"
+        "/business-website-design/"
       ],
       [
         "CAMCO Prefabricated Structures"
       ]
     ]
   },
-  "/portfolio/constantin-floors/": {
-    "oldUrl": "/flooring-website-design-constantin-floors/",
+  "/flooring-website-design-constantin-floors/": {
     "title": "Flooring Website Design Case Study | Constantin Floors",
     "description": "See how our flooring website design and SEO boosted Constantin Floors' client inquiries by 60% and online presence.",
     "ogType": "article",
@@ -1166,19 +1135,18 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Portfolio",
-        "/portfolio/"
+        "/web-design-portfolio/"
       ],
       [
         "Business & Service Websites",
-        "/portfolio/custom-websites/"
+        "/business-website-design/"
       ],
       [
         "Constantin Floors"
       ]
     ]
   },
-  "/portfolio/custom-websites/": {
-    "oldUrl": "/business-website-design/",
+  "/business-website-design/": {
     "title": "Business Website Design | Helping Businesses Succeed Online",
     "description": "Enhance your business’s online presence with a professional business website design that drives conversions and builds credibility.",
     "ogType": "article",
@@ -1203,15 +1171,14 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Portfolio",
-        "/portfolio/"
+        "/web-design-portfolio/"
       ],
       [
         "Business & Service Websites"
       ]
     ]
   },
-  "/portfolio/dental-clinic-websites/": {
-    "oldUrl": "/dental-clinic-websites/",
+  "/dental-clinic-websites/": {
     "title": "Dental Clinic Websites | Professional Design to Attract Patients",
     "description": "Enhance your dental clinic’s online presence with a professional dental clinic websites that drives patient inquiries and simplifies appointment bookings.",
     "ogType": "article",
@@ -1236,14 +1203,14 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Portfolio",
-        "/portfolio/"
+        "/web-design-portfolio/"
       ],
       [
         "Dental Clinics"
       ]
     ]
   },
-  "/portfolio/dr-kc-dental-aesthetic-center/": {
+  "/dental-clinic-website-design-dr-kc/": {
     "breadcrumb": [
       [
         "Home",
@@ -1251,19 +1218,18 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Portfolio",
-        "/portfolio/"
+        "/web-design-portfolio/"
       ],
       [
         "Dental Clinics",
-        "/portfolio/dental-clinic-websites/"
+        "/dental-clinic-websites/"
       ],
       [
         "Dr. KC Dental Aesthetic Center"
       ]
     ]
   },
-  "/portfolio/ecommerce-websites/": {
-    "oldUrl": "/e-commerce-websites/",
+  "/e-commerce-websites/": {
     "title": "E-commerce Websites Design | High-Converting Online Stores",
     "description": "Boost sales with ahigh-performance e-commerce websites design that enhances user experience, credibility and boost revenue and engagement.",
     "ogType": "article",
@@ -1288,15 +1254,14 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Portfolio",
-        "/portfolio/"
+        "/web-design-portfolio/"
       ],
       [
         "E-commerce Websites"
       ]
     ]
   },
-  "/portfolio/good-force/": {
-    "oldUrl": "/e-commerce-website-design-good-force/",
+  "/e-commerce-website-design-good-force/": {
     "title": "E-commerce Website Design | Good Force Trading",
     "description": "Discover how our e-commerce website design and SEO strategies helped Good Force increase inquiries by 60% and orders by 79%.",
     "ogType": "article",
@@ -1321,19 +1286,18 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Portfolio",
-        "/portfolio/"
+        "/web-design-portfolio/"
       ],
       [
         "Business & Service Websites",
-        "/portfolio/custom-websites/"
+        "/business-website-design/"
       ],
       [
         "Good Force"
       ]
     ]
   },
-  "/portfolio/kulaman-ranch/": {
-    "oldUrl": "/dairy-e-commerce-website-design-kulaman/",
+  "/dairy-e-commerce-website-design-kulaman/": {
     "title": "Dairy E-commerce Website Design for Organic Dairy and Tours",
     "description": "See how our dairy e-commerce website design and SEO boosted Kulaman Ranch's dairy sales by 40% and farm tour bookings by 50%.",
     "ogType": "article",
@@ -1358,19 +1322,18 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Portfolio",
-        "/portfolio/"
+        "/web-design-portfolio/"
       ],
       [
         "E-commerce Websites",
-        "/portfolio/ecommerce-websites/"
+        "/e-commerce-websites/"
       ],
       [
         "Kulaman Ranch"
       ]
     ]
   },
-  "/portfolio/lana-naturalis/": {
-    "oldUrl": "/skincare-website-design-lana/",
+  "/skincare-website-design-lana/": {
     "title": "Skincare Website Design to Boost Online Sales | Lana Naturalis",
     "description": "See how our organic skincare website design and SEO helped Lana Naturalis grow online sales by 45% and boost customer engagement.",
     "ogType": "article",
@@ -1395,19 +1358,18 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Portfolio",
-        "/portfolio/"
+        "/web-design-portfolio/"
       ],
       [
         "E-commerce Websites",
-        "/portfolio/ecommerce-websites/"
+        "/e-commerce-websites/"
       ],
       [
         "Lana Naturalis"
       ]
     ]
   },
-  "/portfolio/mang-kikos-cacao/": {
-    "oldUrl": "/pasalubong-e-commerce-website-mangkikos-cacao/",
+  "/pasalubong-e-commerce-website-mangkikos-cacao/": {
     "title": "Pasalubong E-commerce Website Design | Mangkikos Cacao",
     "description": "See how our pasalubong e-commerce website design and SEO strategies boosted Mangkikos Cacao’s online orders by 60% and enhanced brand.",
     "ogType": "article",
@@ -1432,19 +1394,18 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Portfolio",
-        "/portfolio/"
+        "/web-design-portfolio/"
       ],
       [
         "E-commerce Websites",
-        "/portfolio/ecommerce-websites/"
+        "/e-commerce-websites/"
       ],
       [
         "Mang Kiko's Cacao"
       ]
     ]
   },
-  "/portfolio/millennium-smiles-dental-center/": {
-    "oldUrl": "/dentistry-website-development-millennium/",
+  "/dentistry-website-development-millennium/": {
     "title": "Dentistry Website Development | Millennium Dental",
     "description": "Learn how our dentistry website development increased inquiries by 50%, streamlined bookings for Millennium Smiles Dental Clinic.",
     "ogType": "article",
@@ -1469,19 +1430,18 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Portfolio",
-        "/portfolio/"
+        "/web-design-portfolio/"
       ],
       [
         "Dental Clinics",
-        "/portfolio/dental-clinic-websites/"
+        "/dental-clinic-websites/"
       ],
       [
         "Millennium Smiles Dental Center"
       ]
     ]
   },
-  "/portfolio/sia-tankiko-dental-clinic/": {
-    "oldUrl": "/dental-care-website-design-sia-tankiko/",
+  "/dental-care-website-design-sia-tankiko/": {
     "title": "Dental Care Website Design for Patient Engagement | Sia Tankiko",
     "description": "Discover how our dental care website design boosted Sia Tankiko Dental Clinic’s bookings by 40% and reduced missed appointments by 30%.",
     "ogType": "article",
@@ -1506,19 +1466,18 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Portfolio",
-        "/portfolio/"
+        "/web-design-portfolio/"
       ],
       [
         "Dental Clinics",
-        "/portfolio/dental-clinic-websites/"
+        "/dental-clinic-websites/"
       ],
       [
         "Sia-Tankiko Dental Clinic"
       ]
     ]
   },
-  "/pricing/": {
-    "oldUrl": "/pricing-plans/",
+  "/pricing-plans/": {
     "title": "Pricing & Marketing Packages for Dental & Aesthetic Clinics",
     "description": "Transparent pricing on custom websites, SEO, and paid ads built exclusively for dental & aesthetic clinics. Choose a package or get a free growth audit.",
     "ogType": "article",
@@ -1557,8 +1516,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ]
     ]
   },
-  "/services/": {
-    "oldUrl": "/web-development-seo-google-ads-services/",
+  "/web-development-seo-google-ads-services/": {
     "title": "Web Development, SEO & Google Ads Services in the Philippines",
     "description": "Boost your business with expert Web Development, SEO, and Google Ads. Get a high-performing website, better rankings, and more traffic today!",
     "ogType": "article",
@@ -1586,8 +1544,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ]
     ]
   },
-  "/services/paid-advertising/": {
-    "oldUrl": "/google-ads-services/",
+  "/google-ads-services/": {
     "title": "Google Ads Services for Maximum ROI | Digital Services Master",
     "description": "Get more leads and sales with our Google Ads services. We create targeted campaigns that drive results. Get started today!",
     "ogType": "article",
@@ -1612,15 +1569,14 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Services",
-        "/services/"
+        "/web-development-seo-google-ads-services/"
       ],
       [
         "Paid Advertising"
       ]
     ]
   },
-  "/services/seo/": {
-    "oldUrl": "/seo-services-in-the-philippines/",
+  "/seo-services-in-the-philippines/": {
     "title": "SEO Services in the Philippines for Clinics & Brands",
     "description": "Boost rankings with our SEO services in the Philippines. Increase visibility, drive traffic, and achieve long-term success!",
     "ogType": "article",
@@ -1645,15 +1601,14 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Services",
-        "/services/"
+        "/web-development-seo-google-ads-services/"
       ],
       [
         "SEO"
       ]
     ]
   },
-  "/services/web-development/": {
-    "oldUrl": "/web-development-seo-google-ads-services/website-development/",
+  "/web-development-seo-google-ads-services/website-development/": {
     "title": "Website Development for Clinics | Custom WordPress",
     "description": "Clinic website development from wireframe to launch: responsive, custom WordPress builds that stay fast, secure, and simple for your team to update.",
     "ogType": "article",
@@ -1678,7 +1633,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       ],
       [
         "Services",
-        "/services/"
+        "/web-development-seo-google-ads-services/"
       ],
       [
         "Web Development"
