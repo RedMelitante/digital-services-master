@@ -25,7 +25,7 @@ Copy `.env.example` to `.env` and set as needed:
 | Variable | Purpose |
 | --- | --- |
 | `SITE_URL` | Public URL used for canonical links, Open Graph URLs, `robots.txt` and the sitemap. Defaults to `https://digitalservicesmaster.com`. |
-| `PUBLIC_AUDIT_FORM_ENDPOINT` | The Google Apps Script web app URL (ending in `/exec`) that emails audit form requests to redmelitante@digitalservicesmaster.com. See [`apps-script/audit-form/`](apps-script/audit-form/README.md). Required in production: without it the form shows an error instead of sending, and the build prints a warning. |
+| `PUBLIC_AUDIT_FORM_ENDPOINT` | Optional. Overrides the Google Apps Script web app URL that emails audit form requests to redmelitante@digitalservicesmaster.com. The deployed URL is already set in `src/scripts/audit-form.ts`. See [`apps-script/audit-form/`](apps-script/audit-form/README.md). |
 
 ## Project structure
 
@@ -111,8 +111,7 @@ Open items from the design handoff:
 
 - Privacy Policy and Terms: add business name and registration, address, analytics tools
   and governing law; get a lawyer's review; remove the "Draft" label.
-- Deploy `apps-script/audit-form/` and set `PUBLIC_AUDIT_FORM_ENDPOINT` to its web app URL,
-  so the audit form sends.
+- Send a test request from the Contact page and confirm the email arrives.
 - Add 301 redirects for the old URLs that no longer have their own page:
   `/about-us-web-developer/`, `/website-development/`,
   `/web-development-seo-google-ads-services/web-design-services/`,

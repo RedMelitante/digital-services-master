@@ -28,12 +28,11 @@ silently dropped.
 5. Click **Deploy** and approve the permission prompt. Google asks to let the script
    "send email as you".
 6. Copy the **Web app URL**, which ends in `/exec`.
-7. Set it as `PUBLIC_AUDIT_FORM_ENDPOINT` where the site is built, then rebuild and
-   redeploy the site:
-   - **Locally:** add `PUBLIC_AUDIT_FORM_ENDPOINT=<url>` to `.env`
-   - **Cloudflare:** add the same variable to the project's build variables
+7. Put the URL in `DEFAULT_ENDPOINT` in `src/scripts/audit-form.ts`, or set it as
+   `PUBLIC_AUDIT_FORM_ENDPOINT` in the build environment. Then rebuild and redeploy
+   the site, because the URL is built into the page.
 
-   The value is built into the site, so a rebuild is needed after setting it.
+The current deployment is already set in `src/scripts/audit-form.ts`.
 
 To check the deployment, open the web app URL in a browser. It should show
 `{"ok":true,"service":"audit-form"}`. Then send a test request from the Contact page.
